@@ -38,8 +38,8 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ setMode }) => {
               <ArrowLeft className="w-5 h-5" />
             </button>
             <div>
-              <h2 className="text-xl font-bold text-white">Direktori Bank Soal (80+ Soal)</h2>
-              <p className="text-xs text-slate-400">Telusuri seluruh soal beserta pembahasan lengkap</p>
+              <h2 className="text-xl font-bold text-white">Direktori Bank Soal (200 Soal)</h2>
+              <p className="text-xs text-slate-400">Telusuri seluruh soal Modul 1 & Modul 2 beserta pembahasan lengkap</p>
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { QuizMode } from '../types';
-import { BookOpen, Home, Layers, ShieldCheck, PlayCircle } from 'lucide-react';
+import { BookOpen, Home, Layers, ShieldCheck, PlayCircle, BookMarked } from 'lucide-react';
 
 interface NavbarProps {
   currentMode: QuizMode;
@@ -25,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode }) => {
               <h1 className="font-bold text-base sm:text-lg bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
                 QuizMaster
               </h1>
-              <p className="text-xs text-slate-400">Modul 1 & Modul 2</p>
+              <p className="text-xs text-slate-400">Modul 1 & Modul 2 (200 Soal)</p>
             </div>
           </div>
 
@@ -64,15 +64,27 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode }) => {
               }`}
             >
               <Layers className="w-4 h-4" />
-              <span>Bank Soal (80+)</span>
+              <span>Bank Soal (200)</span>
+            </button>
+
+            <button
+              onClick={() => setMode('materials')}
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center space-x-2 ${
+                currentMode === 'materials'
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+              }`}
+            >
+              <BookMarked className="w-4 h-4" />
+              <span>Ringkasan Materi</span>
             </button>
           </nav>
 
-          {/* Right Action / Bookmarked Badge */}
+          {/* Right Action / Verified Badge */}
           <div className="flex items-center space-x-3">
             <div className="hidden sm:flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-full text-xs text-slate-300">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Verified Blueprint</span>
+              <span>IndexedDB Persistent</span>
             </div>
           </div>
         </div>
@@ -100,6 +112,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode }) => {
         >
           <Layers className="w-5 h-5 mb-1" />
           <span>Soal</span>
+        </button>
+        <button
+          onClick={() => setMode('materials')}
+          className={`flex flex-col items-center text-xs ${currentMode === 'materials' ? 'text-indigo-400 font-bold' : 'text-slate-400'}`}
+        >
+          <BookMarked className="w-5 h-5 mb-1" />
+          <span>Materi</span>
         </button>
       </div>
     </header>

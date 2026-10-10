@@ -6,7 +6,6 @@ export interface Question {
   options: string[];
   correctAnswer: number; // 0-3 index (A, B, C, D)
   explanation: string;
-  tierOrModule: string;
 }
 
 export type QuizMode = 'dashboard' | 'practice' | 'exam' | 'bank' | 'materials' | 'analytics';
@@ -22,6 +21,7 @@ export interface QuizState {
   timeSpent: number; // in seconds
   examTimeLeft: number; // in seconds
   isExamSubmitted: boolean;
+  selectedModule: 'all' | 'modul-1' | 'modul-2';
 }
 
 export interface ModuleTopic {
@@ -33,3 +33,4 @@ export interface ModuleTopic {
   keyPoints: string[];
   iconName: string;
 }
+

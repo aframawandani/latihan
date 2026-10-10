@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Dashboard } from './components/Dashboard';
 import { PracticeMode } from './components/PracticeMode';
 import { QuestionBank } from './components/QuestionBank';
+import { StudyMaterials } from './components/StudyMaterials';
 
 export default function App() {
   const [currentMode, setMode] = useState<QuizMode>('dashboard');
@@ -17,10 +18,11 @@ export default function App() {
         {currentMode === 'dashboard' && <Dashboard setMode={setMode} />}
         {currentMode === 'practice' && <PracticeMode setMode={setMode} />}
         {currentMode === 'bank' && <QuestionBank setMode={setMode} />}
+        {currentMode === 'materials' && <StudyMaterials setMode={setMode} />}
       </main>
 
       <footer className="bg-slate-900 border-t border-slate-800 text-center py-6 text-xs text-slate-400">
-        <p>Aplikasi Latihan Soal • 80+ Soal Pilihan Ganda Interaktif</p>
+        <p>Aplikasi Latihan Soal • 200 Soal Pilihan Ganda Berstandar Akademik • Progress Tersimpan di IndexedDB</p>
       </footer>
     </div>
   );

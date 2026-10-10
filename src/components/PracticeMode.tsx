@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Question, QuizMode } from '../types';
 import { QUESTIONS } from '../data/questions';
-import { CheckCircle2, XCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, PlayCircle, Settings, RotateCcw } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, RotateCcw, Save } from 'lucide-react';
+import { saveProgressToIDB, getProgressFromIDB } from '../utils/db';
 
 interface PracticeModeProps {
   setMode: (mode: QuizMode) => void;
@@ -19,10 +20,45 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [showExplanation, setShowExplanation] = useState<Record<number, boolean>>({});
   const [bookmarked, setBookmarked] = useState<number[]>([]);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  // Load saved progress from IndexedDB on mount
+  useEffect(() => {
+    const loadSavedSession = async () => {
+      const savedSession = await getProgressFromIDB('practice_session');
+      if (savedSession && savedSession.activeQuestions && savedSession.activeQuestions.length > 0) {
+        setActiveQuestions(savedSession.activeQuestions);
+        setCurrentIndex(savedSession.currentIndex || 0);
+        setSelectedAnswers(savedSession.selectedAnswers || {});
+        setShowExplanation(savedSession.showExplanation || {});
+        setBookmarked(savedSession.bookmarked || []);
+        setSelectedModules(savedSession.selectedModules || ['modul-1', 'modul-2']);
+        setQuestionLimit(savedSession.questionLimit ?? 20);
+        setIsConfiguring(savedSession.isConfiguring ?? false);
+      }
+      setIsLoaded(true);
+    };
+    loadSavedSession();
+  }, []);
+
+  // Save session to IndexedDB whenever active state changes
+  useEffect(() => {
+    if (!isLoaded) return;
+    saveProgressToIDB('practice_session', {
+      isConfiguring,
+      selectedModules,
+      questionLimit,
+      activeQuestions,
+      currentIndex,
+      selectedAnswers,
+      showExplanation,
+      bookmarked
+    });
+  }, [isConfiguring, selectedModules, questionLimit, activeQuestions, currentIndex, selectedAnswers, showExplanation, bookmarked, isLoaded]);
 
   const handleToggleModule = (mod: string) => {
     if (selectedModules.includes(mod)) {
-      if (selectedModules.length === 1) return; // keep at least one
+      if (selectedModules.length === 1) return;
       setSelectedModules(selectedModules.filter(m => m !== mod));
     } else {
       setSelectedModules([...selectedModules, mod]);
@@ -30,13 +66,8 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
   };
 
   const handleStartQuiz = () => {
-    // Filter questions by selected modules
     let pool = QUESTIONS.filter(q => selectedModules.includes(q.moduleId));
-    
-    // Shuffle questions randomly
     pool = [...pool].sort(() => Math.random() - 0.5);
-
-    // Slice to limit if not 0 (0 means all)
     const finalPool = questionLimit === 0 ? pool : pool.slice(0, questionLimit);
 
     setActiveQuestions(finalPool);
@@ -76,6 +107,10 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
   ).length;
   const progressPercent = activeQuestions.length > 0 ? Math.round((answeredCount / activeQuestions.length) * 100) : 0;
 
+  if (!isLoaded) {
+    return <div className="max-w-4xl mx-auto px-4 py-16 text-center text-slate-400">Memuat data dari penyimpanan...</div>;
+  }
+
   // 1. Configuration Screen
   if (isConfiguring) {
     const totalAvailable = QUESTIONS.filter(q => selectedModules.includes(q.moduleId)).length;
@@ -87,11 +122,11 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
 
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 rounded-2xl bg-indigo-600/10 text-indigo-400 flex items-center justify-center font-bold">
-              <Settings className="w-6 h-6" />
+              <Save className="w-6 h-6" />
             </div>
             <div>
               <h2 className="text-2xl font-extrabold text-white">Pengaturan Latihan Soal</h2>
-              <p className="text-xs text-slate-400">Pilih modul dan jumlah soal sesuai kebutuhan Anda</p>
+              <p className="text-xs text-slate-400">Progress Anda otomatis tersimpan aman di IndexedDB</p>
             </div>
           </div>
 
@@ -189,6 +224,20 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
     );
   }
 
+  if (!currentQ) {
+    return (
+      <div className="max-w-4xl mx-auto px-4 py-16 text-center space-y-4">
+        <h2 className="text-xl font-bold text-white">Tidak ada soal tersimpan</h2>
+        <button
+          onClick={() => setIsConfiguring(true)}
+          className="bg-indigo-600 px-4 py-2 rounded-xl text-white text-sm"
+        >
+          Pengaturan Latihan
+        </button>
+      </div>
+    );
+  }
+
   // 2. Active Quiz Screen
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-6">
@@ -208,13 +257,19 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
           </div>
         </div>
 
-        <button
-          onClick={handleStartQuiz}
-          className="flex items-center space-x-1.5 text-xs text-indigo-400 hover:text-indigo-300 bg-slate-800 px-3 py-2 rounded-xl border border-slate-700"
-        >
-          <RotateCcw className="w-4 h-4" />
-          <span>Acak Ulang Soal</span>
-        </button>
+        <div className="flex items-center space-x-2">
+          <span className="text-xs text-emerald-400 flex items-center space-x-1 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1.5 rounded-xl">
+            <Save className="w-3.5 h-3.5" />
+            <span>Tersimpan di IndexedDB</span>
+          </span>
+          <button
+            onClick={handleStartQuiz}
+            className="flex items-center space-x-1.5 text-xs text-indigo-400 hover:text-indigo-300 bg-slate-800 px-3 py-2 rounded-xl border border-slate-700"
+          >
+            <RotateCcw className="w-4 h-4" />
+            <span>Acak Ulang</span>
+          </button>
+        </div>
       </div>
 
       {/* Progress Bar */}
