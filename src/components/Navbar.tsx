@@ -1,6 +1,6 @@
 import React from 'react';
 import { QuizMode } from '../types';
-import { BookOpen, Award, CheckCircle, Clock, Home, Layers, BarChart2, ShieldCheck, PlayCircle } from 'lucide-react';
+import { BookOpen, Home, Layers, ShieldCheck, PlayCircle } from 'lucide-react';
 
 interface NavbarProps {
   currentMode: QuizMode;
@@ -8,7 +8,7 @@ interface NavbarProps {
   bookmarkedCount: number;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarkedCount }) => {
+export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode }) => {
   return (
     <header className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,9 +23,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarked
             </div>
             <div>
               <h1 className="font-bold text-base sm:text-lg bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-                UTS Modul 1
+                QuizMaster
               </h1>
-              <p className="text-xs text-slate-400">Sistem Informasi & Web</p>
+              <p className="text-xs text-slate-400">Modul 1 & Modul 2</p>
             </div>
           </div>
 
@@ -52,19 +52,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarked
               }`}
             >
               <PlayCircle className="w-4 h-4" />
-              <span>Mode Latihan</span>
-            </button>
-
-            <button
-              onClick={() => setMode('exam')}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center space-x-2 ${
-                currentMode === 'exam'
-                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                  : 'text-slate-300 hover:bg-slate-800 hover:text-white'
-              }`}
-            >
-              <Clock className="w-4 h-4" />
-              <span>Simulasi UTS</span>
+              <span>Latihan Soal</span>
             </button>
 
             <button
@@ -76,31 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarked
               }`}
             >
               <Layers className="w-4 h-4" />
-              <span>Bank Soal (50)</span>
-            </button>
-
-            <button
-              onClick={() => setMode('materials')}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center space-x-2 ${
-                currentMode === 'materials'
-                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                  : 'text-slate-300 hover:bg-slate-800 hover:text-white'
-              }`}
-            >
-              <BookOpen className="w-4 h-4" />
-              <span>Materi & Infografis</span>
-            </button>
-
-            <button
-              onClick={() => setMode('analytics')}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center space-x-2 ${
-                currentMode === 'analytics'
-                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                  : 'text-slate-300 hover:bg-slate-800 hover:text-white'
-              }`}
-            >
-              <BarChart2 className="w-4 h-4" />
-              <span>Statistik</span>
+              <span>Bank Soal (80+)</span>
             </button>
           </nav>
 
@@ -108,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarked
           <div className="flex items-center space-x-3">
             <div className="hidden sm:flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-full text-xs text-slate-300">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Verified UTS Blueprint</span>
+              <span>Verified Blueprint</span>
             </div>
           </div>
         </div>
@@ -131,25 +95,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarked
           <span>Latihan</span>
         </button>
         <button
-          onClick={() => setMode('exam')}
-          className={`flex flex-col items-center text-xs ${currentMode === 'exam' ? 'text-indigo-400 font-bold' : 'text-slate-400'}`}
-        >
-          <Clock className="w-5 h-5 mb-1" />
-          <span>Ujian</span>
-        </button>
-        <button
           onClick={() => setMode('bank')}
           className={`flex flex-col items-center text-xs ${currentMode === 'bank' ? 'text-indigo-400 font-bold' : 'text-slate-400'}`}
         >
           <Layers className="w-5 h-5 mb-1" />
           <span>Soal</span>
-        </button>
-        <button
-          onClick={() => setMode('materials')}
-          className={`flex flex-col items-center text-xs ${currentMode === 'materials' ? 'text-indigo-400 font-bold' : 'text-slate-400'}`}
-        >
-          <BookOpen className="w-5 h-5 mb-1" />
-          <span>Materi</span>
         </button>
       </div>
     </header>

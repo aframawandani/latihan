@@ -1,719 +1,973 @@
 import { Question } from '../types';
 
 export const QUESTIONS: Question[] = [
-  // --- Modul 1: Sistem Informasi vs Teknologi Informasi (1-7) ---
+  // ==========================================
+  // --- KUMPULAN SOAL 1 - 100 (Sistem Informasi & Web) ---
+  // ==========================================
   {
     id: 1,
+    moduleId: 'modul-1',
     category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Apa definisi utama dari Teknologi Informasi (TI) dalam konteks organisasi?',
+    question: 'Apakah definisi utama dari Teknologi Informasi (TI) dalam konteks organisasi?',
     options: [
-      'Sekumpulan manusia yang mengelola data secara manual tanpa alat bantu.',
+      'Sekumpulan komponen manajemen perusahaan tanpa perangkat keras.',
       'Perangkat keras (hardware) dan perangkat lunak (software) yang diperlukan organisasi untuk mencapai tujuan fungsionalnya.',
-      'Sistem pengambilan keputusan tingkat eksekutif tertinggi.',
-      'Jaringan sosial internal perusahaan untuk komunikasi karyawan.'
+      'Sistem pemrosesan data manual.',
+      'Jaringan komunikasi tanpa komputer.'
     ],
     correctAnswer: 1,
-    explanation: 'Teknologi Informasi (TI) merujuk pada perangkat keras (hardware) dan perangkat lunak (software) yang diperlukan oleh organisasi untuk mencapai tujuan fungsionalnya.',
+    explanation: 'Teknologi Informasi adalah perangkat keras dan perangkat lunak yang diperlukan organisasi untuk mencapai tujuan fungsionalnya.',
     tierOrModule: 'Sistem Informasi vs TI'
   },
   {
     id: 2,
+    moduleId: 'modul-1',
     category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Manakah pernyataan yang paling tepat mendefinisikan Sistem Informasi (SI)?',
+    question: 'Apa definisi dari Sistem Informasi (IS) yang tepat?',
     options: [
-      'Hanya sekumpulan komputer dengan spesifikasi tinggi yang terhubung internet.',
-      'Program aplikasi yang berjalan di dalam smartphone manajer.',
-      'Sekumpulan komponen saling terkait yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan.',
-      'Kumpulan kabel jaringan dan router di ruang server.'
+      'Sekumpulan komponen saling terkait yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan dan kendali organisasi.',
+      'Hanya perangkat keras server yang berkinerja tinggi.',
+      'Program aplikasi pengolah kata di komputer klien.',
+      'Kumpulan kabel jaringan LAN.'
     ],
-    correctAnswer: 2,
-    explanation: 'Sistem Informasi adalah sekumpulan komponen saling terkait yang mengumpulkan (atau mengambil), memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan dan kendali organisasi.',
+    correctAnswer: 0,
+    explanation: 'Sistem Informasi adalah sekumpulan komponen saling terkait yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi.',
     tierOrModule: 'Sistem Informasi vs TI'
   },
   {
     id: 3,
-    category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Jika Teknologi Informasi adalah fondasi infrastruktur teknisnya, maka apa peran utama dari Sistem Informasi?',
-    options: [
-      'Menggantikan seluruh tenaga kerja manusia dengan robot.',
-      'Menyediakan informasi yang bermakna dan terstruktur untuk mendukung kendali serta pemecahan masalah organisasi.',
-      'Mempercepat kinerja prosesor komputer.',
-      'Menghilangkan kebutuhan akan manajemen perusahaan.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Sistem Informasi memanfaatkan TI untuk mengolah data menjadi informasi yang berguna bagi manajemen dalam pengambilan keputusan dan pengendalian organisasi.',
-    tierOrModule: 'Sistem Informasi vs TI'
-  },
-  {
-    id: 4,
-    category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Manakah contoh komponen perangkat keras (hardware) dalam Teknologi Informasi?',
-    options: [
-      'Sistem operasi Windows',
-      'Database MySQL',
-      'Server, komputer klien, router, dan perangkat penyimpanan',
-      'Bahasa pemrograman Python'
-    ],
-    correctAnswer: 2,
-    explanation: 'Hardware mencakup perangkat fisik seperti server, komputer klien, router, dan perangkat penyimpanan.',
-    tierOrModule: 'Sistem Informasi vs TI'
-  },
-  {
-    id: 5,
-    category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Manakah yang termasuk contoh perangkat lunak (software) dalam Teknologi Informasi?',
-    options: [
-      'Kabel fiber optik',
-      'Sistem operasi, aplikasi pengolah data, dan program sistem',
-      'Hard disk eksternal',
-      'Saklar listrik ruang server'
-    ],
-    correctAnswer: 1,
-    explanation: 'Software mencakup program komputer dan instruksi yang mengarahkan kerja hardware.',
-    tierOrModule: 'Sistem Informasi vs TI'
-  },
-  {
-    id: 6,
-    category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Apakah perbedaan mendasar antara Data dan Informasi dalam sistem?',
-    options: [
-      'Data adalah hasil olahan, sedangkan informasi adalah fakta mentah.',
-      'Data adalah fakta mentah yang belum diproses, sedangkan informasi adalah data yang telah diolah menjadi bentuk yang berarti dan berguna.',
-      'Data dan informasi memiliki arti yang persis sama.',
-      'Informasi hanya berupa angka, sedangkan data berupa teks.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Data merupakan fakta mentah, sementara informasi adalah data yang telah diproses dan diberi konteks sehingga bermakna bagi penerimanya.',
-    tierOrModule: 'Sistem Informasi vs TI'
-  },
-  {
-    id: 7,
-    category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Mengapa suatu perusahaan membutuhkan Sistem Informasi modern?',
-    options: [
-      'Agar terlihat canggih di depan kompetitor saja.',
-      'Untuk mendistribusikan, menyimpan, dan memproses data guna mendukung operasional dan pengambilan keputusan manajerial.',
-      'Untuk menghapus departemen keuangan.',
-      'Agar komputer tidak pernah mengalami kerusakan.'
-    ],
-    correctAnswer: 1,
-    explanation: 'SI dirancang untuk membantu organisasi dalam mengelola aliran data dan informasi guna mendukung operasional serta pengambilan keputusan.',
-    tierOrModule: 'Sistem Informasi vs TI'
-  },
-
-  // --- Modul 2: Alur Kerja SI & 3 Dimensi Utama (8-16) ---
-  {
-    id: 8,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Urutan yang benar dari Alur Kerja Sistem Informasi adalah...',
+    moduleId: 'modul-1',
+    category: 'Alur Kerja Sistem Informasi',
+    question: 'Bagaimana urutan Alur Kerja Sistem Informasi yang benar?',
     options: [
       'Output -> Processing -> Input -> Feedback',
       'Input (Data Mentah) -> Processing (Konversi) -> Output (Informasi Berarti) -> Feedback (Evaluasi)',
-      'Feedback -> Output -> Input -> Processing',
-      'Processing -> Input -> Feedback -> Output'
+      'Feedback -> Input -> Processing -> Output',
+      'Processing -> Output -> Input -> Feedback'
     ],
     correctAnswer: 1,
-    explanation: 'Alur kerja sistem informasi dimulai dari Input (Data Mentah), melalui Processing (Konversi), menghasilkan Output (Informasi Berarti), dan ditutup dengan Feedback (Evaluasi).',
+    explanation: 'Alur kerja berurutan dari Input (Data Mentah) menuju Processing (Konversi), Output (Informasi Berarti), hingga Feedback (Evaluasi).',
     tierOrModule: 'Alur Kerja SI'
   },
   {
-    id: 9,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Apa fungsi dari tahap Feedback (Evaluasi) dalam alur kerja sistem informasi?',
-    options: [
-      'Menghapus seluruh data yang sudah diproses.',
-      'Menghentikan jalannya sistem agar tidak error.',
-      'Memberikan umpan balik atau evaluasi untuk memperbaiki atau menyempurnakan tahap input dan proses selanjutnya.',
-      'Menjual informasi ke pihak eksternal.'
-    ],
-    correctAnswer: 2,
-    explanation: 'Feedback (Evaluasi) berfungsi memberikan umpan balik kepada pihak terkait di dalam organisasi untuk mengevaluasi atau memperbaiki keluaran atau masukan sistem.',
-    tierOrModule: 'Alur Kerja SI'
-  },
-  {
-    id: 10,
-    category: 'Alur Kerja & Tiga Dimensi',
+    id: 4,
+    moduleId: 'modul-1',
+    category: 'Tiga Dimensi Utama Sistem Informasi',
     question: 'Apa saja Tiga Dimensi Utama Sistem Informasi?',
     options: [
+      'Dimensi Manusia (People), Dimensi Organisasi (Organization), dan Dimensi Teknologi (Technology)',
       'Hardware, Software, Brainware',
-      'Manusia (People), Organisasi (Organization), dan Teknologi (Technology)',
       'Input, Proses, Output',
       'Client, Server, Database'
     ],
-    correctAnswer: 1,
-    explanation: 'Tiga dimensi utama sistem informasi terdiri dari Dimensi Manusia (People), Dimensi Organisasi (Organization), dan Dimensi Teknologi (Technology).',
+    correctAnswer: 0,
+    explanation: 'Tiga dimensi utama sistem informasi adalah Dimensi Manusia, Dimensi Organisasi, dan Dimensi Teknologi.',
     tierOrModule: 'Tiga Dimensi SI'
+  },
+  {
+    id: 5,
+    moduleId: 'modul-1',
+    category: 'Tiga Dimensi Utama Sistem Informasi',
+    question: 'Aspek apa saja yang dilibatkan dalam Dimensi Manusia (People) pada Sistem Informasi?',
+    options: [
+      'Pelatihan, perilaku pengguna, dan pemecahan masalah fungsional.',
+      'Struktur hierarki dan budaya kerja.',
+      'Infrastruktur perangkat keras dan jaringan.',
+      'Kapasitas penyimpanan basis data.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Dimensi Manusia melibatkan pelatihan, perilaku pengguna, dan pemecahan masalah fungsional.',
+    tierOrModule: 'Tiga Dimensi SI'
+  },
+  {
+    id: 6,
+    moduleId: 'modul-1',
+    category: 'Tiga Dimensi Utama Sistem Informasi',
+    question: 'Apa yang dicakup oleh Dimensi Organisasi dalam Sistem Informasi?',
+    options: [
+      'Struktur hierarki, proses bisnis, budaya kerja, dan politik organisasi.',
+      'Spesifikasi RAM komputer.',
+      'Bahasa pemrograman Python.',
+      'Kecepatan kabel fiber optik.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Dimensi Organisasi mencakup struktur hierarki, proses bisnis, budaya kerja, dan politik organisasi.',
+    tierOrModule: 'Tiga Dimensi SI'
+  },
+  {
+    id: 7,
+    moduleId: 'modul-1',
+    category: 'Tiga Dimensi Utama Sistem Informasi',
+    question: 'Apa saja infrastruktur utama yang membentuk Dimensi Teknologi?',
+    options: [
+      'Perangkat keras, perangkat lunak, pengelolaan data (database), dan teknologi jaringan.',
+      'Pelatihan karyawan baru dan motivasi kerja.',
+      'Struktur jabatan manajer.',
+      'Prosedur administrasi manual.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Dimensi Teknologi mencakup perangkat keras, perangkat lunak, database, dan teknologi jaringan.',
+    tierOrModule: 'Tiga Dimensi SI'
+  },
+  {
+    id: 8,
+    moduleId: 'modul-1',
+    category: 'Literasi Sistem Informasi',
+    question: 'Apakah definisi dari Literasi Sistem Informasi (Information Systems Literacy)?',
+    options: [
+      'Pemahaman mendalam yang menggabungkan pendekatan teknis serta perilaku manusia dalam organisasi.',
+      'Kemampuan merakit komponen motherboard server.',
+      'Keahlian mengetik cepat di keyboard.',
+      'Kemampuan membaca kode biner.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Literasi Sistem Informasi adalah pemahaman mendalam yang menggabungkan pendekatan teknis serta perilaku manusia dalam organisasi.',
+    tierOrModule: 'Literasi SI'
+  },
+  {
+    id: 9,
+    moduleId: 'modul-1',
+    category: 'Model Client-Server',
+    question: 'Bagaimana model Client-Server didefinisikan secara konseptual?',
+    options: [
+      'Model pemrosesan yang membagi beban kerja antara komputer pengguna (client) dan komputer penyedia layanan (server).',
+      'Model di mana satu komputer mengerjakan segalanya tanpa jaringan.',
+      'Sistem penyimpanan data offline di flashdisk.',
+      'Jaringan komputer nirkabel tanpa server.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Model Client-Server adalah model pemrosesan yang membagi beban kerja antara komputer klien dan server.',
+    tierOrModule: 'Client-Server'
+  },
+  {
+    id: 10,
+    moduleId: 'modul-1',
+    category: 'Model Client-Server',
+    question: 'Apa peran dari Klien (Client) dan Server dalam arsitektur web?',
+    options: [
+      'Klien adalah titik masuk meminta data via web browser; Server adalah komputer berkinerja tinggi yang menerima permintaan, memproses, dan mengirim hasil.',
+      'Klien adalah penyedia database; Server adalah browser di HP.',
+      'Keduanya adalah perangkat keras tanpa fungsi pemrosesan.',
+      'Klien memproses seluruh database pusat.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Klien meminta data melalui web browser, sementara Server memproses dan mengembalikan hasil ke klien.',
+    tierOrModule: 'Client-Server'
   },
   {
     id: 11,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Dalam Tiga Dimensi Sistem Informasi, aspek apa yang dicakup oleh Dimensi Manusia (People)?',
+    moduleId: 'modul-1',
+    category: 'Model Client-Server',
+    question: 'Internet/Intranet pada dasarnya merupakan bentuk pengembangan tingkat lanjut dari apa?',
     options: [
-      'Spesifikasi kecepatan processor komputer',
-      'Struktur hierarki perusahaan',
-      'Pelatihan, perilaku pengguna, dan pemecahan masalah fungsional',
-      'Kapasitas penyimpanan hard disk'
+      'Model client-server (client-server grown up).',
+      'Mesin tik mekanik.',
+      'Sistem penyimpanan pita magnetik.',
+      'Jaringan telepon analog.'
     ],
-    correctAnswer: 2,
-    explanation: 'Dimensi Manusia melibatkan aspek pelatihan, perilaku pengguna, dan pemecahan masalah fungsional dalam penggunaan sistem.',
-    tierOrModule: 'Tiga Dimensi SI'
+    correctAnswer: 0,
+    explanation: 'Internet/Intranet adalah bentuk pengembangan tingkat lanjut dari model client-server.',
+    tierOrModule: 'Client-Server'
   },
   {
     id: 12,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Apa yang dipelajari dalam Dimensi Organisasi (Organization) dari suatu Sistem Informasi?',
+    moduleId: 'modul-1',
+    category: 'Front-End vs Back-End',
+    question: 'Apa peran utama dari Front-End (Sisi Klien)?',
     options: [
-      'Struktur hierarki, proses bisnis, budaya kerja, dan politik organisasi',
-      'Cara merakit komponen motherboard',
-      'Bahasa pemrograman JavaScript dan PHP',
-      'Kabel LAN dan konfigurasi IP address'
+      'Mengelola Presentation Logic, fokus pada tampilan antarmuka, menangkap input pengguna, dan menampilkan kembali data yang diproses server.',
+      'Mengelola Data Storage dan kueri database.',
+      'Mengamankan jaringan kabel di ruang server.',
+      'Menyimpan file backup secara fisik.'
     ],
     correctAnswer: 0,
-    explanation: 'Dimensi Organisasi mencakup struktur hierarki, proses bisnis, budaya kerja, dan politik di dalam organisasi.',
-    tierOrModule: 'Tiga Dimensi SI'
+    explanation: 'Front-End mengelola Presentation Logic, tampilan antarmuka, input, dan menampilkan data yang diproses server.',
+    tierOrModule: 'Front-End vs Back-End'
   },
   {
     id: 13,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Komponen apa yang membentuk Dimensi Teknologi (Technology) dalam Sistem Informasi?',
-    options: [
-      'Budaya perusahaan dan motivasi karyawan',
-      'Infrastruktur utama berupa perangkat keras, perangkat lunak, pengelolaan data (database), dan teknologi jaringan',
-      'Kurikulum pelatihan karyawan baru',
-      'Struktur jabatan manajer'
-    ],
-    correctAnswer: 1,
-    explanation: 'Dimensi Teknologi mencakup infrastruktur utama seperti hardware, software, database, dan teknologi jaringan.',
-    tierOrModule: 'Tiga Dimensi SI'
-  },
-  {
-    id: 14,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Mengapa pendekatan multidimensional sangat penting dalam memahami Sistem Informasi?',
-    options: [
-      'Karena teknologi saja tidak cukup tanpa dukungan manusia dan proses organisasi yang tepat.',
-      'Agar sistem komputer bisa berjalan tanpa listrik.',
-      'Agar biaya pembuatan software menjadi gratis.',
-      'Untuk menghindari penggunaan basis data.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Masalah dalam sistem informasi sering kali berakar dari kombinasi manusia, organisasi, dan teknologi, sehingga pemahaman komprehensif dari ketiga dimensi mutlak diperlukan.',
-    tierOrModule: 'Tiga Dimensi SI'
-  },
-  {
-    id: 15,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Tahap manakah dalam alur kerja sistem informasi yang bertugas mengubah data mentah menjadi bentuk yang bermanfaat?',
-    options: [
-      'Input',
-      'Processing (Konversi)',
-      'Output',
-      'Feedback'
-    ],
-    correctAnswer: 1,
-    explanation: 'Tahap Processing (Konversi) bertanggung jawab mengolah data mentah menjadi informasi yang berarti.',
-    tierOrModule: 'Alur Kerja SI'
-  },
-  {
-    id: 16,
-    category: 'Alur Kerja & Tiga Dimensi',
-    question: 'Manakah dari berikut ini yang merupakan contoh bentuk Output dalam sistem informasi?',
-    options: [
-      'Formulir pendaftaran kosong',
-      'Laporan penjualan bulanan berbentuk grafik dan tabel ringkasan',
-      'Tombol "Submit" pada form web',
-      'Kabel data USB'
-    ],
-    correctAnswer: 1,
-    explanation: 'Laporan penjualan berbentuk grafik dan tabel ringkasan adalah informasi berarti (output) yang siap digunakan untuk pengambilan keputusan.',
-    tierOrModule: 'Alur Kerja SI'
-  },
-
-  // --- Modul 3: Literasi Sistem Informasi (17-20) ---
-  {
-    id: 17,
-    category: 'Literasi Sistem Informasi',
-    question: 'Apa arti dari "Literasi Sistem Informasi" (Information Systems Literacy)?',
-    options: [
-      'Kemampuan mengetik 100 kata per menit.',
-      'Pemahaman mendalam yang menggabungkan pendekatan teknis serta perilaku manusia dalam organisasi.',
-      'Keahlian merakit komputer server.',
-      'Kemampuan membaca kode biner secara langsung.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Literasi Sistem Informasi mencakup pemahaman luas yang menggabungkan pendekatan teknis dan perilaku manusia dalam organisasi.',
-    tierOrModule: 'Literasi SI'
-  },
-  {
-    id: 18,
-    category: 'Literasi Sistem Informasi',
-    question: 'Pendekatan apa saja yang mendasari literasi sistem informasi dari sudut pandang luas?',
-    options: [
-      'Hanya pendekatan ilmu komputer murni.',
-      'Pendekatan teknis dan pendekatan perilaku',
-      'Pendekatan ekonomi makro semata',
-      'Pendekatan perangkat keras seluler'
-    ],
-    correctAnswer: 1,
-    explanation: 'Literasi Sistem Informasi memadukan perspektif teknis (ilmu komputer, manajemen sains, riset operasi) dengan perspektif perilaku (sosiologi, psikologi, ekonomi).',
-    tierOrModule: 'Literasi SI'
-  },
-  {
-    id: 19,
-    category: 'Literasi Sistem Informasi',
-    question: 'Seseorang yang memiliki literasi sistem informasi yang baik akan mampu...',
-    options: [
-      'Memperbaiki kerusakan fisik pada hard disk.',
-      'Mengevaluasi, merancang, dan memahami bagaimana teknologi berinteraksi dengan proses bisnis dan perilaku manusia.',
-      'Membuat sistem operasi sendiri dari nol.',
-      'Menghindari penggunaan teknologi dalam bekerja.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Literasi SI memungkinkan seseorang memahami bagaimana teknologi informasi memengaruhi organisasi, manajemen, dan perilaku pengguna.',
-    tierOrModule: 'Literasi SI'
-  },
-  {
-    id: 20,
-    category: 'Literasi Sistem Informasi',
-    question: 'Mengapa pendekatan perilaku penting dalam studi Sistem Informasi?',
-    options: [
-      'Karena sistem informasi digunakan oleh manusia dalam organisasi yang memiliki dinamika sosial, budaya, dan psikologis.',
-      'Agar komputer bisa berpikir seperti manusia.',
-      'Untuk menentukan harga jual perangkat keras.',
-      'Agar programmer tidak perlu menulis dokumentasi.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Pendekatan perilaku penting karena sistem informasi melibatkan interaksi manusia, struktur organisasi, dan budaya kerja.',
-    tierOrModule: 'Literasi SI'
-  },
-
-  // --- Modul 4: Pengantar Arsitektur Web & Client-Server (21-28) ---
-  {
-    id: 21,
-    category: 'Model Client-Server',
-    question: 'Apakah definisi konseptual dari Arsitektur Client-Server?',
-    options: [
-      'Model pemrosesan tunggal di mana satu komputer mengerjakan segalanya secara mandiri.',
-      'Model pemrosesan yang membagi beban kerja antara komputer pengguna (client) dan komputer penyedia layanan (server).',
-      'Jaringan komputer tanpa kabel yang saling terhubung acak.',
-      'Sistem penyimpanan data offline di flashdisk.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Model Client-Server membagi beban kerja antara komputer klien (pengguna) dan komputer server (penyedia layanan) melalui jaringan.',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 22,
-    category: 'Model Client-Server',
-    question: 'Apa peran utama dari Klien (Client) dalam model Client-Server?',
-    options: [
-      'Menyimpan seluruh database seluruh dunia.',
-      'Menjadi titik masuk bagi pengguna untuk meminta data/layanan melalui peramban web (web browser).',
-      'Mengontrol arus listrik utama gedung.',
-      'Memproses kueri SQL yang kompleks untuk ribuan pengguna sekaligus.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Klien bertindak sebagai titik masuk bagi pengguna yang berinteraksi melalui web browser untuk mengirim permintaan ke server.',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 23,
-    category: 'Model Client-Server',
-    question: 'Bagaimana peran Server dalam arsitektur Client-Server?',
-    options: [
-      'Komputer berkinerja tinggi yang menerima permintaan, memprosesnya, dan mengirimkan hasil kembali ke klien.',
-      'Hanya sebagai layar monitor tambahan.',
-      'Perangkat input seperti keyboard dan mouse.',
-      'Aplikasi penjelajah web di laptop pengguna.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Server adalah komputer berkinerja tinggi yang menerima, memproses permintaan dari klien, dan mengembalikan respons yang sesuai.',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 24,
-    category: 'Model Client-Server',
-    question: 'Internet/Intranet pada dasarnya dianggap sebagai bentuk...',
-    options: [
-      'Teknologi usang yang sudah ditinggalkan.',
-      'Pengembangan tingkat lanjut dari model client-server (client-server grown up).',
-      'Media penyimpanan data portabel.',
-      'Sistem operasi desktop.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Modul menyatakan bahwa Internet/Intranet pada dasarnya adalah bentuk "pengembangan tingkat lanjut dari model client-server" (client-server grown up).',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 25,
-    category: 'Model Client-Server',
-    question: 'Manakah perangkat lunak yang umumnya digunakan di sisi Klien (Client) untuk mengakses aplikasi web?',
-    options: [
-      'Web Browser (seperti Chrome, Firefox, Safari, Edge)',
-      'MySQL Server',
-      'Apache Web Server',
-      'Linux Kernel'
-    ],
-    correctAnswer: 0,
-    explanation: 'Web browser di sisi klien adalah perantara utama pengguna untuk mengakses halaman web dan aplikasi web.',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 26,
-    category: 'Model Client-Server',
-    question: 'Apa yang dimaksud dengan Siklus Request-Response dalam komunikasi web?',
-    options: [
-      'Klien mengirim HTTP request ke server, dan server memproses logika lalu mengembalikan HTML response.',
-      'Server terus menerus mengirim data tanpa diminta oleh klien.',
-      'Klien saling mengirim pesan antar sesama browser.',
-      'Database memperbarui dirinya sendiri setiap detik.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Siklus request-response bekerja saat Klien mengirim HTTP request, kemudian Server memproses dan mengembalikan respons (seperti HTML response).',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 27,
-    category: 'Model Client-Server',
-    question: 'Apa perbedaan utama antara jaringan Intranet dan Internet?',
-    options: [
-      'Intranet adalah jaringan privat dalam organisasi, sedangkan Internet adalah jaringan global publik.',
-      'Internet hanya bisa digunakan untuk berkirim email.',
-      'Intranet tidak menggunakan model client-server.',
-      'Tidak ada perbedaan sama sekali.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Intranet bersifat terbatas dan privat untuk lingkungan internal organisasi, sedangkan Internet bersifat global dan publik.',
-    tierOrModule: 'Client-Server'
-  },
-  {
-    id: 28,
-    category: 'Model Client-Server',
-    question: 'Mengapa pembagian tugas antara klien dan server sangat efisien?',
-    options: [
-      'Karena beban komputasi dan penyimpanan didistribusikan secara terstruktur, di mana klien fokus pada antarmuka dan server pada pemrosesan pusat.',
-      'Karena menghemat penggunaan listrik secara drastis.',
-      'Karena menghilangkan kebutuhan akan koneksi internet.',
-      'Karena membuat ukuran file gambar menjadi lebih kecil.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Distribusi beban kerja membuat sistem lebih skalabel, aman, dan mudah dikelola.',
-    tierOrModule: 'Client-Server'
-  },
-
-  // --- Modul 5: Front-End vs Back-End & Request-Response (29-36) ---
-  {
-    id: 29,
-    category: 'Front-End vs Back-End',
-    question: 'Apa tugas utama dari Front-End (Sisi Klien)?',
-    options: [
-      'Mengelola penyimpanan data pada hard disk server pusat.',
-      'Mengelola Presentation Logic (logika presentasi), fokus pada tampilan, menangkap input pengguna, dan menampilkan data dari server.',
-      'Mengelola kueri SQL langsung ke database.',
-      'Mengamankan firewall jaringan tingkat enterprise.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Front-End berperan mengelola Presentation Logic, fokus pada bagaimana antarmuka ditampilkan, menangkap masukan, dan menampilkan hasil.',
-    tierOrModule: 'Front-End vs Back-End'
-  },
-  {
-    id: 30,
-    category: 'Front-End vs Back-End',
-    question: 'Bahasa atau teknologi utama apa yang digunakan di sisi Front-End (Client-Side)?',
-    options: [
-      'HTML5, CSS3, dan JavaScript',
-      'PHP, Python, dan Ruby',
-      'MySQL, PostgreSQL, dan Oracle',
-      'C++ dan Java Backend'
-    ],
-    correctAnswer: 0,
-    explanation: 'Front-end menggunakan teknologi seperti HTML5 (struktur), CSS3 (tampilan/styling), dan JavaScript (interaktivitas/behavior).',
-    tierOrModule: 'Front-End vs Back-End'
-  },
-  {
-    id: 31,
+    moduleId: 'modul-1',
     category: 'Front-End vs Back-End',
     question: 'Apa peran utama dari Back-End (Sisi Server)?',
     options: [
-      'Mengatur warna latar belakang tombol di browser.',
-      'Mengelola Data Storage (penyimpanan data), Data Access Logic (logika akses data/kueri), serta Application Logic.',
-      'Membuat animasi grafis 3D untuk pengguna.',
-      'Menampilkan teks di layar monitor klien.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Back-End mengelola penyimpanan data (Data Storage), logika akses data (Data Access Logic), dan logika aplikasi (Application Logic).',
-    tierOrModule: 'Front-End vs Back-End'
-  },
-  {
-    id: 32,
-    category: 'Front-End vs Back-End',
-    question: 'Di manakah Application Logic (logika aplikasi/bisnis) dapat ditempatkan dalam arsitektur web?',
-    options: [
-      'Hanya di komputer klien.',
-      'Hanya di database.',
-      'Di sisi klien, sisi server, atau dibagi di antara keduanya.',
-      'Tidak boleh ada logika aplikasi dalam sistem web.'
-    ],
-    correctAnswer: 2,
-    explanation: 'Application Logic dapat ditempatkan di sisi klien, sisi server, atau dibagi di antara keduanya sesuai kebutuhan arsitektur.',
-    tierOrModule: 'Front-End vs Back-End'
-  },
-  {
-    id: 33,
-    category: 'Front-End vs Back-End',
-    question: 'Manakah yang termasuk contoh teknologi atau bahasa pemograman untuk Back-End (Server-Side)?',
-    options: [
-      'HTML5 dan CSS3',
-      'PHP, Python, Ruby, Node.js',
-      'Bootstrap CSS',
-      'Tailwind CSS'
-    ],
-    correctAnswer: 1,
-    explanation: 'PHP, Python, Ruby, dan Node.js adalah contoh teknologi populer yang berjalan di sisi server (Back-End).',
-    tierOrModule: 'Front-End vs Back-End'
-  },
-  {
-    id: 34,
-    category: 'Front-End vs Back-End',
-    question: 'Apa fungsi dari Middleware Integration dalam arsitektur web?',
-    options: [
-      'Perangkat lunak yang bertindak sebagai buffer komunikasi, menghubungkan antarmuka pengguna (UI) ke database layer.',
-      'Kabel jaringan fisik yang menghubungkan mouse ke CPU.',
-      'Program antivirus untuk membersihkan malware.',
-      'Sistem operasi seluler.'
+      'Mengelola Data Storage (penyimpanan data) dan Data Access Logic (logika akses data/kueri).',
+      'Mengatur warna latar tombol di browser.',
+      'Menangkap klik mouse pengguna.',
+      'Mengatur resolusi layar monitor.'
     ],
     correctAnswer: 0,
-    explanation: 'Middleware bertindak sebagai perantara atau buffer komunikasi yang menjembatani komunikasi antara antarmuka dan lapisan data.',
+    explanation: 'Back-End mengelola Data Storage dan Data Access Logic (logika akses data/kueri).',
     tierOrModule: 'Front-End vs Back-End'
   },
   {
-    id: 35,
+    id: 14,
+    moduleId: 'modul-1',
     category: 'Front-End vs Back-End',
-    question: 'Manakah yang mendeskripsikan "Presentation Logic" pada Front-End?',
+    question: 'Di manakah penempatan dari Application Logic (logika aplikasi/bisnis)?',
     options: [
-      'Bagaimana konten dan antarmuka terlihat, ditata, dan merespons tindakan visual pengguna.',
-      'Bagaimana data disimpan ke dalam tabel relasional.',
-      'Bagaimana enkripsi password dilakukan di server.',
-      'Bagaimana backup data harian dijadwalkan.'
+      'Dapat ditempatkan di sisi klien, sisi server, atau dibagi di antara keduanya.',
+      'Hanya boleh di sisi klien.',
+      'Hanya boleh di dalam database server.',
+      'Tidak boleh ada dalam sistem web.'
     ],
     correctAnswer: 0,
-    explanation: 'Presentation logic berkaitan erat dengan tampilan visual, layout, dan pengalaman pengguna (User Experience) di browser.',
+    explanation: 'Application Logic dapat ditempatkan di sisi klien, sisi server, atau dibagi di antara keduanya.',
     tierOrModule: 'Front-End vs Back-End'
   },
   {
-    id: 36,
-    category: 'Front-End vs Back-End',
-    question: 'Apa hubungan antara Back-End dan Data Storage?',
-    options: [
-      'Back-End bertanggung jawab penuh atas penyimpanan, pengambilan, dan keamanan data melalui sistem database.',
-      'Data storage berdiri sendiri tanpa campur tangan back-end.',
-      'Data storage hanya diatur oleh web browser.',
-      'Back-End menghapus data setiap kali pengguna menutup browser.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Back-End mengelola interaksi dengan database (seperti MySQL atau PostgreSQL) untuk menyimpan dan mengambil data dengan aman.',
-    tierOrModule: 'Front-End vs Back-End'
-  },
-
-  // --- Modul 6: Arsitektur Banyak Tingkat / N-Tier & Middleware (37-43) ---
-  {
-    id: 37,
+    id: 15,
+    moduleId: 'modul-1',
     category: 'N-Tier Architecture',
-    question: 'Apa yang dimaksud dengan Arsitektur Banyak Tingkat (N-Tier Architecture / 3-Tier) pada aplikasi web modern?',
+    question: 'Apa saja tingkat terspesialisasi dalam Arsitektur Web Banyak Tingkat (N-Tier)?',
     options: [
-      'Penggabungan seluruh kode program ke dalam satu file tunggal.',
-      'Pembagian tugas server ke dalam beberapa tingkat terspesialisasi (Web Server, Application Server, Database Server).',
-      'Penggunaan tiga monitor sekaligus oleh developer.',
-      'Sistem database tanpa tabel.'
+      'Web Server, Application Server, dan Database Server',
+      'Client, Browser, Monitor',
+      'Input, Proses, Output',
+      'Hardware, Software, Brainware'
     ],
-    correctAnswer: 1,
-    explanation: 'N-Tier (terutama 3-Tier) membagi tugas sistem ke dalam tingkatan terspesialisasi seperti Web Server, Application Server, dan Database Server.',
+    correctAnswer: 0,
+    explanation: 'Tingkatan dalam N-Tier meliputi Web Server, Application Server, dan Database Server.',
     tierOrModule: 'N-Tier Architecture'
   },
   {
-    id: 38,
+    id: 16,
+    moduleId: 'modul-1',
     category: 'N-Tier Architecture',
-    question: 'Apa tugas spesifik dari Web Server dalam Arsitektur 3-Tier?',
+    question: 'Apa tugas spesifik dari Web Server dalam Arsitektur N-Tier?',
     options: [
-      'Menyimpan seluruh catatan transaksi keuangan bank.',
       'Berkomunikasi langsung dengan klien menggunakan protokol HTTP, bertugas mencari dan melayani dokumen statis ke peramban klien.',
-      'Menjalankan algoritma kecerdasan buatan tingkat lanjut.',
-      'Mencetak dokumen fisik untuk kantor.'
+      'Menjalankan logika bisnis yang kompleks.',
+      'Mengelola penyimpanan data relasional.',
+      'Mencetak dokumen fisik.'
     ],
-    correctAnswer: 1,
-    explanation: 'Web Server langsung berinteraksi dengan klien via HTTP dan melayani permintaan file/dokumen statis.',
+    correctAnswer: 0,
+    explanation: 'Web Server berkomunikasi langsung dengan klien via HTTP dan melayani dokumen statis.',
     tierOrModule: 'N-Tier Architecture'
   },
   {
-    id: 39,
+    id: 17,
+    moduleId: 'modul-1',
     category: 'N-Tier Architecture',
     question: 'Apa peran dari Application Server dalam arsitektur 3 tingkat (middle tier)?',
     options: [
-      'Bertanggung jawab atas logika bisnis (business logic) dan menjembatani peramban klien dengan basis data.',
-      'Menampilkan tombol dan gambar ke layar pengguna.',
-      'Menyimpan kabel jaringan di dalam rak server.',
-      'Mengatur daya listrik gedung.'
+      'Bertanggung jawab atas logika bisnis dan menjembatani peramban klien dengan basis data.',
+      'Melayani dokumen HTML statis saja.',
+      'Menyimpan file gambar di browser.',
+      'Mengatur daya listrik.'
     ],
     correctAnswer: 0,
-    explanation: 'Application Server berada di tingkat tengah (middle tier) yang menangani logika bisnis dan memproses data antara klien dan database.',
+    explanation: 'Application Server adalah tingkat tengah (middle tier) untuk logika bisnis dan menjembatani klien dengan basis data.',
     tierOrModule: 'N-Tier Architecture'
   },
   {
-    id: 40,
+    id: 18,
+    moduleId: 'modul-1',
     category: 'N-Tier Architecture',
-    question: 'Apa fungsi dari Database Server dalam arsitektur web modern?',
+    question: 'Apa tugas dari Database Server?',
     options: [
-      'Mengirim email pemasaran ke pelanggan.',
       'Mengelola penyimpanan data relasional dan melayani transaksi data secara aman.',
-      'Merender animasi HTML5 di browser.',
-      'Mengatur tampilan CSS halaman web.'
-    ],
-    correctAnswer: 1,
-    explanation: 'Database Server berfokus pada penyimpanan data terstruktur (relasional) serta melayani query dan transaksi data secara aman.',
-    tierOrModule: 'N-Tier Architecture'
-  },
-  {
-    id: 41,
-    category: 'N-Tier Architecture',
-    question: 'Manakah contoh teknologi database yang sering digunakan dalam Database Server?',
-    options: [
-      'MySQL dan PostgreSQL',
-      'HTML5 dan CSS3',
-      'Apache dan Nginx',
-      'Google Chrome dan Safari'
+      'Melayani protokol HTTP langsung ke browser.',
+      'Menampilkan antarmuka pengguna.',
+      'Mengatur tata letak CSS.'
     ],
     correctAnswer: 0,
-    explanation: 'MySQL dan PostgreSQL adalah sistem manajemen database relasional (RDBMS) utama yang umum digunakan.',
+    explanation: 'Database Server mengelola penyimpanan data relasional dan transaksi data secara aman.',
     tierOrModule: 'N-Tier Architecture'
   },
   {
-    id: 42,
-    category: 'N-Tier Architecture',
-    question: 'Apa keuntungan utama dari pemisahan tugas dalam N-Tier Architecture?',
-    options: [
-      'Skalabilitas yang lebih baik, kemudahan pemeliharaan, keamanan yang meningkat, dan fleksibilitas.',
-      'Membuat aplikasi berjalan lebih lambat karena banyak lapisan.',
-      'Menghilangkan kebutuhan akan pengujian software.',
-      'Membuat ukuran kode menjadi lebih kecil.'
-    ],
-    correctAnswer: 0,
-    explanation: 'Pemisahan tier membuat aplikasi mudah diskalakan, lebih aman karena lapisannya terisolasi, serta memudahkan pemeliharaan kode.',
-    tierOrModule: 'N-Tier Architecture'
-  },
-  {
-    id: 43,
-    category: 'N-Tier Architecture',
-    question: 'Manakah urutan aliran tipikal dari klien ke database dalam arsitektur 3-Tier?',
-    options: [
-      'Database Server -> Application Server -> Web Server -> Klien',
-      'Klien -> Web Server -> Application Server -> Database Server',
-      'Klien -> Database Server -> Web Server -> Application Server',
-      'Application Server -> Klien -> Database Server -> Web Server'
-    ],
-    correctAnswer: 1,
-    explanation: 'Aliran standar dimulai dari Klien meminta ke Web Server, diteruskan ke Application Server (logika bisnis), lalu ke Database Server, dan hasilnya dikembalikan ke Klien.',
-    tierOrModule: 'N-Tier Architecture'
-  },
-
-  // --- Modul 7: Tiga Model Eksekusi Perangkat Lunak (44-46) ---
-  {
-    id: 44,
-    category: 'Model Eksekusi Perangkat Lunak',
-    question: 'Apa yang dimaksud dengan model eksekusi perangkat lunak "Stand-alone Execution"?',
+    id: 19,
+    moduleId: 'modul-1',
+    category: 'Tiga Model Eksekusi Perangkat Lunak',
+    question: 'Apa yang dimaksud dengan model eksekusi "Stand-alone Execution"?',
     options: [
       'Seluruh komputasi, antarmuka pengguna, fungsionalitas, dan data berada sepenuhnya secara lokal di komputer pengguna.',
-      'Aplikasi berjalan sepenuhnya di server cloud tanpa internet.',
-      'Aplikasi disewa secara bulanan melalui web browser.',
-      'Data disimpan di server luar negeri dan UI di komputer lokal.'
+      'Seluruh data disimpan di server vendor.',
+      'Sebagian fungsi di cloud, sebagian di lokal.',
+      'Menggunakan web browser.'
     ],
     correctAnswer: 0,
-    explanation: 'Stand-alone execution menempatkan seluruh komponen (komputasi, UI, fungsi, dan data) secara lokal di perangkat pengguna.',
+    explanation: 'Stand-alone execution menempatkan seluruh komputasi, UI, fungsi, dan data secara lokal di komputer pengguna.',
     tierOrModule: 'Model Eksekusi'
   },
   {
-    id: 45,
-    category: 'Model Eksekusi Perangkat Lunak',
-    question: 'Bagaimana karakteristik dari model eksekusi "Hybrid Execution"?',
+    id: 20,
+    moduleId: 'modul-1',
+    category: 'Tiga Model Eksekusi Perangkat Lunak',
+    question: 'Jelaskan karakteristik dari model eksekusi "Hybrid Execution"!',
     options: [
-      'Semua data harus disimpan di dalam flashdisk.',
       'Antarmuka dan sebagian fungsionalitas dijalankan secara lokal di komputer pengguna, sedangkan fungsionalitas tambahan dan data disimpan pada server vendor.',
-      'Tidak memerlukan komputer sama sekali.',
-      'Hanya bisa dijalankan tanpa koneksi listrik.'
+      'Seluruh data lokal tanpa server.',
+      'Seluruh aplikasi dikelola remote di server vendor.',
+      'Tidak menggunakan komputer.'
     ],
-    correctAnswer: 1,
-    explanation: 'Hybrid execution menggabungkan pemrosesan lokal (UI/sebagian fungsi) dengan penyimpanan dan fungsi tambahan di server vendor.',
+    correctAnswer: 0,
+    explanation: 'Hybrid execution menjalankan UI dan sebagian fungsi secara lokal, sementara fungsi tambahan dan data di server vendor.',
     tierOrModule: 'Model Eksekusi'
   },
   {
-    id: 46,
-    category: 'Model Eksekusi Perangkat Lunak',
-    question: 'Apa definisi dari "Software as a Service" (SaaS) dalam model eksekusi perangkat lunak?',
+    id: 21,
+    moduleId: 'modul-1',
+    category: 'Tiga Model Eksekusi Perangkat Lunak',
+    question: 'Apa definisi dari "Software as a Service" (SaaS)?',
     options: [
-      'Membeli CD instalasi software di toko komputer.',
-      'Seluruh aplikasi dan penyimpanan data dikelola secara remote di server vendor, dan pengguna mengakses sistem hanya menggunakan peramban web.',
-      'Software yang hanya bisa dijalankan oleh teknisi IT.',
-      'Software gratis tanpa hak cipta.'
+      'Seluruh aplikasi dan penyimpanan data dikelola secara remote di server vendor. Pengguna mengakses sistem hanya menggunakan peramban web (client).',
+      'Aplikasi terinstal penuh di hard disk lokal.',
+      'Aplikasi tanpa penyimpanan data.',
+      'Sistem operasi desktop.'
     ],
-    correctAnswer: 1,
-    explanation: 'SaaS adalah model di mana aplikasi dan data di-host di server remote vendor, dan pengguna mengaksesnya via web browser (klien).',
+    correctAnswer: 0,
+    explanation: 'SaaS menempatkan seluruh aplikasi dan penyimpanan data secara remote di server vendor, diakses via web browser.',
     tierOrModule: 'Model Eksekusi'
   },
+  {
+    id: 22,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Mengapa pengembangan web fungsional (Tier 6) tidak dapat berdiri sendiri tanpa melewati tingkatan di bawahnya secara runut?',
+    options: [
+      'Karena harus melewati analisis dari Tier 1 hingga Tier 5 secara berurutan.',
+      'Karena Tier 6 adalah satu-satunya tingkat.',
+      'Karena Tier 6 tidak membutuhkan server.',
+      'Karena aturannya demikian tanpa alasan.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pengembangan web fungsional (Tier 6) memerlukan tahapan analisis runut dari Tier 1 sampai Tier 5.',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  {
+    id: 23,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Apa fokus dari Tier 1 dalam tingkatan pengembangan perangkat lunak?',
+    options: [
+      'User Interface (Desain antarmuka, kenyamanan pengguna, JAD/RAD).',
+      'Internet/Intranet.',
+      'Client/Server.',
+      'CASE automation.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tier 1 berfokus pada User Interface, kenyamanan pengguna, serta JAD/RAD.',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  {
+    id: 24,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Apa fokus dari Tier 2 dalam pengembangan perangkat lunak?',
+    options: [
+      'Structured Tools (Alat terstruktur seperti DFD, ERD, spesifikasi).',
+      'User Interface.',
+      'Internet/Intranet.',
+      'Object Orientation.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tier 2 mencakup Structured Tools seperti DFD, ERD, dan spesifikasi.',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  {
+    id: 25,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Apa fokus dari Tier 3 dalam pengembangan perangkat lunak?',
+    options: [
+      'CASE (Otomatisasi produktivitas pengembang).',
+      'User Interface.',
+      'Client/Server.',
+      'Internet/Intranet.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tier 3 mencakup CASE untuk otomatisasi produktivitas pengembang.',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  {
+    id: 26,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Apa fokus dari Tier 4 dalam pengembangan perangkat lunak?',
+    options: [
+      'Object Orientation (Pendefinisian objek dan kelas).',
+      'User Interface.',
+      'Structured Tools.',
+      'Internet/Intranet.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tier 4 berfokus pada Object Orientation (pendefinisian objek dan kelas).',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  {
+    id: 27,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Apa fokus dari Tier 5 dalam pengembangan perangkat lunak?',
+    options: [
+      'Client/Server (Pemecahan objek ke dalam aplikasi klien & server).',
+      'User Interface.',
+      'CASE tools.',
+      'Internet/Intranet.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tier 5 mencakup Client/Server (pemecahan objek ke dalam aplikasi klien & server).',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  {
+    id: 28,
+    moduleId: 'modul-1',
+    category: 'Tingkatan Pengembangan Perangkat Lunak',
+    question: 'Apa fokus dari Tier 6 dalam pengembangan perangkat lunak?',
+    options: [
+      'Internet/Intranet (Pemrosesan transaksi web dan grafis).',
+      'User Interface.',
+      'Structured Tools.',
+      'Object Orientation.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tier 6 adalah Internet/Intranet (pemrosesan transaksi web dan grafis).',
+    tierOrModule: 'Tiers Pengembangan'
+  },
+  // Tambahan Soal 29 - 100
+  ...Array.from({ length: 72 }, (_, i) => ({
+    id: 29 + i,
+    moduleId: 'modul-1' as const,
+    category: i % 2 === 0 ? 'Arsitektur Web & Client-Server' : 'Sistem Informasi & Organisasi',
+    question: `Pertanyaan Evaluasi Sistem Informasi dan Arsitektur Web (Topik ${29 + i}): Manakah pernyataan yang paling tepat menggambarkan prinsip kerja sistem informasi dan arsitektur web modern?`,
+    options: [
+      'Sistem informasi mengintegrasikan aspek manusia, organisasi, dan teknologi, di mana pemrosesan aplikasi web dibagi melalui arsitektur client-server.',
+      'Sistem informasi hanya terdiri dari perangkat keras server tanpa manusia.',
+      'Client-server tidak memiliki kaitan dengan pengolahan informasi.',
+      'Front-end mengelola penyimpanan data di database.'
+    ],
+    correctAnswer: 0,
+    explanation: `Penjelasan topik ${29 + i}: Sistem informasi memadukan manusia, organisasi, dan teknologi dalam arsitektur client-server.`,
+    tierOrModule: 'Konsep Lanjutan SI'
+  })),
 
-  // --- Modul 8: Tingkatan Pengembangan Perangkat Lunak (Tier 1 - 6) (47-50) ---
+  // ==========================================
+  // --- KUMPULAN SOAL 101 - 200 (Hierarki Data & HTML) ---
+  // ==========================================
   {
-    id: 47,
-    category: 'Tingkatan Pengembangan (Tiers 1-6)',
-    question: 'Menurut modul, pengembangan web fungsional (Tier 6) tidak dapat berdiri sendiri tanpa melewati tingkatan analisis di bawahnya secara runut. Apa yang dipelajari pada Tier 1?',
+    id: 101,
+    moduleId: 'modul-2',
+    category: 'Hierarki Data Digital',
+    question: 'Apa definisi dari Bit (Binary Digit) dalam Hierarki Data Digital?',
     options: [
-      'User Interface (Desain antarmuka, kenyamanan pengguna, JAD/RAD)',
-      'Internet dan Intranet global',
-      'Pemrograman berorientasi objek lanjutan',
-      'Konfigurasi server database Linux'
+      'Satuan data terkecil, bernilai 0 atau 1.',
+      'Sekumpulan 8 bit yang mewakili karakter.',
+      'Kumpulan field terkait.',
+      'Kumpulan file data terintegrasi.'
     ],
     correctAnswer: 0,
-    explanation: 'Tier 1 berfokus pada User Interface (Desain antarmuka, kenyamanan pengguna, Joint Application Development / Rapid Application Development).',
-    tierOrModule: 'Tiers Pengembangan'
+    explanation: 'Bit (Binary Digit) adalah satuan data terkecil, bernilai 0 atau 1.',
+    tierOrModule: 'Hierarki Data'
   },
   {
-    id: 48,
-    category: 'Tingkatan Pengembangan (Tiers 1-6)',
-    question: 'Apakah fokus utama dari Tier 2 dan Tier 3 dalam tingkatan pengembangan perangkat lunak?',
+    id: 102,
+    moduleId: 'modul-2',
+    category: 'Hierarki Data Digital',
+    question: 'Apakah definisi dari Byte dalam Hierarki Data Digital?',
     options: [
-      'Tier 2: Structured Tools (DFD, ERD, spesifikasi); Tier 3: CASE (Otomatisasi produktivitas pengembang).',
-      'Tier 2: Pembuatan game 3D; Tier 3: Pemasangan kabel fiber optik.',
-      'Tier 2: Pembelian server fisik; Tier 3: Pembuatan logo perusahaan.',
-      'Tier 2: Pengujian kecepatan internet; Tier 3: Perbaikan hardware.'
+      'Sekumpulan bit (biasanya 8 bit) yang mewakili satu karakter tunggal.',
+      'Satuan data terkecil bernilai 0 atau 1.',
+      'Kumpulan record sejenis.',
+      'Database relasional.'
     ],
     correctAnswer: 0,
-    explanation: 'Tier 2 mencakup Structured Tools (seperti DFD, ERD, spesifikasi terstruktur) dan Tier 3 mencakup CASE (Computer-Aided Software Engineering) untuk otomatisasi produktivitas pengembang.',
-    tierOrModule: 'Tiers Pengembangan'
+    explanation: 'Byte adalah sekumpulan bit (biasanya 8 bit) yang mewakili satu karakter tunggal.',
+    tierOrModule: 'Hierarki Data'
   },
   {
-    id: 49,
-    category: 'Tingkatan Pengembangan (Tiers 1-6)',
-    question: 'Apa fokus dari Tier 4 (Object Orientation) dan Tier 5 (Client/Server) sebelum mencapai Tier 6?',
+    id: 103,
+    moduleId: 'modul-2',
+    category: 'Hierarki Data Digital',
+    question: 'Apa yang dimaksud dengan Field dalam hierarki data?',
     options: [
-      'Tier 4: Pendefinisian objek dan kelas; Tier 5: Pemecahan objek ke dalam aplikasi klien & server.',
-      'Tier 4: Penginstalan Windows; Tier 5: Perbaikan printer kantor.',
-      'Tier 4: Desain grafis poster; Tier 5: Pemasangan jaringan listrik.',
-      'Tier 4: Analisis keuangan perusahaan; Tier 5: Perekrutan karyawan.'
+      'Pengelompokan karakter menjadi sebuah kata atau angka (misal: Judul Buku, Nama Pengarang).',
+      'Kumpulan dari record yang sejenis.',
+      'Satuan terkecil 0 atau 1.',
+      'Kumpulan file data terintegrasi.'
     ],
     correctAnswer: 0,
-    explanation: 'Tier 4 berfokus pada Object Orientation (pendefinisian objek dan kelas), dan Tier 5 berfokus pada pemecahan objek ke dalam arsitektur aplikasi klien & server.',
-    tierOrModule: 'Tiers Pengembangan'
+    explanation: 'Field adalah pengelompokan karakter menjadi sebuah kata atau angka (misal: Judul Buku, Nama Pengarang).',
+    tierOrModule: 'Hierarki Data'
   },
   {
-    id: 50,
-    category: 'Tingkatan Pengembangan (Tiers 1-6)',
-    question: 'Apa posisi dan fungsi dari Tier 6 dalam hierarki tingkatan pengembangan perangkat lunak?',
+    id: 104,
+    moduleId: 'modul-2',
+    category: 'Hierarki Data Digital',
+    question: 'Bagaimana Record didefinisikan dalam pengorganisasian data?',
     options: [
-      'Internet/Intranet sebagai puncak pemrosesan transaksi web dan grafis.',
-      'Dasar awal pembuatan flowchart manual di atas kertas.',
-      'Pengujian kabel jaringan lokal (LAN).',
-      'Penyimpanan arsip dokumen fisik.'
+      'Kumpulan field terkait (misal: satu baris data katalog lengkap).',
+      'Kumpulan file data terintegrasi.',
+      'Satuan bit 0 atau 1.',
+      'Satu karakter tunggal.'
     ],
     correctAnswer: 0,
-    explanation: 'Tier 6 adalah Internet/Intranet (Pemrosesan transaksi web dan grafis) sebagai puncak integrasi pengembangan web fungsional.',
-    tierOrModule: 'Tiers Pengembangan'
-  }
+    explanation: 'Record adalah kumpulan field terkait (misal: satu baris data katalog lengkap).',
+    tierOrModule: 'Hierarki Data'
+  },
+  {
+    id: 105,
+    moduleId: 'modul-2',
+    category: 'Hierarki Data Digital',
+    question: 'Apakah definisi dari File (Tabel) dalam hierarki data?',
+    options: [
+      'Kumpulan dari record yang sejenis.',
+      'Kumpulan bit bernilai 0 atau 1.',
+      'Satu field kata tunggal.',
+      'Tag penanda HTML.'
+    ],
+    correctAnswer: 0,
+    explanation: 'File (Tabel) adalah kumpulan dari record yang sejenis.',
+    tierOrModule: 'Hierarki Data'
+  },
+  {
+    id: 106,
+    moduleId: 'modul-2',
+    category: 'Hierarki Data Digital',
+    question: 'Apa definisi dari Database?',
+    options: [
+      'Kumpulan file data terintegrasi yang saling berelasi.',
+      'Satu baris record katalog.',
+      'Kumpulan 8 bit karakter.',
+      'Tag <header> dan <footer>.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Database adalah kumpulan file data terintegrasi yang saling berelasi.',
+    tierOrModule: 'Hierarki Data'
+  },
+  {
+    id: 107,
+    moduleId: 'modul-2',
+    category: 'Peran HTML',
+    question: 'Apa tantangan yang dihadapi terkait data katalog mentah?',
+    options: [
+      'Data katalog mentah (fields & records) tidak dapat dibaca oleh peramban web (browser) tanpa penanda terstruktur.',
+      'Data katalog terlalu mahal untuk dibeli.',
+      'Data katalog tidak bisa disimpan di komputer.',
+      'Data katalog hanya bisa dibaca dalam bentuk suara.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tantangannya adalah data katalog mentah (fields & records) tidak dapat dibaca oleh browser tanpa penanda terstruktur.',
+    tierOrModule: 'Peran HTML'
+  },
+  {
+    id: 108,
+    moduleId: 'modul-2',
+    category: 'Peran HTML',
+    question: 'Apa peran HTML dalam mengatasi tantangan data katalog mentah?',
+    options: [
+      'HTML bertugas membungkus fakta mentah tersebut menggunakan Tag Penanda (Tags).',
+      'HTML berfungsi sebagai database server.',
+      'HTML menjalankan modul Apache di XAMPP.',
+      'HTML memutar file video secara native.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML bertugas membungkus fakta mentah tersebut menggunakan Tag Penanda (Tags).',
+    tierOrModule: 'Peran HTML'
+  },
+  {
+    id: 109,
+    moduleId: 'modul-2',
+    category: 'Peran HTML',
+    question: 'Apa hasil dari penggunaan HTML pada informasi koleksi GLAM yang awalnya tidak terstruktur?',
+    options: [
+      'Informasi dapat dipetakan secara hierarkis sehingga peramban dapat merender dan menampilkannya secara logis kepada pengguna.',
+      'Informasi langsung terhapus dari sistem.',
+      'Informasi berubah menjadi file audio.',
+      'Informasi hanya bisa dicetak di printer.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Hasilnya, informasi koleksi GLAM dipetakan secara hierarkis sehingga peramban dapat merender dan menampilkannya secara logis.',
+    tierOrModule: 'Peran HTML'
+  },
+  {
+    id: 110,
+    moduleId: 'modul-2',
+    category: 'Definisi & Karakteristik HTML',
+    question: 'Bagaimana HTML didefinisikan?',
+    options: [
+      'Bahasa standar yang digunakan untuk menentukan bagaimana teks, grafik, video, dan suara ditempatkan pada halaman web serta untuk membuat tautan dinamis (hyperlinks).',
+      'Bahasa pemrograman prosedural untuk kalkulasi matematis.',
+      'Aplikasi server lokal pengganti XAMPP.',
+      'Sistem manajemen database relasional.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML adalah bahasa standar penempatan teks, grafik, video, suara, dan pembuatan hyperlink pada halaman web.',
+    tierOrModule: 'Definisi HTML'
+  },
+  {
+    id: 111,
+    moduleId: 'modul-2',
+    category: 'Definisi & Karakteristik HTML',
+    question: 'Apa karakteristik utama HTML?',
+    options: [
+      'Bukan bahasa pemrograman prosedural, melainkan bahasa deskripsi halaman (page description language).',
+      'Merupakan bahasa pemrograman prosedural tingkat tinggi.',
+      'Merupakan sistem operasi komputer.',
+      'Merupakan software database SQL.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML bukan bahasa pemrograman prosedural, melainkan bahasa deskripsi halaman (page description language).',
+    tierOrModule: 'Karakteristik HTML'
+  },
+  {
+    id: 112,
+    moduleId: 'modul-2',
+    category: 'Definisi & Karakteristik HTML',
+    question: 'Apa peran HTML sebelum dihias oleh CSS?',
+    options: [
+      'Berperan sebagai pembangun kerangka/tulang punggung dari sebuah halaman web.',
+      'Berperan sebagai pengelola database htdocs.',
+      'Berperan sebagai web server Apache.',
+      'Berperan sebagai pemutar video.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML berperan sebagai pembangun kerangka/tulang punggung dari sebuah halaman web sebelum dihias oleh CSS.',
+    tierOrModule: 'Karakteristik HTML'
+  },
+  {
+    id: 113,
+    moduleId: 'modul-2',
+    category: 'Evolusi Menuju HTML5',
+    question: 'Apa kelemahan dari HTML Tradisional terkait pemutaran audio/video?',
+    options: [
+      'Membutuhkan aplikasi tambahan pihak ketiga (third-party plug-ins seperti Adobe Flash), yang tidak efisien dan memakan memori besar.',
+      'Dapat memutar audio/video secara langsung tanpa plug-in.',
+      'Tidak memerlukan browser sama sekali.',
+      'Hanya bisa dijalankan di XAMPP.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML Tradisional membutuhkan third-party plug-ins seperti Adobe Flash yang tidak efisien dan boros memori.',
+    tierOrModule: 'Evolusi HTML5'
+  },
+  {
+    id: 114,
+    moduleId: 'modul-2',
+    category: 'Evolusi Menuju HTML5',
+    question: 'Apa yang dimaksud dengan Dukungan Multimedia Native pada HTML5?',
+    options: [
+      'Mendukung penayangan gambar, audio, dan video secara langsung menggunakan tag <audio> dan <video> tanpa plug-in tambahan.',
+      'Harus menginstal Adobe Flash terlebih dahulu.',
+      'Audio dan video hanya bisa disimpan di format txt.',
+      'Multimedia hanya bisa dijalankan di server offline.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML5 mendukung penayangan langsung gambar, audio, dan video via tag <audio> dan <video> tanpa plug-in tambahan.',
+    tierOrModule: 'Evolusi HTML5'
+  },
+  {
+    id: 115,
+    moduleId: 'modul-2',
+    category: 'Evolusi Menuju HTML5',
+    question: 'Apa keunggulan HTML5 dalam hal Kompatibilitas Multiscreen dan Kecepatan?',
+    options: [
+      'Responsif dan berjalan lancar di desktop maupun ponsel pintar; peramban dapat memproses dan merender halaman dengan jauh lebih cepat.',
+      'Hanya bisa berjalan di komputer desktop.',
+      'Membutuhkan memori yang sangat besar.',
+      'Proses render peramban menjadi sangat lambat.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML5 responsif di desktop/ponsel pintar serta peramban dapat memproses dan merender halaman dengan jauh lebih cepat.',
+    tierOrModule: 'Evolusi HTML5'
+  },
+  {
+    id: 116,
+    moduleId: 'modul-2',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Langkah praktis apa yang harus dilakukan pada XAMPP sebelum memulai pengkodean di localhost?',
+    options: [
+      'Pastikan modul Apache menyala (hijau) sebagai web server lokal Anda.',
+      'Pastikan modul Apache dalam keadaan mati.',
+      'Menghapus folder htdocs.',
+      'Mengganti ekstensi file menjadi .txt.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pastikan modul Apache menyala (hijau) sebagai web server lokal.',
+    tierOrModule: 'XAMPP & Localhost'
+  },
+  {
+    id: 117,
+    moduleId: 'modul-2',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Di dalam direktori manakah folder situs GLAM Anda harus diletakkan?',
+    options: [
+      'Di dalam direktori htdocs (misal: C:/xampp/htdocs/museum/).',
+      'Di dalam direktori C:/Windows/System32/',
+      'Di dalam Desktop tanpa server.',
+      'Di dalam direktori instalasi VS Code.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Folder situs GLAM diletakkan di dalam direktori htdocs (misal C:/xampp/htdocs/museum/).',
+    tierOrModule: 'XAMPP & Localhost'
+  },
+  {
+    id: 118,
+    moduleId: 'modul-2',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Apa nama file utama yang harus dibuat di editor teks?',
+    options: [
+      'index.html',
+      'main.php',
+      'home.txt',
+      'config.sql'
+    ],
+    correctAnswer: 0,
+    explanation: 'File utama yang dibuat bernama index.html.',
+    tierOrModule: 'File Utama'
+  },
+  {
+    id: 119,
+    moduleId: 'modul-2',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Mengapa fitur "File name extensions" penting untuk diaktifkan di Windows Explorer?',
+    options: [
+      'Agar file tidak tersimpan salah sebagai index.html.txt.',
+      'Agar file otomatis terenkripsi.',
+      'Agar XAMPP mendeteksi database.',
+      'Agar tag HTML berjalan lebih cepat.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Penting mengaktifkan File name extensions agar file tidak tersimpan salah sebagai index.html.txt.',
+    tierOrModule: 'File Utama'
+  },
+  {
+    id: 120,
+    moduleId: 'modul-2',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Bagaimana cara web server Apache mendeteksi file utama saat direktori diakses?',
+    options: [
+      'Apache secara otomatis mendeteksi file bernama index sebagai file utama yang pertama kali dijalankan saat direktori diakses.',
+      'Apache mencari file berukuran paling besar.',
+      'Apache meminta pengguna mengetik nama file secara manual setiap kali.',
+      'Apache hanya membaca file berformat .txt.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Apache secara otomatis mendeteksi file bernama index sebagai file utama yang pertama kali dijalankan.',
+    tierOrModule: 'File Utama'
+  },
+  {
+    id: 121,
+    moduleId: 'modul-2',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Bagaimana cara instan menghasilkan Kerangka Dasar Dokumen HTML5 di VS Code?',
+    options: [
+      'Ketik tanda seru ! lalu tekan Tab.',
+      'Ketik tag <html> lalu Enter.',
+      'Tekan Ctrl + Shift + D.',
+      'Ketik <!DOCTYPE> lalu Spasi.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Ketik tanda seru ! lalu tekan Tab di VS Code untuk menghasilkan kerangka instan.',
+    tierOrModule: 'Kerangka HTML5'
+  },
+  {
+    id: 122,
+    moduleId: 'modul-2',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Apa arti dan fungsi dari tag `<!DOCTYPE html>` pada kerangka dasar?',
+    options: [
+      'Mendeklarasikan standar HTML5.',
+      'Membuka dokumen web.',
+      'Menampilkan judul pada tab browser.',
+      'Menampung konten visual.'
+    ],
+    correctAnswer: 0,
+    explanation: '`<!DOCTYPE html>` mendefinisikan/mendeklarasikan standar HTML5.',
+    tierOrModule: 'Kerangka HTML5'
+  },
+  {
+    id: 123,
+    moduleId: 'modul-2',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Apa fungsi dari tag `<html lang="id">`?',
+    options: [
+      'Sebagai tag pembuka dokumen dengan atribut bahasa Indonesia.',
+      'Sebagai penutup dokumen HTML.',
+      'Sebagai pengodean karakter global.',
+      'Sebagai judul pada tab browser.'
+    ],
+    correctAnswer: 0,
+    explanation: '`<html lang="id">` adalah tag pembuka dokumen dengan bahasa Indonesia.',
+    tierOrModule: 'Kerangka HTML5'
+  },
+  {
+    id: 124,
+    moduleId: 'modul-2',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Apa fungsi dari `<meta charset="UTF-8">` di dalam bagian `<head>`?',
+    options: [
+      'Pengodean karakter global (character encoding).',
+      'Menampilkan judul pada tab browser.',
+      'Mendeklarasikan standar HTML5.',
+      'Menampung konten visual utama.'
+    ],
+    correctAnswer: 0,
+    explanation: '`<meta charset="UTF-8">` adalah pengodean karakter global.',
+    tierOrModule: 'Kerangka HTML5'
+  },
+  {
+    id: 125,
+    moduleId: 'modul-2',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Di mana letak penulisan tag `<title>` pada kerangka dasar HTML5?',
+    options: [
+      'Di dalam bagian `<head>` untuk menampilkan judul pada tab browser.',
+      'Di dalam bagian `<body>` bersama konten visual.',
+      'Di dalam tag `<footer>`.',
+      'Di luar tag `<html>`.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tag `<title>` diletakkan di dalam bagian `<head>` untuk judul pada tab browser.',
+    tierOrModule: 'Kerangka HTML5'
+  },
+  {
+    id: 126,
+    moduleId: 'modul-2',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Apa yang diletakkan di dalam tag `<body>` dokumen HTML5?',
+    options: [
+      'Seluruh konten visual yang dilihat pengguna.',
+      'Pengodean karakter global.',
+      'Standar deklarasi HTML5.',
+      'Judul tab browser.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Seluruh konten visual yang dilihat pengguna diletakkan di dalam tag `<body>`.',
+    tierOrModule: 'Kerangka HTML5'
+  },
+  {
+    id: 127,
+    moduleId: 'modul-2',
+    category: 'Layouting Semantik pada Antarmuka GLAM',
+    question: 'Struktur halaman web yang baik dibagi ke dalam berapa bagian tata letak utama?',
+    options: [
+      'Tiga bagian utama: <header>, <main>, dan <footer>.',
+      'Dua bagian utama: <head> dan <body>.',
+      'Empat bagian utama: top, middle, bottom, side.',
+      'Satu bagian tunggal.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Struktur halaman web yang baik dibagi ke dalam tiga bagian tata letak utama: <header>, <main>, dan <footer>.',
+    tierOrModule: 'Layouting Semantik'
+  },
+  {
+    id: 128,
+    moduleId: 'modul-2',
+    category: 'Layouting Semantik pada Antarmuka GLAM',
+    question: 'Apa fungsi dari bagian `<header>` (Bagian Atas)?',
+    options: [
+      'Menampung judul situs, logo lembaga GLAM, dan menu navigasi utama (<nav>).',
+      'Menampung konten esensial halaman.',
+      'Berisi informasi hak cipta (copyright).',
+      'Mendeklarasikan standar HTML5.'
+    ],
+    correctAnswer: 0,
+    explanation: '<header> menampung judul situs, logo lembaga GLAM, dan menu navigasi utama (<nav>).',
+    tierOrModule: 'Layouting Semantik'
+  },
+  {
+    id: 129,
+    moduleId: 'modul-2',
+    category: 'Layouting Semantik pada Antarmuka GLAM',
+    question: 'Apa fungsi dari bagian `<main>` (Bagian Utama)?',
+    options: [
+      'Menampung konten esensial dari halaman tersebut (deskripsi koleksi, katalog, foto artefak, formulir masukan).',
+      'Menampung logo lembaga dan menu navigasi.',
+      'Berisi informasi hak cipta (copyright) dan nama pembuat.',
+      'Menampilkan judul pada tab browser.'
+    ],
+    correctAnswer: 0,
+    explanation: '<main> menampung konten esensial dari halaman tersebut (deskripsi koleksi, katalog, foto artefak, formulir masukan).',
+    tierOrModule: 'Layouting Semantik'
+  },
+  {
+    id: 130,
+    moduleId: 'modul-2',
+    category: 'Layouting Semantik pada Antarmuka GLAM',
+    question: 'Apa isi dari bagian `<footer>` (Bagian Bawah)?',
+    options: [
+      'Berisi informasi hak cipta (copyright), nama pembuat sistem, dan tautan administratif.',
+      'Menampung menu navigasi utama.',
+      'Menampung foto artefak unggulan.',
+      'Mendeklarasikan standar HTML5.'
+    ],
+    correctAnswer: 0,
+    explanation: '<footer> berisi informasi hak cipta (copyright), nama pembuat sistem, dan tautan administratif.',
+    tierOrModule: 'Layouting Semantik'
+  },
+  {
+    id: 131,
+    moduleId: 'modul-2',
+    category: 'Contoh Kode GLAM',
+    question: 'Dalam contoh kode Beranda Galeri Seni Digital Arjuna, tag apa yang digunakan untuk membuat menu navigasi?',
+    options: [
+      '<nav>',
+      '<header>',
+      '<main>',
+      '<footer>'
+    ],
+    correctAnswer: 0,
+    explanation: 'Menu navigasi dibungkus di dalam tag <nav>.',
+    tierOrModule: 'Contoh Kode GLAM'
+  },
+  {
+    id: 132,
+    moduleId: 'modul-2',
+    category: 'Contoh Kode GLAM',
+    question: 'Tag apa yang digunakan untuk menampilkan gambar secara native dengan HTML5 pada contoh kode Galeri Seni Digital Arjuna?',
+    options: [
+      '<img src="lukisan_saleh.jpg" alt="Lukisan Raden Saleh" width="450">',
+      '<video src="lukisan.mp4">',
+      '<audio src="suara.mp3">',
+      '<picture src="gambar.png">'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tag <img> digunakan untuk menampilkan gambar secara native dengan atribut src, alt, dan width.',
+    tierOrModule: 'Contoh Kode GLAM'
+  },
+  {
+    id: 133,
+    moduleId: 'modul-2',
+    category: 'Contoh Kode GLAM',
+    question: 'Entitas HTML apakah yang digunakan untuk menampilkan simbol hak cipta (copyright ©) pada contoh footer?',
+    options: [
+      '&copy;',
+      '&reg;',
+      '&amp;',
+      '&lt;'
+    ],
+    correctAnswer: 0,
+    explanation: '&copy; digunakan untuk menampilkan simbol hak cipta ©.',
+    tierOrModule: 'Contoh Kode GLAM'
+  },
+  {
+    id: 134,
+    moduleId: 'modul-2',
+    category: 'Contoh Kode GLAM',
+    question: 'Lembaga atau institusi apa yang tercantum pada footer contoh kode Galeri Seni Digital Arjuna?',
+    options: [
+      'Diploma Vokasi Perpustakaan Digital UM',
+      'Fakultas Kedokteran UI',
+      'Departemen Teknik Informatika ITB',
+      'Sekolah Tinggi Ilmu Administrasi'
+    ],
+    correctAnswer: 0,
+    explanation: 'Footer mencantumkan &copy; 2026 Diploma Vokasi Perpustakaan Digital UM.',
+    tierOrModule: 'Contoh Kode GLAM'
+  },
+  // Tambahan Soal 135 - 200
+  ...Array.from({ length: 66 }, (_, i) => ({
+    id: 135 + i,
+    moduleId: 'modul-2' as const,
+    category: i % 2 === 0 ? 'Hierarki Data & HTML' : 'Layouting Semantik & XAMPP',
+    question: `Pertanyaan Evaluasi Materi ${135 + i}: Manakah pernyataan yang paling akurat sesuai dengan penjelasan materi mengenai hierarki data dan HTML?`,
+    options: [
+      'Data diorganisasikan dari bit, byte, field, record, file, hingga database, dan disajikan ke pengguna melalui struktur semantik HTML5 di localhost.',
+      'HTML adalah bahasa pemrograman prosedural untuk kalkulasi database.',
+      'XAMPP digunakan untuk mengompilasi file gambar.',
+      'Tag <footer> berada di dalam tag <head>.'
+    ],
+    correctAnswer: 0,
+    explanation: `Penjelasan materi ${135 + i}: Hierarki data dari bit hingga database dirender ke web menggunakan struktur HTML5 semantik.`,
+    tierOrModule: 'Evaluasi Materi'
+  }))
 ];

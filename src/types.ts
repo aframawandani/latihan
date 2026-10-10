@@ -1,5 +1,6 @@
 export interface Question {
   id: number;
+  moduleId: 'modul-1' | 'modul-2';
   category: string;
   question: string;
   options: string[];
@@ -25,6 +26,7 @@ export interface QuizState {
 
 export interface ModuleTopic {
   id: string;
+  moduleId: 'modul-1' | 'modul-2';
   title: string;
   subtitle: string;
   summary: string;

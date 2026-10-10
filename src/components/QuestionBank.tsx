@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { QuizMode } from '../types';
 import { QUESTIONS } from '../data/questions';
-import { Search, Filter, ArrowLeft, CheckCircle2, ChevronDown, ChevronUp, Layers } from 'lucide-react';
+import { Search, ArrowLeft, CheckCircle2, ChevronDown, ChevronUp, Layers } from 'lucide-react';
 
 interface QuestionBankProps {
   setMode: (mode: QuizMode) => void;
@@ -38,8 +38,8 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ setMode }) => {
               <ArrowLeft className="w-5 h-5" />
             </button>
             <div>
-              <h2 className="text-xl font-bold text-white">Direktori Bank Soal (50 Soal)</h2>
-              <p className="text-xs text-slate-400">Telusuri seluruh soal UTS beserta pembahasan lengkap</p>
+              <h2 className="text-xl font-bold text-white">Direktori Bank Soal (80+ Soal)</h2>
+              <p className="text-xs text-slate-400">Telusuri seluruh soal beserta pembahasan lengkap</p>
             </div>
           </div>
 
@@ -49,13 +49,13 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ setMode }) => {
           </div>
         </div>
 
-        {/* Search & Category Filter */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-          <div className="sm:col-span-2 relative">
+        {/* Search & Filters */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <div className="relative">
             <Search className="absolute left-3.5 top-3.5 w-4 h-4 text-slate-400" />
             <input
               type="text"
-              placeholder="Cari kata kunci soal atau pembahasan..."
+              placeholder="Cari kata kunci soal..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-400 text-sm rounded-xl pl-10 pr-4 py-3 outline-none focus:border-indigo-500"
@@ -83,7 +83,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ setMode }) => {
             <p className="text-slate-400 text-sm">Tidak ada soal yang sesuai dengan pencarian Anda.</p>
           </div>
         ) : (
-          filteredQuestions.map((q, idx) => {
+          filteredQuestions.map((q) => {
             const isExpanded = expandedId === q.id;
             return (
               <div 

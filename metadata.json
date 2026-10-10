@@ -1,6 +1,6 @@
 {
-  "name": "Latihan UTS Modul 1 - Sistem Informasi & Web Programming",
-  "description": "Aplikasi latihan UTS interaktif khusus Modul 1 dengan 50 soal pilihan ganda, pembahasan lengkap, timer ujian, dan analisis materi Sistem Informasi & Web Programming.",
+  "name": "QuizMaster - Aplikasi Latihan Soal",
+  "description": "Aplikasi latihan soal interaktif Modul 1 & Modul 2 dengan 80+ soal pilihan ganda, pembahasan lengkap, dan ringkasan materi.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
