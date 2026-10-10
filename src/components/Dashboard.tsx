@@ -20,15 +20,15 @@ export const Dashboard: React.FC<DashboardProps> = ({ setMode, savedStats }) => 
         <div className="relative z-10 max-w-3xl space-y-6">
           <div className="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/30 px-3 py-1 rounded-full text-xs font-semibold text-indigo-300">
             <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-            <span>Persiapan Ujian Tengah Semester (UTS) Resmi</span>
+            <span>Persiapan Ujian UTS Khusus Modul 1</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Mastery Soal UTS <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">Sistem Informasi & Web Programming</span>
+            Latihan Soal <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">Modul 1: Sistem Informasi & Web Programming</span>
           </h1>
 
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Asah pemahamanmu dengan <strong className="text-white font-semibold">50 soal pilihan ganda</strong> berkualitas tinggi lengkap dengan pembahasan mendalam berdasarkan modul perkuliahan dan infografis <em>Web Programming 101: The Client-Server Foundation</em>.
+            Asah pemahamanmu untuk materi <strong className="text-white font-semibold">Modul 1</strong> dengan <strong className="text-white font-semibold">50 soal pilihan ganda</strong> lengkap dengan pembahasan mendalam berdasarkan modul perkuliahan dan infografis <em>Web Programming 101: The Client-Server Foundation</em>.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">

@@ -23,9 +23,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode, bookmarked
             </div>
             <div>
               <h1 className="font-bold text-base sm:text-lg bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-                Latihan UTS SI & Web
+                UTS Modul 1
               </h1>
-              <p className="text-xs text-slate-400">50 Soal Pilihan Ganda & Modul</p>
+              <p className="text-xs text-slate-400">Sistem Informasi & Web</p>
             </div>
           </div>
 
