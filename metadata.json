@@ -1,0 +1,7 @@
+{
+  "name": "Latihan UTS Sistem Informasi & Web Programming",
+  "description": "Aplikasi latihan UTS interaktif dengan 50 soal pilihan ganda, pembahasan lengkap, timer ujian, dan analisis materi Sistem Informasi & Web Programming.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
