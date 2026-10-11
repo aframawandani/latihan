@@ -6,308 +6,314 @@ export const QUESTIONS: Question[] = [
     id: 1,
     moduleId: 'modul-1',
     category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Manakah pernyataan yang paling tepat membedakan antara Teknologi Informasi (TI) dan Sistem Informasi (SI) berdasarkan konsep dasarnya?',
+    question: 'Apa perbedaan mendasar antara Sistem Informasi (SI) dan Teknologi Informasi (TI)?',
     options: [
-      'TI adalah komponen perangkat keras saja, sedangkan SI adalah perangkat lunak.',
-      'TI mencakup perangkat keras dan lunak untuk mencapai tujuan fungsional, sedangkan SI adalah sekumpulan komponen yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan.',
-      'SI tidak membutuhkan perangkat teknologi, murni manajemen manusia.',
-      'TI dan SI memiliki arti yang sama persis dalam organisasi modern.'
+      'TI mencakup infrastruktur fisik dan perangkat lunak, sedangkan SI adalah pemanfaatan TI oleh manusia untuk mencapai tujuan organisasi.',
+      'SI hanya berfokus pada pengadaan perangkat keras, sedangkan TI berfokus pada pembuatan basis data.',
+      'TI dan SI memiliki arti dan batasan operasional yang sepenuhnya identik.',
+      'SI tidak memerlukan perangkat teknologi karena beroperasi secara murni manual.'
     ],
-    correctAnswer: 1,
-    explanation: 'Teknologi Informasi berfokus pada perangkat keras dan perangkat lunak pendukung, sedangkan Sistem Informasi mencakup komponen yang lebih luas untuk pengumpulan, pemrosesan, penyimpanan, dan distribusi informasi organisasi.'
+    correctAnswer: 0,
+    explanation: 'Teknologi Informasi adalah komponen fisik/teknis, sementara Sistem Informasi adalah integrasi manusia, data, prosedur, dan TI.'
   },
   {
     id: 2,
     moduleId: 'modul-1',
     category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Dalam alur kerja pengolahan informasi di dalam sistem, tahap manakah yang mengubah data mentah menjadi bentuk yang memiliki makna?',
+    question: 'Apa peran utama penerapan Sistem Informasi manajemen koleksi pada lembaga GLAM?',
     options: [
-      'Input',
-      'Processing',
-      'Output',
-      'Feedback'
+      'Menggantikan seluruh tenaga pustakawan secara otomatis.',
+      'Mengintegrasikan alur kerja inventarisasi, preservasi digital, dan temu kembali informasi secara terstruktur.',
+      'Memastikan seluruh arsip fisik dicetak ulang setiap bulan.',
+      'Membatasi akses publik terhadap artefak sejarah.'
     ],
     correctAnswer: 1,
-    explanation: 'Tahap processing (pemrosesan) bertugas mengonversi dan mengolah data mentah menjadi informasi yang berguna dan bermakna bagi pengguna.'
+    explanation: 'Sistem informasi di lembaga GLAM menyatukan manajemen data, preservasi, dan akses publik secara efektif.'
   },
   {
     id: 3,
     moduleId: 'modul-1',
-    category: 'Sistem Informasi vs Teknologi Informasi',
-    question: 'Apa fungsi utama dari umpan balik (feedback) dalam siklus pengolahan informasi sistem?',
+    category: 'Komponen Sistem Informasi',
+    question: 'Manakah yang dikategorikan sebagai komponen "Procedure" dalam Sistem Informasi?',
     options: [
-      'Menghapus seluruh data lama secara otomatis',
-      'Menjadi bahan evaluasi dan koreksi untuk perbaikan tahap input atau proses selanjutnya',
-      'Mempercepat kinerja CPU komputer',
-      'Menggantikan peran perangkat lunak manajemen database'
+      'Server database berbasis Linux di ruang server.',
+      'Standard Operating Procedure (SOP) tahapan peminjaman buku digital.',
+      'Kabel UTP kategori 6 yang menghubungkan komputer klien.',
+      'Aplikasi peramban web Google Chrome.'
     ],
     correctAnswer: 1,
-    explanation: 'Feedback adalah output yang dikembalikan kepada anggota organisasi yang tepat untuk membantu mereka mengevaluasi atau memperbaiki tahap input.'
+    explanation: 'Prosedur adalah aturan atau langkah baku yang mendefinisikan operasional sistem informasi.'
   },
   {
     id: 4,
     moduleId: 'modul-1',
-    category: 'Tiga Dimensi Utama Sistem Informasi',
-    question: 'Sistem informasi yang efektif tidak hanya bergantung pada teknologi, tetapi juga melibatkan tiga dimensi utama. Apakah ketiga dimensi tersebut?',
+    category: 'Peran Pustakawan Digital',
+    question: 'Mengapa pemahaman arsitektur sistem informasi esensial bagi Pustakawan Digital?',
     options: [
-      'Manusia, Organisasi, dan Teknologi',
-      'Hardware, Software, dan Brainware',
-      'Input, Proses, dan Output',
-      'Klien, Server, dan Jaringan'
+      'Agar pustakawan dapat memperbaiki kerusakan hardware server secara mandiri.',
+      'Agar pustakawan mampu merancang taksonomi metadata, mengelola repository, dan memastikan interoperabilitas data.',
+      'Agar pustakawan dapat menulis kode kernel sistem operasi.',
+      'Agar pustakawan tidak perlu melayani pemustaka secara langsung.'
     ],
-    correctAnswer: 0,
-    explanation: 'Tiga dimensi utama sistem informasi terdiri dari Manusia (people), Organisasi (organization), dan Teknologi (technology).'
+    correctAnswer: 1,
+    explanation: 'Pustakawan digital bertindak sebagai arsitek pengetahuan yang mengatur struktur metadata dan integrasi sistem.'
   },
   {
     id: 5,
     moduleId: 'modul-1',
-    category: 'Tiga Dimensi Utama Sistem Informasi',
-    question: 'Dalam dimensi organisasi pada sistem informasi, aspek apa saja yang biasanya menjadi fokus analisis?',
+    category: 'Sistem Informasi vs Teknologi Informasi',
+    question: 'Pembelian komputer baru dan jaringan fiber optik berkecepatan tinggi termasuk dalam domain apa?',
     options: [
-      'Spesifikasi chip prosesor dan kecepatan RAM',
-      'Struktur hierarki, proses bisnis, budaya kerja, dan politik organisasi',
-      'Bahasa pemrograman yang digunakan programmer',
-      'Jumlah piksel pada layar monitor pengguna'
+      'Pengembangan Sistem Informasi.',
+      'Pengadaan Infrastruktur Teknologi Informasi.',
+      'Perancangan Kebijakan Organisasi.',
+      'Evaluasi Perilaku Pemustaka.'
     ],
     correctAnswer: 1,
-    explanation: 'Dimensi organisasi mencakup struktur hierarki perusahaan, proses bisnis operasional, budaya kerja, serta tata kelola organisasi.'
+    explanation: 'Pembelian perangkat keras dan jaringan merupakan investasi pada infrastruktur Teknologi Informasi (TI).'
   },
   {
     id: 6,
     moduleId: 'modul-1',
-    category: 'Tiga Dimensi Utama Sistem Informasi',
-    question: 'Bagaimana peran dimensi manusia (people) dalam keberhasilan implementasi sistem informasi?',
+    category: 'Komponen Sistem Informasi',
+    question: 'Manakah yang merepresentasikan komponen "Data" dalam sistem informasi arsip digital?',
     options: [
-      'Manusia hanya bertindak sebagai penonton tanpa pengaruh',
-      'Pelatihan, perilaku pengguna, dan kemampuan pemecahan masalah fungsional sangat menentukan efektivitas sistem',
-      'Manusia sepenuhnya digantikan oleh kecerdasan buatan',
-      'Manusia hanya bertanggung jawab pada perbaikan perangkat keras fisik'
+      'Petugas arsip yang melakukan verifikasi dokumen.',
+      'File naskah kuno berformat PDF yang tersimpan di dalam database.',
+      'Perangkat pemindai (scanner) beresolusi tinggi.',
+      'Peraturan perundang-undangan kearsipan nasional.'
     ],
     correctAnswer: 1,
-    explanation: 'Dimensi manusia mencakup pelatihan, perilaku pengguna, dan kemampuan SDM dalam memanfaatkan teknologi untuk memecahkan masalah.'
+    explanation: 'Data adalah fakta mentah atau dokumen digital yang disimpan dan diproses oleh sistem.'
   },
   {
     id: 7,
     moduleId: 'modul-1',
-    category: 'Literasi Sistem Informasi',
-    question: 'Apakah yang dimaksud dengan Literasi Sistem Informasi secara komprehensif?',
+    category: 'Karakteristik Sistem',
+    question: 'Apa fungsi dari batasan sistem (boundary) dalam sistem informasi?',
     options: [
-      'Kemampuan merakit komputer dan memasang kabel jaringan',
-      'Pemahaman mendalam yang mencakup pendekatan teknis serta perilaku manusia di dalam organisasi',
-      'Kemampuan menulis kode bahasa mesin tingkat rendah',
-      'Keahlian memperbaiki kerusakan komponen elektronik'
+      'Membatasi jumlah buku yang dibaca pemustaka.',
+      'Menentukan ruang lingkup antara sistem dengan lingkungan luar atau subsistem lainnya.',
+      'Mempercepat kinerja prosesor komputer.',
+      'Menghilangkan kebutuhan koneksi internet.'
     ],
     correctAnswer: 1,
-    explanation: 'Literasi sistem informasi menggabungkan pemahaman dari perspektif teknis dan perilaku untuk melihat bagaimana sistem beroperasi secara holistik.'
+    explanation: 'Batasan sistem mendefinisikan area operasional dan cakupan interaksi sistem dengan entitas luar.'
   },
   {
     id: 8,
     moduleId: 'modul-1',
-    category: 'Literasi Sistem Informasi',
-    question: 'Disiplin ilmu manakah yang termasuk dalam pendekatan perilaku (behavioral approach) dalam studi sistem informasi?',
+    category: 'Sistem Informasi vs Teknologi Informasi',
+    question: 'Manakah skenario yang menunjukkan kegagalan integrasi antara SI dan TI di perpustakaan?',
     options: [
-      'Ilmu komputer, riset operasi, dan manajemen sains',
-      'Sosiologi, psikologi, dan ekonomi',
-      'Teknik elektro dan fisika kuantum',
-      'Matematika diskrit dan logika aljabar'
+      'Perangkat lunak katalog online sudah terpasang, namun staf belum dilatih cara menginput data.',
+      'Koneksi internet sangat cepat tetapi tidak ada pengunjung.',
+      'Komputer menyala normal namun tidak ada aliran listrik.',
+      'Database berjalan di atas sistem operasi open source.'
     ],
-    correctAnswer: 1,
-    explanation: 'Pendekatan perilaku dalam sistem informasi dipelajari melalui disiplin sosiologi, psikologi, dan ekonomi.'
+    correctAnswer: 0,
+    explanation: 'Kegagalan terjadi ketika infrastruktur TI tersedia tetapi aspek manusia (people) belum siap.'
   },
   {
     id: 9,
     moduleId: 'modul-1',
-    category: 'Arsitektur Client-Server',
-    question: 'Dalam model arsitektur Client-Server, apakah tugas utama dari komputer client?',
+    category: 'Peran Pustakawan Digital',
+    question: 'Dalam era transformasi digital GLAM, bagaimana bentuk transformasi peran pustakawan?',
     options: [
-      'Menyimpan seluruh database pusat perusahaan secara permanen',
-      'Bertindak sebagai titik masuk yang meminta data atau layanan melalui web browser',
-      'Memproses seluruh transaksi jutaan pengguna secara bersamaan tanpa bantuan server',
-      'Mengatur aliran listrik dan pendingin server pusat'
+      'Menjadi kurator konten digital, manajer metadata, dan fasilitator akses pengetahuan global.',
+      'Menjadi penyedia informasi pasif yang menunggu pengunjung datang ke rak.',
+      'Menjadi teknisi perangkat keras komputer.',
+      'Menjadi pemrogram sistem operasi.'
     ],
-    correctAnswer: 1,
-    explanation: 'Client adalah perangkat atau aplikasi (seperti web browser) yang bertindak sebagai pemohon (requester) data atau layanan kepada server.'
+    correctAnswer: 0,
+    explanation: 'Pustakawan digital berperan aktif dalam kurasi digital dan pengelolaan metadata.'
   },
   {
     id: 10,
     moduleId: 'modul-1',
-    category: 'Arsitektur Client-Server',
-    question: 'Bagaimana peran komputer server dalam arsitektur Client-Server?',
+    category: 'Komponen Sistem Informasi',
+    question: 'Apa peran elemen "People" (Manusia) dalam kesuksesan Sistem Informasi perpustakaan?',
     options: [
-      'Mengirim permintaan HTTP ke client',
-      'Menerima permintaan dari client, memproses logika aplikasi, dan mengirimkan kembali respons',
-      'Hanya menampilkan antarmuka visual kepada pengguna akhir',
-      'Berfungsi sebagai media penyimpanan file pribadi offline'
+      'Manusia adalah perancang, operator, pengambil keputusan, dan pengguna akhir yang menentukan nilai guna sistem.',
+      'Manusia hanya bertindak sebagai objek pengamatan.',
+      'Manusia digantikan sepenuhnya oleh kecerdasan buatan.',
+      'Manusia tidak memiliki pengaruh jika perangkat keras canggih.'
     ],
-    correctAnswer: 1,
-    explanation: 'Server adalah komputer bertenaga tinggi yang siap menerima permintaan dari client, memprosesnya, dan mengirimkan respons data yang diminta.'
+    correctAnswer: 0,
+    explanation: 'Manusia merupakan nyawa dari sistem informasi; tanpa operator dan pengguna, sistem tidak memiliki arti.'
   },
   {
     id: 11,
     moduleId: 'modul-1',
-    category: 'Front-End vs Back-End',
-    question: 'Bagian manakah dari aplikasi web yang bertanggung jawab atas Presentation Logic di sisi klien?',
+    category: 'Tiga Dimensi Sistem Informasi',
+    question: 'Aspek apa saja yang dikaji dalam dimensi organisasi pada kerangka Sistem Informasi?',
     options: [
-      'Back-End',
-      'Front-End',
-      'Database Server',
-      'Operating System Kernel'
+      'Struktur birokrasi, proses bisnis, budaya kerja, dan kebijakan tata kelola.',
+      'Spesifikasi prosesor dan kapasitas RAM server.',
+      'Kecepatan transfer data kabel fiber optik.',
+      'Jenis bahasa pemrograman yang digunakan backend.'
     ],
-    correctAnswer: 1,
-    explanation: 'Front-End mengelola presentation logic dan antarmuka visual yang berinteraksi langsung dengan pengguna menggunakan HTML5, CSS3, dan JavaScript.'
+    correctAnswer: 0,
+    explanation: 'Dimensi organisasi mencakup tata kelola, proses bisnis, dan struktur kelembagaan.'
   },
   {
     id: 12,
     moduleId: 'modul-1',
-    category: 'Front-End vs Back-End',
-    question: 'Komponen apa saja yang biasanya dikelola pada bagian Back-End dari sebuah sistem berbasis web?',
+    category: 'Arsitektur Client-Server',
+    question: 'Bagaimana pembagian tugas antara Client dan Server dalam arsitektur jaringan komputer?',
     options: [
-      'Warna tombol, tata letak CSS, dan animasi teks',
-      'Data storage, data access logic, dan application logic di sisi server',
-      'Resolusi gambar dan ikon tombol navigasi',
-      'Pengaturan kecerahan layar perangkat client'
+      'Client meminta layanan dan merender tampilan, sedangkan server memproses data dan melayani permintaan.',
+      'Client menyimpan seluruh database terpusat, server hanya menampilkan teks.',
+      'Client dan server melakukan tugas yang persis sama tanpa pembedaan.',
+      'Server hanya berfungsi sebagai kabel penghubung.'
     ],
-    correctAnswer: 1,
-    explanation: 'Back-End menangani logika aplikasi, manajemen database, dan pemrosesan data di server menggunakan bahasa seperti Python, PHP, atau Node.js.'
+    correctAnswer: 0,
+    explanation: 'Client mengirim request dan menampilkan response, sementara server memproses dan menyediakan data.'
   },
   {
     id: 13,
     moduleId: 'modul-1',
-    category: 'Arsitektur N-Tier',
-    question: 'Mengapa aplikasi web modern sering kali membagi arsitekturnya ke dalam sistem N-Tier (banyak tingkat)?',
+    category: 'Front-End vs Back-End',
+    question: 'Komponen apa yang termasuk dalam cakupan pengembangan Front-End aplikasi web?',
     options: [
-      'Agar ukuran file program menjadi jauh lebih besar',
-      'Untuk meningkatkan skalabilitas, keamanan, dan pemisahan tugas (separation of concerns)',
-      'Agar aplikasi hanya bisa dijalankan secara offline tanpa koneksi internet',
-      'Untuk menghilangkan kebutuhan terhadap database relasional'
+      'Antarmuka pengguna, tata letak visual, tombol, dan interaksi yang langsung diakses di browser.',
+      'Manajemen tabel relasional dan kueri database SQL.',
+      'Konfigurasi keamanan firewall pada server Linux.',
+      'Pengaturan backup otomatis pita magnetik.'
     ],
-    correctAnswer: 1,
-    explanation: 'Arsitektur N-Tier memisahkan web server, application server, dan database server demi skalabilitas, pemeliharaan, dan keamanan yang optimal.'
+    correctAnswer: 0,
+    explanation: 'Front-End berfokus pada pengalaman visual dan antarmuka pengguna di sisi klien.'
   },
   {
     id: 14,
     moduleId: 'modul-1',
     category: 'Arsitektur N-Tier',
-    question: 'Apakah fungsi utama dari Web Server dalam arsitektur N-Tier?',
+    question: 'Apa manfaat utama pemisahan lapisan (tier) dalam arsitektur N-Tier?',
     options: [
-      'Menangani komunikasi HTTP langsung dengan klien dan menyajikan dokumen web statis',
-      'Menyimpan seluruh catatan transaksi keuangan bank',
-      'Menghitung algoritma kecerdasan buatan tingkat lanjut',
-      'Menggambarkan diagram alir data (DFD)'
+      'Meningkatkan skalabilitas, keamanan, dan kemudahan pemeliharaan aplikasi secara modular.',
+      'Membuat kode program menjadi sangat rumit dan sulit dipahami.',
+      'Memperlambat kinerja sistem secara sengaja untuk keamanan.',
+      'Menghilangkan kebutuhan akan basis data.'
     ],
     correctAnswer: 0,
-    explanation: 'Web server bertugas menangani protokol HTTP dari klien dan menyajikan konten statis atau meneruskan permintaan ke application server.'
+    explanation: 'Arsitektur N-Tier memisahkan presentasi, logika bisnis, dan data agar mudah dikelola.'
   },
   {
     id: 15,
     moduleId: 'modul-1',
-    category: 'Model Eksekusi Perangkat Lunak',
-    question: 'Manakah model eksekusi perangkat lunak di mana seluruh komputasi, antarmuka, dan data tersimpan secara lokal pada perangkat pengguna tanpa keterlibatan server eksternal?',
+    category: 'Karakteristik Sistem',
+    question: 'Mengapa umpan balik (feedback) sangat penting bagi kelangsungan sistem informasi?',
     options: [
-      'Software as a Service (SaaS)',
-      'Hybrid Execution',
-      'Stand-alone Execution',
-      'Cloud Computing Tier'
+      'Sebagai evaluasi performa untuk melakukan perbaikan dan penyesuaian operasional sistem.',
+      'Untuk menambah biaya operasional instansi.',
+      'Untuk mematikan sistem secara otomatis saat malam hari.',
+      'Untuk menghapus data lama secara permanen.'
     ],
-    correctAnswer: 2,
-    explanation: 'Stand-alone execution adalah model di mana aplikasi berjalan sepenuhnya di perangkat lokal pengguna.'
+    correctAnswer: 0,
+    explanation: 'Umpan balik memastikan sistem dapat terus beradaptasi dan ditingkatkan kinerjanya.'
   },
   {
     id: 16,
     moduleId: 'modul-1',
-    category: 'Model Eksekusi Perangkat Lunak',
-    question: 'Apa karakteristik utama dari model Software as a Service (SaaS)?',
+    category: 'Komponen Sistem Informasi',
+    question: 'Manakah contoh nyata perangkat keras (hardware) pendukung sistem sirkulasi perpustakaan?',
     options: [
-      'Pengguna wajib menginstal software berukuran besar di setiap komputer lokal',
-      'Seluruh aplikasi dan data dikelola secara remote di server cloud dan diakses via web browser',
-      'Data hanya bisa disimpan di dalam disket fisik',
-      'Tidak memerlukan koneksi internet sama sekali'
+      'Barcode scanner, printer kartu anggota, dan komputer server.',
+      'Sistem operasi Windows Server.',
+      'SOP pelayanan peminjaman buku.',
+      'Database katalog perpustakaan.'
     ],
-    correctAnswer: 1,
-    explanation: 'SaaS menyediakan aplikasi yang di-host di cloud dan dapat diakses langsung oleh pengguna melalui peramban web.'
+    correctAnswer: 0,
+    explanation: 'Barcode scanner dan printer adalah perangkat keras fisik.'
   },
   {
     id: 17,
     moduleId: 'modul-1',
-    category: 'Tiers Pengembangan Perangkat Lunak',
-    question: 'Dalam tahapan Tier pengembangan perangkat lunak, manakah tier yang berfokus pada User Interface (Antarmuka Pengguna) dan teknik perancangan seperti JAD/RAD?',
+    category: 'Peran Pustakawan Digital',
+    question: 'Apa tujuan utama penerapan standar metadata dalam pengelolaan perpustakaan digital?',
     options: [
-      'Tier 1',
-      'Tier 3',
-      'Tier 5',
-      'Tier 6'
+      'Memungkinkan temu kembali informasi yang cepat dan interoperabilitas antar-repositori.',
+      'Memperbesar ukuran file gambar artefak.',
+      'Membatasi jumlah pengunjung situs web.',
+      'Menghilangkan kebutuhan katalog.'
     ],
     correctAnswer: 0,
-    explanation: 'Tier 1 berfokus pada User Interface, desain interaksi, serta metode Joint Application Development (JAD) atau Rapid Application Development (RAD).'
+    explanation: 'Metadata terstandar memastikan dokumen mudah dicari dan dibagikan ke sistem lain.'
   },
   {
     id: 18,
     moduleId: 'modul-1',
-    category: 'Tiers Pengembangan Perangkat Lunak',
-    question: 'Apa peran dari Tier 2 dalam pengembangan perangkat lunak terstruktur?',
+    category: 'Sistem Informasi vs Teknologi Informasi',
+    question: 'Bagaimana cara Sistem Informasi memberikan nilai tambah bagi organisasi GLAM?',
     options: [
-      'Menggunakan perangkat CASE otomatis',
-      'Membuat alat terstruktur seperti Data Flow Diagram (DFD) dan Entity Relationship Diagram (ERD)',
-      'Menjalankan transaksi e-commerce via internet',
-      'Mengonversi kode ke bahasa mesin assembler'
+      'Menyelaraskan pemanfaatan teknologi dengan tujuan strategis pelestarian dan pelayanan publik.',
+      'Meniadakan seluruh koleksi buku fisik.',
+      'Mengurangi jumlah pustakawan menjadi nol.',
+      'Menjual data pribadi pengunjung ke pihak luar.'
     ],
-    correctAnswer: 1,
-    explanation: 'Tier 2 melibatkan penggunaan alat terstruktur (structured tools) seperti DFD dan ERD untuk memodelkan sistem.'
+    correctAnswer: 0,
+    explanation: 'SI menyelaraskan teknologi dengan misi strategis organisasi.'
   },
   {
     id: 19,
     moduleId: 'modul-1',
-    category: 'Tiers Pengembangan Perangkat Lunak',
-    question: 'Manakah tier yang memanfaatkan Computer-Aided Software Engineering (CASE) untuk meningkatkan produktivitas pengembang?',
+    category: 'Arsitektur Client-Server',
+    question: 'Apa risiko utama jika seluruh beban komputasi hanya diletakkan pada sisi Client?',
     options: [
-      'Tier 1',
-      'Tier 3',
-      'Tier 4',
-      'Tier 5'
+      'Kinerja aplikasi menjadi sangat lambat pada perangkat berspesifikasi rendah dan rentan terhadap manipulasi data.',
+      'Server menjadi tidak memiliki fungsi sama sekali.',
+      'Koneksi internet terputus secara permanen.',
+      'Bahasa pemrograman otomatis berubah.'
     ],
-    correctAnswer: 1,
-    explanation: 'Tier 3 berfokus pada perangkat CASE (Computer-Aided Software Engineering) untuk otomatisasi pembuatan dokumentasi dan kode.'
+    correctAnswer: 0,
+    explanation: 'Pembebanan berlebih di client menurunkan performa dan keamanan data.'
   },
   {
     id: 20,
     moduleId: 'modul-1',
-    category: 'Tiers Pengembangan Perangkat Lunak',
-    question: 'Pada tier berapakah pengembang mulai mendefinisikan objek, kelas, atribut, dan metode dalam paradigma berorientasi objek?',
+    category: 'Front-End vs Back-End',
+    question: 'Bahasa atau teknologi apa yang umumnya digunakan dalam pengembangan lapisan Back-End?',
     options: [
-      'Tier 2',
-      'Tier 4',
-      'Tier 5',
-      'Tier 6'
+      'PHP, Node.js, Python, dan pengelolaan database SQL.',
+      'HTML dan CSS murni di browser.',
+      'Adobe Photoshop dan Figma.',
+      'Kabel LAN dan switch jaringan.'
     ],
-    correctAnswer: 1,
-    explanation: 'Tier 4 berfokus pada Object Orientation (Orientasi Objek) untuk pemodelan berbasis kelas dan objek.'
+    correctAnswer: 0,
+    explanation: 'Back-End menggunakan bahasa server-side seperti PHP, Python, atau Node.js.'
   },
-  ...Array.from({ length: 80 }, (_, index) => {
-    const id = 21 + index;
-    const topics = [
+  // Soal 21 hingga 100 Modul 1
+  ...Array.from({ length: 80 }, (_, i) => {
+    const id = i + 21;
+    const cat = [
       'Sistem Informasi vs Teknologi Informasi',
-      'Tiga Dimensi Utama Sistem Informasi',
-      'Literasi Sistem Informasi',
+      'Komponen Sistem Informasi',
+      'Tiga Dimensi Sistem Informasi',
       'Arsitektur Client-Server',
       'Front-End vs Back-End',
       'Arsitektur N-Tier',
-      'Model Eksekusi Perangkat Lunak',
-      'Tiers Pengembangan Perangkat Lunak'
+      'Karakteristik Sistem',
+      'Peran Pustakawan Digital'
+    ][i % 8];
+    const pool = [
+      `Bagaimana cara mengoptimalkan penerapan ${cat.toLowerCase()} dalam operasional harian perpustakaan?`,
+      `Apa dampak langsung dari integrasi ${cat.toLowerCase()} terhadap efisiensi manajemen arsip?`,
+      `Mengapa pemahaman mengenai ${cat.toLowerCase()} sangat krusial bagi pengelola institusi GLAM?`,
+      `Bagaimana standar operasional dari ${cat.toLowerCase()} diimplementasikan pada repositori digital?`
     ];
-    const topic = topics[index % topics.length];
     return {
       id,
       moduleId: 'modul-1' as const,
-      category: topic,
-      question: `Pertanyaan mendalam ke-${id} mengenai konsep ${topic} dalam perancangan sistem informasi dan teknologi modern: Manakah analisis yang paling akurat?`,
+      category: cat,
+      question: pool[i % pool.length],
       options: [
-        `Analisis A yang menyatakan bahwa ${topic} berjalan tanpa aturan organisasi.`,
-        `Analisis B yang mengintegrasikan aspek teknis dan manajerial secara sinergis dalam ${topic}.`,
-        `Analisis C yang mengabaikan faktor manusia dan fokus semata pada perangkat keras.`,
-        `Analisis D yang menganggap sistem informasi tidak membutuhkan data terstruktur.`
+        'Mengikuti prinsip tata kelola sistem informasi yang terstruktur dan terstandar.',
+        'Mengabaikan prosedur baku dan berjalan secara manual.',
+        'Menghapus seluruh dokumentasi digital yang ada.',
+        'Menutup akses publik terhadap repositori.'
       ],
-      correctAnswer: 1,
-      explanation: `Berdasarkan prinsip ${topic}, integrasi antara komponen teknis dan manajerial merupakan kunci keberhasilan sistem.`
+      correctAnswer: 0,
+      explanation: `Penerapan ${cat} yang tepat meningkatkan efektivitas layanan informasi.`
     };
   }),
 
@@ -316,617 +322,1718 @@ export const QUESTIONS: Question[] = [
     id: 101,
     moduleId: 'modul-2',
     category: 'Hierarki Data Digital',
-    question: 'Manakah urutan hierarki data digital yang paling tepat dari tingkat terkecil hingga sistem terintegrasi?',
+    question: 'Apa unit terkecil dalam hierarki data digital sebelum membentuk karakter?',
     options: [
-      'Database -> File -> Record -> Field -> Byte -> Bit',
-      'Bit -> Byte -> Field -> Record -> File (Tabel) -> Database',
-      'Record -> Field -> Byte -> Bit -> Database -> File',
-      'Byte -> Bit -> Record -> Field -> Database -> File'
+      'Bit (Binary Digit)',
+      'Byte',
+      'Field',
+      'Record'
     ],
-    correctAnswer: 1,
-    explanation: 'Hierarki data digital dimulai dari Bit (satuan terkecil), Byte, Field, Record, File (Tabel), hingga Database terintegrasi.'
+    correctAnswer: 0,
+    explanation: 'Bit adalah unit data terkecil yang bernilai 0 atau 1.'
   },
   {
     id: 102,
     moduleId: 'modul-2',
-    category: 'Hierarki Data Digital',
-    question: 'Apakah definisi dari satuan Bit dalam hierarki data digital?',
+    category: 'Peran HTML pada Sistem GLAM',
+    question: 'Apa peran utama HTML dalam pengembangan antarmuka sistem GLAM?',
     options: [
-      'Sekumpulan 8 karakter huruf alfabet',
-      'Satuan data terkecil yang bernilai 0 atau 1',
-      'Satu baris data katalog perpustakaan',
-      'Kumpulan file tabel relasional'
+      'Membentuk struktur dan kerangka dasar halaman web untuk menampilkan informasi koleksi.',
+      'Mengatur warna latar belakang dan animasi tombol.',
+      'Menyimpan data transaksi pengguna ke dalam database SQL.',
+      'Mengamankan server dari serangan peretas.'
     ],
-    correctAnswer: 1,
-    explanation: 'Bit (Binary Digit) adalah satuan data terkecil di dalam komputer yang hanya bernilai binary 0 atau 1.'
+    correctAnswer: 0,
+    explanation: 'HTML berfungsi sebagai kerangka struktur dokumen web.'
   },
   {
     id: 103,
     moduleId: 'modul-2',
-    category: 'Hierarki Data Digital',
-    question: 'Berapa jumlah bit yang biasanya membentuk satu Byte untuk mewakili satu karakter tunggal?',
+    category: 'Definisi & Karakteristik HTML',
+    question: 'Apa kepanjangan dari HTML dalam teknologi web?',
     options: [
-      '2 bit',
-      '4 bit',
-      '8 bit',
-      '16 bit'
+      'HyperText Markup Language',
+      'High Transfer Modern Link',
+      'Hyper Tool Multi Language',
+      'HyperText Machine Learning'
     ],
-    correctAnswer: 2,
-    explanation: 'Satu Byte secara umum terdiri dari sekumpulan 8 bit yang mewakili satu karakter tunggal.'
+    correctAnswer: 0,
+    explanation: 'HTML singkatan dari HyperText Markup Language.'
   },
   {
     id: 104,
     moduleId: 'modul-2',
-    category: 'Hierarki Data Digital',
-    question: 'Apakah yang dimaksud dengan Field dalam pengorganisasian data?',
+    category: 'Evolusi HTML5',
+    question: 'Apa keunggulan utama penggunaan standar HTML5 dibandingkan versi sebelumnya?',
     options: [
-      'Kumpulan seluruh tabel database perpustakaan',
-      'Pengelompokan karakter menjadi sebuah kata atau angka (misal: Judul Buku, Nama Pengarang)',
-      'Satu baris data katalog lengkap',
-      'Media penyimpanan eksternal komputer'
+      'Mendukung elemen semantik modern, pemutaran audio/video bawaan, dan kompatibilitas seluler yang superior.',
+      'Menghilangkan kebutuhan akan tag penutup.',
+      'Hanya dapat dijalankan di komputer mainframe.',
+      'Menggantikan peran bahasa pemrograman PHP.'
     ],
-    correctAnswer: 1,
-    explanation: 'Field adalah pengelompokan karakter yang membentuk atribut data seperti Judul Buku atau Nama Pengarang.'
+    correctAnswer: 0,
+    explanation: 'HTML5 memperkenalkan elemen semantik dan dukungan multimedia asli.'
   },
   {
     id: 105,
     moduleId: 'modul-2',
-    category: 'Hierarki Data Digital',
-    question: 'Manakah yang merupakan definisi tepat dari sebuah Record?',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Apa nama file utama yang wajib ada dalam direktori root sebuah proyek web standar?',
     options: [
-      'Kumpulan field terkait yang membentuk satu baris data katalog lengkap',
-      'Nilai tunggal bernilai 0 atau 1',
-      'Kumpulan database yang terisolasi',
-      'Program aplikasi pengolah kata'
+      'index.html',
+      'home.php',
+      'main.css',
+      'config.json'
     ],
     correctAnswer: 0,
-    explanation: 'Record adalah kumpulan field terkait yang menyusun satu baris data entitas secara utuh (misal satu baris data katalog).'
+    explanation: 'index.html adalah file standar yang dibaca pertama kali oleh web server.'
   },
   {
     id: 106,
     moduleId: 'modul-2',
-    category: 'Hierarki Data Digital',
-    question: 'Apakah kedudukan dari File (Tabel) dalam struktur hierarki data digital?',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Tag deklarasi apa yang wajib diletakkan pada baris paling atas dokumen HTML5?',
     options: [
-      'Satuan terkecil setara bit',
-      'Kumpulan dari record yang sejenis',
-      'Program peramban web (browser)',
-      'Perangkat keras penyimpanan utama'
+      '<!DOCTYPE html>',
+      '<html>',
+      '<head>',
+      '<meta charset="UTF-8">'
     ],
-    correctAnswer: 1,
-    explanation: 'File atau Tabel merupakan kumpulan dari record-record yang sejenis dan terstruktur.'
+    correctAnswer: 0,
+    explanation: '<!DOCTYPE html> mendeklarasikan bahwa dokumen menggunakan standar HTML5.'
   },
   {
     id: 107,
     moduleId: 'modul-2',
-    category: 'Hierarki Data Digital',
-    question: 'Apa definisi dari sebuah Database dalam konteks hierarki data?',
+    category: 'Layouting Semantik',
+    question: 'Manakah tag HTML5 semantik yang digunakan untuk bagian kepala atau tajuk halaman web?',
     options: [
-      'Kumpulan file data terintegrasi yang saling berelasi',
-      'Satu karakter tunggal ASCII',
-      'Kabel jaringan internet lokal',
-      'Perangkat lunak antivirus'
+      '<header>',
+      '<footer>',
+      '<section>',
+      '<aside>'
     ],
     correctAnswer: 0,
-    explanation: 'Database adalah puncak hierarki berupa kumpulan file data terintegrasi yang saling berelasi satu sama lain.'
+    explanation: '<header> merepresentasikan bagian kepala atau navigasi utama.'
   },
   {
     id: 108,
     moduleId: 'modul-2',
-    category: 'Peran HTML dalam GLAM',
-    question: 'Mengapa seorang pustakawan digital atau pengelola institusi GLAM perlu memahami HTML?',
+    category: 'Layouting Semantik',
+    question: 'Tag HTML5 apa yang digunakan untuk membungkus konten utama halaman web?',
     options: [
-      'Agar dapat merakit komponen CPU komputer server',
-      'Karena data katalog mentah (fields & records) tidak dapat dibaca oleh peramban web (browser) tanpa penanda terstruktur',
-      'Untuk memperbaiki jaringan listrik gedung perpustakaan',
-      'Agar dapat mengenkripsi database secara militer'
+      '<main>',
+      '<div>',
+      '<span>',
+      '<section>'
     ],
-    correctAnswer: 1,
-    explanation: 'Data katalog mentah memerlukan HTML sebagai penanda terstruktur agar dapat dipetakan dan dirender oleh web browser.'
+    correctAnswer: 0,
+    explanation: '<main> menandai konten utama yang unik dari dokumen.'
   },
   {
     id: 109,
     moduleId: 'modul-2',
-    category: 'Peran HTML dalam GLAM',
-    question: 'Bagaimana peran utama HTML dalam menyajikan informasi koleksi GLAM kepada pengguna?',
+    category: 'Layouting Semantik',
+    question: 'Apa fungsi dari tag HTML5 <footer>?',
     options: [
-      'Menghapus seluruh arsip digital lama',
-      'Membungkus fakta mentah menggunakan tag penanda (tags) sehingga informasi dapat dipetakan secara hierarkis dan dirender secara logis oleh browser',
-      'Menghitung statistik pengunjung secara otomatis tanpa antarmuka',
-      'Menggantikan fungsi sistem operasi komputer'
+      'Menampilkan bagian kaki halaman web yang biasanya memuat informasi hak cipta dan kontak.',
+      'Membuat garis horizontal di tengah halaman.',
+      'Menyimpan skrip JavaScript.',
+      'Mengatur ukuran font.'
     ],
-    correctAnswer: 1,
-    explanation: 'HTML membungkus data mentah dengan tag penanda agar peramban web dapat menampilkan informasi koleksi secara logis.'
+    correctAnswer: 0,
+    explanation: '<footer> berisi informasi penutup atau kaki halaman.'
   },
   {
     id: 110,
     moduleId: 'modul-2',
     category: 'Definisi & Karakteristik HTML',
-    question: 'Apakah definisi resmi dari HTML (Hypertext Markup Language)?',
+    question: 'Bagaimana cara kerja tag (markup) dalam dokumen HTML?',
     options: [
-      'Bahasa pemrograman prosedural untuk membuat game 3D',
-      'Bahasa standar yang digunakan untuk menentukan bagaimana teks, grafik, video, dan suara ditempatkan pada halaman web serta membuat hyperlink',
-      'Sistem operasi berbasis command line open source',
-      'Protocols jaringan untuk mengirim email rahasia'
+      'Mengapit teks atau konten untuk memberikan instruksi kepada browser bagaimana konten tersebut harus dirender.',
+      'Menjalankan perhitungan matematis di sisi server.',
+      'Mengenkripsi data pengguna sebelum dikirim.',
+      'Menghapus cache browser secara otomatis.'
     ],
-    correctAnswer: 1,
-    explanation: 'HTML adalah Hypertext Markup Language, bahasa standar untuk tata letak halaman web, multimedia, dan hyperlink.'
+    correctAnswer: 0,
+    explanation: 'Tag HTML memberi tahu browser bagaimana menyajikan elemen kepada pengguna.'
   },
   {
     id: 111,
     moduleId: 'modul-2',
-    category: 'Definisi & Karakteristik HTML',
-    question: 'Termasuk dalam jenis bahasa apakah HTML dalam dunia komputasi?',
+    category: 'Hierarki Data Digital',
+    question: 'Dalam struktur database, kumpulan field yang saling berkaitan untuk merepresentasikan satu entitas disebut apa?',
     options: [
-      'Bahasa pemrograman prosedural tingkat tinggi',
-      'Bahasa deskripsi halaman (page description language), bukan bahasa pemrograman prosedural',
-      'Bahasa kueri basis data relasional',
-      'Bahasa mesin assembler berbasis register'
+      'Record (Baris)',
+      'File (Tabel)',
+      'Database',
+      'Byte'
     ],
-    correctAnswer: 1,
-    explanation: 'HTML bukanlah bahasa pemrograman prosedural, melainkan bahasa deskripsi halaman (page description language).'
+    correctAnswer: 0,
+    explanation: 'Record adalah kumpulan field yang membentuk satu entitas data lengkap.'
   },
   {
     id: 112,
     moduleId: 'modul-2',
-    category: 'Definisi & Karakteristik HTML',
-    question: 'Bagaimana posisi HTML dalam membangun sebuah halaman web sebelum dihias?',
+    category: 'Peran HTML pada Sistem GLAM',
+    question: 'Mengapa penggunaan struktur HTML yang baik penting untuk repositori digital arsip?',
     options: [
-      'Sebagai pengatur skema database SQL',
-      'Berperan sebagai pembangun kerangka atau tulang punggung dari sebuah halaman web sebelum dihias oleh CSS',
-      'Sebagai pengaman firewall server',
-      'Sebagai compiler bahasa C++'
+      'Memastikan mesin pencari (SEO) dapat mengindeks naskah kuno dan metadata dengan akurat.',
+      'Mempercepat kerusakan arsip fisik.',
+      'Mengubah format teks menjadi gambar raster.',
+      'Meniadakan kebutuhan server database.'
     ],
-    correctAnswer: 1,
-    explanation: 'HTML bertindak sebagai kerangka atau tulang punggung halaman web sebelum diperindah menggunakan CSS.'
+    correctAnswer: 0,
+    explanation: 'Struktur HTML yang bersih membantu pengindeksan mesin pencari dan aksesibilitas.'
   },
   {
     id: 113,
     moduleId: 'modul-2',
-    category: 'Evolusi Menuju HTML5',
-    question: 'Apa kelemahan utama dari HTML Tradisional dalam menangani konten multimedia seperti audio dan video?',
+    category: 'Evolusi HTML5',
+    question: 'Elemen semantik apa dalam HTML5 yang menggantikan penggunaan tag <div> generik untuk artikel?',
     options: [
-      'Dapat berjalan terlalu cepat tanpa kontrol',
-      'Membutuhkan aplikasi tambahan pihak ketiga (third-party plug-ins seperti Adobe Flash) yang tidak efisien dan memakan memori besar',
-      'Tidak bisa dibuka di komputer manapun',
-      'Hanya mendukung format teks hitam putih'
+      '<article>',
+      '<section>',
+      '<nav>',
+      '<header>'
     ],
-    correctAnswer: 1,
-    explanation: 'HTML tradisional membutuhkan plug-in pihak ketiga seperti Adobe Flash untuk memutar audio/video, yang tidak efisien dan boros memori.'
+    correctAnswer: 0,
+    explanation: '<article> khusus digunakan untuk konten mandiri seperti artikel atau berita.'
   },
   {
     id: 114,
     moduleId: 'modul-2',
-    category: 'Evolusi Menuju HTML5',
-    question: 'Fitur apakah yang menjadi keunggulan utama standar modern HTML5 dalam penayangan multimedia?',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Di dalam elemen manakah metadata, judul halaman (<title>), dan tautan CSS diletakkan?',
     options: [
-      'Dukungan Multimedia Native menggunakan tag <audio> dan <video> secara langsung tanpa plug-in tambahan',
-      'Harus menggunakan emulator Flash player',
-      'Hanya bisa dijalankan menggunakan kaset disket',
-      'Memerlukan lisensi berbayar dari Adobe'
+      '<head>',
+      '<body>',
+      '<footer>',
+      '<main>'
     ],
     correctAnswer: 0,
-    explanation: 'HTML5 menghadirkan dukungan multimedia native melalui tag <audio> dan <video> tanpa memerlukan plug-in eksternal.'
+    explanation: 'Bagian <head> memuat informasi meta, judul, dan tautan stylesheet.'
   },
   {
     id: 115,
     moduleId: 'modul-2',
-    category: 'Evolusi Menuju HTML5',
-    question: 'Selain dukungan multimedia native, apa keunggulan lain dari HTML5 dibandingkan versi tradisional?',
+    category: 'Kerangka Dasar Dokumen HTML5',
+    question: 'Elemen apa yang membungkus seluruh konten yang tampak pada jendela browser?',
     options: [
-      'Kompatibilitas multiscreen (responsif di desktop maupun ponsel pintar) serta pemrosesan peramban yang jauh lebih cepat',
-      'Hanya bisa diakses melalui telepon kabel analog',
-      'Menghapuskan kebutuhan terhadap tag HTML dasar',
-      'Menghilangkan penggunaan CSS dan JavaScript sepenuhnya'
+      '<body>',
+      '<head>',
+      '<html>',
+      '<title>'
     ],
     correctAnswer: 0,
-    explanation: 'HTML5 menawarkan kompatibilitas multiscreen yang responsif serta kecepatan pemrosesan render yang tinggi di berbagai perangkat.'
+    explanation: '<body> memuat seluruh isi visual yang dirender untuk pengguna.'
   },
   {
     id: 116,
     moduleId: 'modul-2',
-    category: 'Lingkungan Kerja & XAMPP',
-    question: 'Modul apa pada aplikasi XAMPP yang harus dipastikan menyala (berwarna hijau) sebagai web server lokal?',
+    category: 'Layouting Semantik',
+    question: 'Apa keuntungan menggunakan elemen semantik HTML5 dibandingkan <div> generik?',
     options: [
-      'MySQL',
-      'Apache',
-      'FileZilla',
-      'Tomcat'
+      'Meningkatkan keterbacaan kode, aksesibilitas screen reader, dan SEO.',
+      'Membuat file web berukuran 1 gigabyte.',
+      'Menghilangkan kebutuhan lembar gaya.',
+      'Mengunci akses browser.'
     ],
-    correctAnswer: 1,
-    explanation: 'Modul Apache pada XAMPP harus diaktifkan (menyala hijau) untuk bertindak sebagai web server lokal.'
+    correctAnswer: 0,
+    explanation: 'Elemen semantik memberikan makna jelas bagi browser, pembaca layar, dan pengembang.'
   },
   {
     id: 117,
     moduleId: 'modul-2',
-    category: 'Lingkungan Kerja & XAMPP',
-    question: 'Di dalam direktori manakah folder situs GLAM harus diletakkan pada instalasi XAMPP default di Windows?',
+    category: 'Definisi & Karakteristik HTML',
+    question: 'Apa fungsi dari atribut `charset="UTF-8"` pada dokumen HTML?',
     options: [
-      'C:/xampp/htdocs/',
-      'C:/Windows/System32/',
-      'C:/Program Files/Adobe/',
-      'C:/Users/Documents/Database/'
+      'Menetapkan pengkodean karakter universal agar simbol dan huruf khusus terbaca dengan benar.',
+      'Mengatur warna latar belakang halaman.',
+      'Menghubungkan file JavaScript.',
+      'Mengompres ukuran gambar.'
     ],
     correctAnswer: 0,
-    explanation: 'Folder situs web lokal diletakkan di dalam direktori htdocs pada instalasi XAMPP (misal: C:/xampp/htdocs/museum/).'
+    explanation: 'UTF-8 memastikan dukungan karakter global termasuk huruf khusus dan multibahasa.'
   },
   {
     id: 118,
     moduleId: 'modul-2',
-    category: 'Lingkungan Kerja & XAMPP',
-    question: 'Mengapa pengaturan "File name extensions" di Windows Explorer harus diaktifkan saat membuat file index.html?',
+    category: 'Peran HTML pada Sistem GLAM',
+    question: 'Bagaimana HTML membantu institusi perpustakaan dalam menyajikan katalog?',
     options: [
-      'Agar file tidak tersimpan salah sebagai index.html.txt oleh editor teks',
-      'Untuk mempercepat koneksi internet WiFi',
-      'Agar komputer bisa mendeteksi virus secara otomatis',
-      'Untuk mengubah format file menjadi PDF'
+      'Menyediakan format terstruktur untuk menampilkan daftar buku, pengarang, dan tahun terbit.',
+      'Menjual buku secara fisik langsung dari browser.',
+      'Mencetak kartu anggota secara otomatis tanpa printer.',
+      'Menghapus database secara berkala.'
     ],
     correctAnswer: 0,
-    explanation: 'Mengaktifkan file name extensions mencegah file tersimpan secara keliru dengan ekstensi ganda seperti index.html.txt.'
+    explanation: 'HTML menstrukturkan data katalog agar mudah dibaca pengunjung web.'
   },
   {
     id: 119,
     moduleId: 'modul-2',
-    category: 'Lingkungan Kerja & XAMPP',
-    question: 'Bagaimana cara web server Apache mendeteksi file utama yang pertama kali dijalankan saat direktori diakses?',
+    category: 'Evolusi HTML5',
+    question: 'Tag HTML5 apa yang digunakan untuk menyematkan video tanpa plugin tambahan?',
     options: [
-      'Apache secara otomatis mendeteksi file yang memiliki nama berawalan "index"',
-      'Apache meminta pengguna mengetik password master',
-      'Apache mencari file berformat .exe di dalam folder',
-      'Apache membaca file konfigurasi BIOS'
+      '<video>',
+      '<media>',
+      '<movie>',
+      '<flash>'
     ],
     correctAnswer: 0,
-    explanation: 'Apache secara otomatis mendeteksi file bernama index sebagai file utama yang pertama kali dieksekusi saat direktori diakses.'
+    explanation: '<video> adalah tag bawaan HTML5 untuk pemutaran video.'
   },
   {
     id: 120,
     moduleId: 'modul-2',
-    category: 'Kerangka Dasar Dokumen HTML5',
-    question: 'Kombinasi pintasan apa yang dapat diketik di VS Code (dengan tanda seru !) untuk menghasilkan kerangka dasar HTML5 secara instan?',
+    category: 'Lingkungan Kerja & File Utama',
+    question: 'Apa fungsi dari tag `<title>` di dalam bagian `<head>`?',
     options: [
-      'Ketik ! lalu tekan Tab',
-      'Ketik Ctrl + Alt + Delete',
-      'Ketik Shift + F5',
-      'Ketik HTML5 lalu tekan Enter'
+      'Menampilkan judul halaman pada tab browser dan hasil mesin pencari.',
+      'Membuat judul besar di tengah halaman web.',
+      'Menuliskan nama pengarang file CSS.',
+      'Menyimpan kata sandi database.'
     ],
     correctAnswer: 0,
-    explanation: 'Mengetik tanda seru (!) lalu menekan tombol Tab di VS Code akan menghasilkan kerangka dasar dokumen HTML5 secara instan.'
+    explanation: '<title> menentukan teks yang muncul di tab browser.'
   },
-  ...Array.from({ length: 80 }, (_, index) => {
-    const id = 121 + index;
-    const categories = [
+  // Soal 121 hingga 200 Modul 2
+  ...Array.from({ length: 80 }, (_, i) => {
+    const id = i + 121;
+    const cat = [
       'Hierarki Data Digital',
-      'Peran HTML dalam GLAM',
+      'Peran HTML pada Sistem GLAM',
       'Definisi & Karakteristik HTML',
-      'Evolusi Menuju HTML5',
-      'Lingkungan Kerja & XAMPP',
+      'Evolusi HTML5',
+      'Lingkungan Kerja & File Utama',
       'Kerangka Dasar Dokumen HTML5',
-      'Layouting Semantik pada Antarmuka GLAM'
+      'Layouting Semantik'
+    ][i % 7];
+    const pool = [
+      `Bagaimana cara menerapkan standar ${cat.toLowerCase()} dalam pengelolaan arsip digital?`,
+      `Apa fungsi utama dari ${cat.toLowerCase()} dalam perancangan sistem informasi perpustakaan?`,
+      `Mengapa pemahaman mengenai ${cat.toLowerCase()} sangat penting bagi pustakawan digital?`,
+      `Bagaimana struktur optimal dari ${cat.toLowerCase()} pada platform web museum modern?`
     ];
-    const category = categories[index % categories.length];
     return {
       id,
       moduleId: 'modul-2' as const,
-      category,
-      question: `Pertanyaan mendalam ke-${id} mengenai materi ${category} dalam perancangan web dan pengorganisasian data digital: Manakah pernyataan yang paling tepat?`,
+      category: cat,
+      question: pool[i % pool.length],
       options: [
-        `Pernyataan A yang mendeskripsikan proses ${category} secara tidak terstruktur.`,
-        `Pernyataan B yang sesuai dengan prinsip baku ${category} dalam pengelolaan sistem digital dan GLAM.`,
-        `Pernyataan C yang mengabaikan standar kerangka HTML5.`,
-        `Pernyataan D yang bertentangan dengan arsitektur server lokal Apache.`
+        'Menggunakan sintaks dan atribut yang sesuai dengan standar HTML5 untuk keterbacaan optimal.',
+        'Menuliskan tag tanpa penutup secara acak.',
+        'Mengandalkan lembar gaya eksternal untuk struktur dokumen.',
+        'Menghapus seluruh elemen semantik dari dokumen.'
       ],
-      correctAnswer: 1,
-      explanation: `Berdasarkan materi ${category}, konsep tersebut merujuk langsung pada standar implementasi teknis yang benar.`
+      correctAnswer: 0,
+      explanation: `Penerapan standar ${cat} memastikan halaman web dirender dengan sempurna oleh browser.`
     };
   }),
 
-  // ==================== MODUL 3 (201 - 300) ====================
+  // ==================== MODUL 3 (201 - 300: 50% TEORI & 50% TEKNIS) ====================
+  // --- TEORI (201 - 250) ---
   {
     id: 201,
     moduleId: 'modul-3',
-    category: 'CSS & Perannya dalam Web',
-    question: 'Apakah definisi resmi dari CSS (Cascading Style Sheets) dalam pengembangan web?',
+    category: 'Definisi & Peran CSS',
+    question: 'Apa definisi utama dari CSS (Cascading Style Sheets)?',
     options: [
-      'Bahasa markup untuk menyusun struktur dokumen',
-      'Bahasa yang digunakan untuk mengatur tampilan dan gaya visual dokumen yang ditulis dalam bahasa markup seperti HTML',
-      'Sistem manajemen basis data relasional untuk menyimpan arsip',
-      'Protokol jaringan untuk mengirimkan halaman web ke browser'
+      'Bahasa yang digunakan untuk mengatur tampilan dan gaya visual dokumen yang ditulis dalam bahasa markup seperti HTML.',
+      'Bahasa pemrograman backend untuk mengelola database server.',
+      'Perangkat lunak untuk mengedit gambar raster arsip.',
+      'Protokol jaringan untuk transfer file antar server.'
     ],
-    correctAnswer: 1,
-    explanation: 'CSS adalah Cascading Style Sheets, bahasa untuk mengatur tata letak, gaya visual, dan estetika dokumen markup.'
+    correctAnswer: 0,
+    explanation: 'CSS adalah bahasa styling untuk mengatur tampilan visual dokumen markup.'
   },
   {
     id: 202,
     moduleId: 'modul-3',
-    category: 'CSS & Perannya dalam Web',
-    question: 'Dalam analogi sederhana bangunan halaman web, apakah peranan dari CSS?',
+    category: 'Definisi & Peran CSS',
+    question: 'Dalam analogi bangunan web, apa peran utama dari HTML?',
     options: [
-      'Bertindak sebagai pondasi beton bawah tanah',
-      'Bertindak sebagai cat, dekorasi, dan tata letak interior yang membuat kerangka tersebut estetik dan nyaman dihuni',
-      'Bertindak sebagai kabel kelistrikan utama server',
-      'Bertindak sebagai bahan baku batu bata dinding'
+      'Bertindak sebagai kerangka atau tulang punggung bangunan halaman web.',
+      'Bertindak sebagai cat, dekorasi, dan tata letak interior.',
+      'Bertindak sebagai fondasi bawah tanah dan sistem kelistrikan.',
+      'Bertindak sebagai pemilik gedung.'
     ],
-    correctAnswer: 1,
-    explanation: 'HTML bertindak sebagai kerangka/tulang punggung, sedangkan CSS bertindak sebagai cat, dekorasi, dan interior.'
+    correctAnswer: 0,
+    explanation: 'HTML adalah kerangka atau tulang punggung struktur halaman web.'
   },
   {
     id: 203,
     moduleId: 'modul-3',
-    category: 'CSS & Perannya dalam Web',
-    question: 'Apa tujuan utama penggunaan CSS pada sistem institusi GLAM (Galleries, Libraries, Archives, Museums)?',
+    category: 'Definisi & Peran CSS',
+    question: 'Dalam analogi bangunan web, apa peran utama dari CSS?',
     options: [
-      'Menghapus seluruh metadata koleksi lama',
-      'Memastikan informasi koleksi digital tidak hanya fungsional, tetapi juga menarik secara visual dan mudah dipahami oleh pengunjung',
-      'Mengubah format file gambar menjadi teks murni',
-      'Menggantikan fungsi database server'
+      'Bertindak sebagai cat, dekorasi, dan tata letak interior yang membuat kerangka estetik.',
+      'Bertindak sebagai fondasi semen beton bawah tanah.',
+      'Bertindak sebagai fondasi batu bata mentah.',
+      'Bertindak sebagai pintu gerbang utama.'
     ],
-    correctAnswer: 1,
-    explanation: 'CSS memastikan informasi koleksi digital di institusi GLAM tampil menarik secara visual dan mudah dipahami pengunjung.'
+    correctAnswer: 0,
+    explanation: 'CSS berfungsi seperti cat dan dekorasi yang memperindah kerangka bangunan web.'
   },
   {
     id: 204,
     moduleId: 'modul-3',
-    category: 'Piramida Desain Web Arthur M. Langer',
-    question: 'Menurut Arthur M. Langer (2008), apakah komponen yang berada di tingkat Fondasi (Dasar) dari Piramida Desain Web?',
+    category: 'Definisi & Peran CSS',
+    question: 'Apa tujuan utama penggunaan CSS pada sistem GLAM?',
     options: [
-      'Content (Konten informasi)',
-      'Purpose / Economics (Nilai ekonomi dan sasaran keberhasilan)',
-      'Visuals / Form (Estetika) dan Technology / Function (Metode teknis implementasi)',
-      'Database relasional dan tabel arsip'
+      'Memastikan informasi koleksi digital fungsional, menarik secara visual, dan mudah dipahami pengunjung.',
+      'Menghapus seluruh naskah kuno yang berukuran besar.',
+      'Menggantikan sistem database relasional.',
+      'Membatasi hak akses pustakawan.'
     ],
-    correctAnswer: 2,
-    explanation: 'Komponen fondasi desain web mencakup Visuals / Form (estetika) serta Technology / Function (teknologi implementasi).'
+    correctAnswer: 0,
+    explanation: 'CSS memastikan koleksi digital GLAM menarik secara visual dan mudah dinikmati pengunjung.'
   },
   {
     id: 205,
     moduleId: 'modul-3',
-    category: 'Piramida Desain Web Arthur M. Langer',
-    question: 'Komponen apakah yang menempati posisi Badan (Tengah) dalam Piramida Desain Web Arthur M. Langer?',
+    category: 'Piramida Desain Web',
+    question: 'Menurut kerangka Piramida Desain Web oleh Arthur M. Langer (2008), desain web terdiri dari berapa komponen terintegrasi?',
     options: [
-      'Content (Fitur dan informasi yang disajikan sebagai batu bata pembangun)',
-      'Visuals dan Form semata',
-      'Tujuan ekonomi perusahaan',
-      'Kabel jaringan lokal'
+      '4 komponen terintegrasi',
+      '2 komponen terintegrasi',
+      '6 komponen terintegrasi',
+      '10 komponen terintegrasi'
     ],
     correctAnswer: 0,
-    explanation: 'Content (konten informasi) menempati posisi badan di tengah piramida sebagai batu bata pembangun.'
+    explanation: 'Menurut Arthur M. Langer (2008), desain web terdiri dari 4 komponen terintegrasi.'
   },
   {
     id: 206,
     moduleId: 'modul-3',
-    category: 'Piramida Desain Web Arthur M. Langer',
-    question: 'Apakah komponen yang menduduki posisi Puncak (Atas) dari Piramida Desain Web Arthur M. Langer?',
+    category: 'Piramida Desain Web',
+    question: 'Komponen apa saja yang berada di tingkat Fondasi (Dasar) dalam Piramida Desain Web Langer?',
     options: [
-      'Visuals / Form',
-      'Technology / Function',
-      'Purpose / Economics (Nilai ekonomi dan sasaran keberhasilan sistem)',
-      'HTML tags penanda'
+      'Visuals / Form (Estetika) dan Technology / Function (Teknologi)',
+      'Content (Konten) dan Purpose (Tujuan)',
+      'Ekonomi dan Pemasaran',
+      'Database dan Server'
     ],
-    correctAnswer: 2,
-    explanation: 'Purpose / Economics menduduki puncak piramida sebagai nilai ekonomi dan sasaran keberhasilan sistem informasi.'
+    correctAnswer: 0,
+    explanation: 'Tingkat fondasi piramida memuat komponen Visuals/Form dan Technology/Function.'
   },
   {
     id: 207,
     moduleId: 'modul-3',
-    category: 'Penerapan Visuals & Content pada GLAM',
-    question: 'Bagaimana hubungan antara pengembang web, CSS, dan Piramida Desain Web dalam konteks GLAM?',
+    category: 'Piramida Desain Web',
+    question: 'Komponen apa yang berada di tingkat Badan (Tengah) dalam Piramida Desain Web Langer?',
     options: [
-      'Pengembang menggunakan CSS untuk mengelola komponen Visuals (Form) guna mengemas konten informasi agar sesuai preferensi pengguna',
-      'CSS digunakan untuk menghapus konten sejarah',
-      'Pengembang mengabaikan tampilan visual demi kecepatan server',
-      'Konten tidak memerlukan visual sama sekali'
+      'Content (Konten)',
+      'Visuals (Estetika)',
+      'Purpose (Tujuan)',
+      'Infrastruktur Jaringan'
     ],
     correctAnswer: 0,
-    explanation: 'Pengembang menggunakan CSS untuk mengelola komponen Visuals (Form) dalam mengemas konten koleksi agar pengunjung merasa nyaman.'
+    explanation: 'Komponen Content berada di tingkat badan (tengah) sebagai batu bata pembangun piramida.'
   },
   {
     id: 208,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: Konsistensi Layout',
-    question: 'Mengapa konsistensi tata letak (layout) sangat penting di seluruh halaman situs web institusi GLAM?',
+    category: 'Piramida Desain Web',
+    question: 'Komponen apa yang berada di tingkat Puncak (Atas) dalam Piramida Desain Web Langer?',
     options: [
-      'Agar ukuran file gambar menjadi lebih kecil',
-      'Membuat pengguna merasa familier, nyaman, dan mudah bernavigasi',
-      'Agar situs dapat berjalan tanpa koneksi internet',
-      'Untuk menyembunyikan menu navigasi utama'
+      'Purpose / Economics (Tujuan)',
+      'Visuals / Form (Estetika)',
+      'Technology / Function (Teknologi)',
+      'Content (Konten)'
     ],
-    correctAnswer: 1,
-    explanation: 'Tata letak yang konsisten membuat pengunjung merasa familier (at home) dan mudah bernavigasi di seluruh halaman situs.'
+    correctAnswer: 0,
+    explanation: 'Komponen Purpose/Economics berada di puncak piramida.'
   },
   {
     id: 209,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: Konsistensi Layout',
-    question: 'Bagaimana pembagian area layar yang dianjurkan dalam struktur web GLAM yang teratur?',
+    category: 'Piramida Desain Web',
+    question: 'Apa fungsi dari komponen Visuals / Form dalam Piramida Desain Web?',
     options: [
-      'Membagi tampilan ke dalam area <header>, <main>, dan <footer> secara seragam pada setiap halaman',
-      'Meletakkan seluruh konten di sudut kanan bawah secara acak',
-      'Menghilangkan tag <header> dan hanya memakai <footer>',
-      'Menggunakan satu halaman panjang tanpa jeda'
+      'Bentuk fisik dan navigasi visual situs web.',
+      'Menyimpan data arsip digital.',
+      'Mengatur keamanan server.',
+      'Menghitung anggaran keuangan instansi.'
     ],
     correctAnswer: 0,
-    explanation: 'Pembagian area layar web dibagi secara teratur ke dalam <header>, <main>, dan <footer> secara seragam.'
+    explanation: 'Visuals/Form mencakup bentuk fisik dan navigasi visual situs web.'
   },
   {
     id: 210,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: White Space',
-    question: 'Apakah yang dimaksud dengan White Space dalam prinsip antarmuka web?',
+    category: 'Piramida Desain Web',
+    question: 'Apa fungsi dari komponen Technology / Function dalam Piramida Desain Web?',
     options: [
-      'Ruang kosong di sekitar teks, gambar, dan elemen antarmuka yang tidak terisi oleh konten visual',
-      'Warna latar belakang putih bersih pada monitor',
-      'Area khusus untuk meletakkan iklan komersial',
-      'Kode CSS untuk menghapus spasi paragraf'
+      'Metode teknis implementasi fungsi web seperti HTML atau PHP.',
+      'Menentukan warna dekorasi halaman.',
+      'Menyusun teks artikel sejarah.',
+      'Mengatur tata letak galeri seni.'
     ],
     correctAnswer: 0,
-    explanation: 'White space adalah area kosong di sekitar elemen yang tidak terisi konten visual untuk memberikan ruang bernapas.'
+    explanation: 'Technology/Function adalah metode teknis implementasi fungsi web.'
   },
   {
     id: 211,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: White Space',
-    question: 'Apa fungsi utama dari White Space dalam halaman katalog digital institusi GLAM?',
+    category: 'Piramida Desain Web',
+    question: 'Apa peran komponen Content dalam Piramida Desain Web pada sistem GLAM?',
     options: [
-      'Membuat halaman terlihat kosong dan membuang ruang',
-      'Memberikan ruang bernapas bagi mata pengunjung, mencegah kepadatan informasi (visual clutter), dan mengarahkan fokus pada artefak',
-      'Mempercepat unduhan file database SQL',
-      'Menghapus teks deskripsi secara otomatis'
+      'Fitur dan informasi yang disajikan sebagai batu bata pembangun piramida.',
+      'Tombol navigasi atas situs web.',
+      'Warna latar belakang dokumen.',
+      'Kabel jaringan server.'
     ],
-    correctAnswer: 1,
-    explanation: 'White space memberikan ruang bernapas bagi mata, mencegah visual clutter, serta mengarahkan fokus ke foto artefak atau deskripsi.'
+    correctAnswer: 0,
+    explanation: 'Content adalah fitur dan informasi yang disajikan (batu bata pembangun).'
   },
   {
     id: 212,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: Tipografi',
-    question: 'Apa karakteristik utama dari Serif Fonts (misal: Georgia, Times New Roman)?',
+    category: 'Piramida Desain Web',
+    question: 'Apa yang dimaksud dengan komponen Purpose / Economics pada puncak piramida desain web?',
     options: [
-      'Memiliki sirip atau ekor kecil di ujung hurufnya',
-      'Bergaris bersih tanpa sirip sama sekali',
-      'Hanya bisa digunakan pada bahasa pemrograman Python',
-      'Selalu berukuran sangat besar'
+      'Nilai ekonomi dan sasaran keberhasilan sistem.',
+      'Jumlah baris kode CSS.',
+      'Kecepatan unduh gambar.',
+      'Jenis font yang digunakan.'
     ],
     correctAnswer: 0,
-    explanation: 'Serif fonts memiliki sirip atau ekor kecil di ujung huruf dan sangat baik untuk media cetak.'
+    explanation: 'Purpose/Economics mencerminkan nilai ekonomi dan sasaran keberhasilan sistem.'
   },
   {
     id: 213,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: Tipografi',
-    question: 'Mengapa Sans-Serif Fonts (misal: Arial, Helvetica, Tahoma) lebih dianjurkan untuk layar digital dibandingkan Serif?',
+    category: 'Piramida Desain Web',
+    question: 'Bagaimana kaitan antara CSS dan komponen Visuals dalam Piramida Desain Web?',
     options: [
-      'Karena ukurannya selalu lebih kecil',
-      'Karena tanpa sirip dan bergaris bersih sehingga jauh lebih mudah dan nyaman dibaca di layar komputer atau ponsel',
-      'Karena diciptakan khusus untuk cetakan buku tua',
-      'Karena tidak membutuhkan file CSS'
+      'Pengembang web menggunakan CSS untuk mengelola komponen Visuals (Form).',
+      'CSS digunakan untuk menyimpan file konten sejarah.',
+      'CSS menentukan tujuan ekonomi institusi.',
+      'CSS mengatur infrastruktur kabel jaringan.'
     ],
-    correctAnswer: 1,
-    explanation: 'Sans-serif bergaris bersih tanpa sirip, membuatnya jauh lebih nyaman dibaca pada layar digital beresolusi komputer/HP.'
+    correctAnswer: 0,
+    explanation: 'CSS digunakan oleh pengembang untuk mengelola komponen Visuals.'
   },
   {
     id: 214,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: Tipografi',
-    question: 'Mengapa aturan tipografi melarang penggunaan huruf besar semua (ALL CAPS) pada paragraf teks deskripsi koleksi?',
+    category: 'Piramida Desain Web',
+    question: 'Bagaimana cara mengemas konten informasi sejarah atau kearsipan dalam sistem GLAM?',
     options: [
-      'Karena menghabiskan banyak kuota internet',
-      'Karena membuat teks sulit dibaca dan memberikan kesan "berteriak" kepada pembaca',
-      'Karena dilarang oleh undang-undang hak cipta web',
-      'Karena otomatis mengubah bahasa halaman web'
+      'Dikemas dengan tampilan visual yang disesuaikan dengan preferensi pengguna.',
+      'Ditampilkan dalam bentuk teks mentah tanpa format.',
+      'Disembunyikan dari pengunjung publik.',
+      'Dicetak dalam format kertas koran.'
     ],
-    correctAnswer: 1,
-    explanation: 'Penggunaan ALL CAPS pada paragraf membuat teks sulit dibaca dan terkesan "berteriak", sehingga harus dihindari.'
+    correctAnswer: 0,
+    explanation: 'Konten informasi sejarah harus dikemas dengan tampilan visual yang sesuai preferensi pengguna.'
   },
   {
     id: 215,
     moduleId: 'modul-3',
-    category: 'Prinsip Antarmuka GLAM: Kontras Warna & Aksesibilitas',
-    question: 'Mengapa kontras warna yang tinggi antara latar belakang dan teks sangat penting dalam perancangan antarmuka?',
+    category: 'Piramida Desain Web',
+    question: 'Apa hasil yang diharapkan bagi pengunjung saat menjelajahi katalog digital?',
     options: [
-      'Agar situs web terlihat seperti era 90-an',
-      'Menjamin informasi koleksi dapat dibaca dengan jelas tanpa memaksakan mata serta mendukung aksesibilitas lansia',
-      'Untuk menghemat pemakaian daya listrik monitor',
-      'Agar kode CSS tidak mengalami error syntax'
+      'Merasa familier (at home) dan tidak mengalami kelelahan visual.',
+      'Mengalami kebingungan navigasi.',
+      'Kesulitan membaca teks arsip.',
+      'Kehilangan koneksi internet.'
     ],
-    correctAnswer: 1,
-    explanation: 'Kontras tinggi menjamin keterbacaan maksimal, mencegah kelelahan mata, dan mendukung aksesibilitas bagi lansia atau keterbatasan visual.'
+    correctAnswer: 0,
+    explanation: 'Pengunjung diharapkan merasa familier dan tidak mengalami kelelahan visual.'
   },
   {
     id: 216,
     moduleId: 'modul-3',
-    category: 'External CSS & style.css',
-    question: 'Apakah praktik terbaik dalam pengembangan web untuk memisahkan kode gaya (styling) dari struktur HTML?',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Apa definisi dari Prinsip Antarmuka GLAM I mengenai Konsistensi Tata Letak (Layout)?',
     options: [
-      'Menggabungkan seluruh kode CSS ke dalam setiap tag HTML secara inline',
-      'Menggunakan External CSS dengan membuat file terpisah bernama style.css',
-      'Menghapus file HTML dan hanya menggunakan file gambar',
-      'Menulis kode CSS di dalam database MySQL'
+      'Tata letak dan pemformatan halaman yang konsisten di seluruh situs web membuat pengguna merasa familier dan mudah bernavigasi.',
+      'Mengubah tata letak setiap kali halaman dimuat ulang.',
+      'Menggunakan warna yang berbeda pada setiap halaman.',
+      'Menghilangkan menu navigasi.'
     ],
-    correctAnswer: 1,
-    explanation: 'External CSS menggunakan file style.css terpisah adalah praktik terbaik untuk menjaga kerapian kode dan pemeliharaan.'
+    correctAnswer: 0,
+    explanation: 'Konsistensi tata letak memberikan kebiasaan dan kemudahan navigasi bagi pengguna.'
   },
   {
     id: 217,
     moduleId: 'modul-3',
-    category: 'External CSS & style.css',
-    question: 'Di bagian manakah pada file index.html tag tautan (<link rel="stylesheet" href="style.css">) harus disematkan?',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Bagaimana pembagian area layar yang seragam pada setiap halaman web menurut infografis GLAM?',
     options: [
-      'Di dalam bagian <head>',
-      'Di bagian paling bawah penutup </html>',
-      'Di dalam tag <footer>',
-      'Di dalam tag <audio>'
+      'Membagi tampilan ke dalam area <header>, <main>, dan <footer>.',
+      'Membagi layar menjadi 10 kolom acak.',
+      'Menggabungkan seluruh konten ke dalam satu paragraf.',
+      'Menempatkan menu di bagian paling bawah.'
     ],
     correctAnswer: 0,
-    explanation: 'Tag tautan External CSS disematkan di dalam bagian <head> dokumen HTML.'
+    explanation: 'Tampilan web dibagi ke dalam area teratur seperti <header>, <main>, dan <footer>.'
   },
   {
     id: 218,
     moduleId: 'modul-3',
-    category: 'External CSS & style.css',
-    question: 'Berdasarkan contoh kode style.css, warna latar belakang apa (#fcfaf2) yang digunakan untuk menciptakan kesan krem lembut?',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Apa fungsi dari penempatan Focal Point (Fokus Perhatian) pada halaman web?',
     options: [
-      'Latar belakang krem lembut',
-      'Merah bata menyala',
-      'Hitam pekat legam',
-      'Biru neon terang'
+      'Menempatkan elemen informasi paling penting pada area atas atau tengah halaman.',
+      'Menyembunyikan tombol penting di sudut bawah.',
+      'Membuat gambar menjadi buram.',
+      'Memperkecil ukuran teks.'
     ],
     correctAnswer: 0,
-    explanation: 'Warna #fcfaf2 digunakan pada body untuk memberikan latar belakang krem lembut yang nyaman.'
+    explanation: 'Focal Point menempatkan informasi terpenting di area atas atau tengah.'
   },
   {
     id: 219,
     moduleId: 'modul-3',
-    category: 'External CSS & style.css',
-    question: 'Dalam contoh penerapan kode style.css, warna apakah (#8c2d19) yang digunakan untuk latar belakang elemen <header>?',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Apa definisi dari White Space (Ruang Kosong) dalam antarmuka web?',
     options: [
-      'Merah bata khas museum',
-      'Hijau daun tua',
-      'Kuning emas berkilau',
-      'Abu-abu metalik'
+      'Area kosong di sekitar teks, gambar, dan elemen antarmuka yang tidak terisi oleh konten visual.',
+      'Warna putih bersih pada seluruh latar belakang.',
+      'Ruang kosong di dalam database SQL.',
+      'Ketiadaan kode CSS pada file HTML.'
     ],
     correctAnswer: 0,
-    explanation: 'Warna #8c2d19 digunakan pada header sebagai warna merah bata khas museum.'
+    explanation: 'White space adalah area kosong di sekitar elemen yang tidak terisi konten.'
   },
   {
     id: 220,
     moduleId: 'modul-3',
-    category: 'External CSS & style.css',
-    question: 'Properti CSS apa yang digunakan dalam kelas .card-koleksi untuk memberikan sudut melengkung dan bayangan kotak (shadow)?',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Apa fungsi utama White Space dalam situs GLAM?',
     options: [
-      'border-radius dan box-shadow',
-      'font-family dan line-height',
-      'padding dan margin-top',
-      'background-color dan color'
+      'Memberikan ruang bernapas bagi mata pengunjung agar tidak lelah.',
+      'Menambah jumlah koleksi arsip digital.',
+      'Mempercepat pemuatan server.',
+      'Mengubah format file gambar.'
     ],
     correctAnswer: 0,
-    explanation: 'border-radius dan box-shadow digunakan untuk mempercantik kartu koleksi dengan sudut melengkung dan efek bayangan.'
+    explanation: 'White space memberikan ruang bernapas bagi mata pengunjung.'
   },
-  ...Array.from({ length: 80 }, (_, index) => {
-    const id = 221 + index;
-    const categories = [
-      'CSS & Perannya dalam Web',
-      'Piramida Desain Web Arthur M. Langer',
-      'Penerapan Visuals & Content pada GLAM',
-      'Prinsip Antarmuka GLAM: Konsistensi Layout',
-      'Prinsip Antarmuka GLAM: White Space',
-      'Prinsip Antarmuka GLAM: Tipografi',
-      'Prinsip Antarmuka GLAM: Kontras Warna & Aksesibilitas',
-      'External CSS & style.css'
-    ];
-    const category = categories[index % categories.length];
-    return {
-      id,
-      moduleId: 'modul-3' as const,
-      category,
-      question: `Pertanyaan mendalam ke-${id} mengenai materi ${category} dalam perancangan antarmuka web dan sistem GLAM: Manakah analisis yang paling akurat?`,
-      options: [
-        `Analisis A yang mengabaikan prinsip ${category} dalam desain sistem informasi.`,
-        `Analisis B yang menerapkan standar profesional ${category} sesuai teori perancangan web modern.`,
-        `Analisis C yang bertentangan dengan penggunaan External CSS.`,
-        `Analisis D yang menyamakan fungsi HTML dan CSS secara keliru.`
-      ],
-      correctAnswer: 1,
-      explanation: `Berdasarkan prinsip ${category}, penerapan desain tersebut menjamin kenyamanan dan estetika visual antarmuka sistem.`
-    };
-  })
+  {
+    id: 221,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Bagaimana White Space mencegah kepadatan informasi visual (visual clutter)?',
+    options: [
+      'Dengan memberikan jarak antar elemen sehingga halaman tidak terlihat sesak.',
+      'Dengan menghapus seluruh gambar artefak.',
+      'Dengan memperkecil ukuran monitor.',
+      'Dengan menggunakan huruf kapital semua.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Jarak antar elemen mencegah kepadatan visual (visual clutter).'
+  },
+  {
+    id: 222,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Bagaimana White Space mengarahkan fokus pengguna pada situs GLAM?',
+    options: [
+      'Mengarahkan perhatian secara langsung pada foto artefak atau teks deskripsi utama.',
+      'Mengalihkan perhatian ke iklan komersial.',
+      'Membuat pengguna mengabaikan konten.',
+      'Menutup halaman secara otomatis.'
+    ],
+    correctAnswer: 0,
+    explanation: 'White space mengarahkan fokus langsung pada foto artefak atau teks deskripsi.'
+  },
+  {
+    id: 223,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Apa peran pemilihan jenis huruf (fonts) dalam perancangan web?',
+    options: [
+      'Menentukan kenyamanan membaca pada layar digital.',
+      'Menentukan kecepatan koneksi internet.',
+      'Menentukan kapasitas penyimpanan server.',
+      'Menentukan jumlah pengunjung harian.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pemilihan font menentukan kenyamanan membaca pada layar digital.'
+  },
+  {
+    id: 224,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Apa ciri khas dari Serif Fonts seperti Georgia atau Times New Roman?',
+    options: [
+      'Memiliki sirip atau ekor kecil di ujung huruf.',
+      'Bergaris bersih tanpa hiasan.',
+      'Hanya dapat digunakan pada format video.',
+      'Selalu berwarna merah terang.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Serif memiliki sirip atau ekor kecil di ujung huruf.'
+  },
+  {
+    id: 225,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Mengapa Serif Fonts sangat baik untuk media cetak tetapi dapat terlihat rumit di layar monitor beresolusi rendah?',
+    options: [
+      'Karena detail sirip kecil pada serif pecah atau sulit dirender dengan jelas di layar rendah.',
+      'Karena ukuran filenya terlalu besar.',
+      'Karena dilarang oleh standar W3C.',
+      'Karena tidak memiliki huruf vokal.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Detail sirip pada serif dapat kurang optimal di layar beresolusi rendah.'
+  },
+  {
+    id: 226,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Apa ciri khas dari Sans-Serif Fonts seperti Arial, Helvetica, atau Tahoma?',
+    options: [
+      'Tanpa sirip dan bergaris bersih.',
+      'Memiliki banyak ornamen hiasan melingkar.',
+      'Hanya tersedia dalam cetakan buku kuno.',
+      'Memiliki ekor panjang di setiap huruf.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Sans-Serif berarti tanpa sirip dengan garis yang bersih.'
+  },
+  {
+    id: 227,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Mengapa Sans-Serif Fonts jauh lebih mudah dan nyaman dibaca di layar komputer atau ponsel?',
+    options: [
+      'Karena karakternya bersih tanpa sirip sehingga sangat tajam dan mudah dibaca di layar digital.',
+      'Karena ukurannya selalu lebih besar dari serif.',
+      'Karena dibuat khusus oleh pengembang browser.',
+      'Karena tidak memerlukan file CSS.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Karakter tanpa sirip membuat sans-serif sangat nyaman dibaca di layar digital.'
+  },
+  {
+    id: 228,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Mengapa aturan tipografi melarang penggunaan huruf besar semua (ALL CAPS) pada paragraf teks deskripsi koleksi?',
+    options: [
+      'Karena membuat teks sulit dibaca dan terkesan berteriak.',
+      'Karena ukuran file menjadi lebih berat.',
+      'Karena dilarang oleh sistem operasi.',
+      'Karena menghilangkan spasi antar kata.'
+    ],
+    correctAnswer: 0,
+    explanation: 'ALL CAPS pada paragraf sulit dibaca dan terkesan berteriak.'
+  },
+  {
+    id: 229,
+    moduleId: 'modul-3',
+    category: 'Kontras Warna & Aksesibilitas',
+    question: 'Apa yang dimaksud dengan Kontras Tinggi dalam Prinsip Antarmuka GLAM IV?',
+    options: [
+      'Menggunakan kombinasi warna yang kontras antara latar belakang dan teks.',
+      'Menggunakan warna yang sama persis antara teks dan latar belakang.',
+      'Menggunakan warna neon yang menyilaukan mata.',
+      'Menggunakan warna hitam pekat untuk seluruh halaman.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kontras tinggi menggunakan kombinasi warna yang kontras antara background dan teks.'
+  },
+  {
+    id: 230,
+    moduleId: 'modul-3',
+    category: 'Kontras Warna & Aksesibilitas',
+    question: 'Berapa contoh kombinasi kontras tinggi yang baik berdasarkan teks modul?',
+    options: [
+      'Teks gelap di atas latar belakang terang atau krem.',
+      'Teks putih di atas latar belakang putih.',
+      'Teks kuning terang di atas latar belakang putih.',
+      'Teks abu-abu terang di atas latar belakang abu-abu.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Teks gelap di atas latar belakang terang/krem memberikan kontras tinggi yang optimal.'
+  },
+  {
+    id: 231,
+    moduleId: 'modul-3',
+    category: 'Kontras Warna & Aksesibilitas',
+    question: 'Apa manfaat dari keterbacaan maksimal berkat kontras warna yang baik?',
+    options: [
+      'Menjamin informasi koleksi dapat dibaca dengan jelas tanpa memaksakan mata.',
+      'Membuat pengunjung cepat merasa lelah.',
+      'Menyembunyikan detail deskripsi artefak.',
+      'Memperlama waktu muat halaman.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kontras yang baik menjamin informasi terbaca jelas tanpa memaksakan mata.'
+  },
+  {
+    id: 232,
+    moduleId: 'modul-3',
+    category: 'Kontras Warna & Aksesibilitas',
+    question: 'Bagaimana kontras warna mendukung aksesibilitas pengguna di situs GLAM?',
+    options: [
+      'Membantu pengunjung dari berbagai latar belakang termasuk lansia atau keterbatasan daya pandang.',
+      'Membatasi akses hanya untuk anak muda.',
+      'Menghilangkan kebutuhan layar monitor.',
+      'Menggantikan teks dengan suara.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kontras warna membantu pengunjung lansia atau yang memiliki keterbatasan daya pandang.'
+  },
+  {
+    id: 233,
+    moduleId: 'modul-3',
+    category: 'External CSS',
+    question: 'Apa praktik terbaik dalam pengembangan web untuk memisahkan kode gaya dari struktur HTML?',
+    options: [
+      'Menggunakan External CSS.',
+      'Menggunakan Inline CSS di setiap tag.',
+      'Menghapus file HTML.',
+      'Menyimpan skrip di database.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Praktik terbaik adalah menggunakan External CSS agar kode gaya terpisah rapi.'
+  },
+  {
+    id: 234,
+    moduleId: 'modul-3',
+    category: 'External CSS',
+    question: 'Apa nama file eksternal standar yang disarankan untuk menyimpan kode gaya CSS?',
+    options: [
+      'style.css',
+      'main.html',
+      'index.php',
+      'script.js'
+    ],
+    correctAnswer: 0,
+    explanation: 'File gaya eksternal dinamai style.css di dalam folder proyek.'
+  },
+  {
+    id: 235,
+    moduleId: 'modul-3',
+    category: 'External CSS',
+    question: 'Di manakah tag tautan (<link>) untuk External CSS disematkan di dalam file HTML?',
+    options: [
+      'Di dalam bagian <head>',
+      'Di bagian paling bawah <footer>',
+      'Di dalam tag <title>',
+      'Di luar dokumen HTML'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tag <link> disematkan di dalam bagian <head> pada file HTML.'
+  },
+  {
+    id: 236,
+    moduleId: 'modul-3',
+    category: 'Definisi & Peran CSS',
+    question: 'Bagaimana peran CSS dalam memastikan informasi koleksi digital tidak hanya fungsional?',
+    options: [
+      'Dengan memastikan informasi juga menarik secara visual dan mudah dipahami.',
+      'Dengan menghapus informasi yang terlalu panjang.',
+      'Dengan mengubah informasi menjadi file audio.',
+      'Dengan membatasi jumlah halaman web.'
+    ],
+    correctAnswer: 0,
+    explanation: 'CSS memastikan informasi fungsional sekaligus menarik secara visual.'
+  },
+  {
+    id: 237,
+    moduleId: 'modul-3',
+    category: 'Piramida Desain Web',
+    question: 'Mengapa Arthur M. Langer menyebut komponen Content sebagai "batu bata" pembangun piramida?',
+    options: [
+      'Karena konten adalah inti informasi dan fitur yang menyusun bangunan sistem informasi.',
+      'Karena konten berbentuk batu bata fisik.',
+      'Karena konten tidak bisa diubah.',
+      'Karena konten dibuat dari semen.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Konten adalah bahan bangunan utama (batu bata) dari sistem informasi.'
+  },
+  {
+    id: 238,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Apa dampak positif dari membagi tampilan web ke dalam area <header>, <main>, dan <footer> secara seragam?',
+    options: [
+      'Memberikan struktur yang teratur dan membuat pengguna mudah bernavigasi.',
+      'Membuat tampilan menjadi rumit.',
+      'Menghilangkan tombol navigasi.',
+      'Memperlambat kinerja browser.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pembagian area yang seragam memberikan struktur teratur dan kemudahan navigasi.'
+  },
+  {
+    id: 239,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Mengapa White Space sangat krusial dalam katalog digital museum?',
+    options: [
+      'Mencegah kepadatan visual dan menonjolkan foto artefak.',
+      'Mengurangi jumlah pengunjung.',
+      'Menambah beban server.',
+      'Menghilangkan deskripsi koleksi.'
+    ],
+    correctAnswer: 0,
+    explanation: 'White space mencegah kepadatan visual dan menonjolkan foto artefak.'
+  },
+  {
+    id: 240,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Mana yang lebih disarankan untuk judul atau teks utama katalog digital berdasarkan prinsip tipografi?',
+    options: [
+      'Sans-Serif Fonts untuk keterbacaan optimal di layar.',
+      'Serif Fonts dengan ukuran sangat kecil.',
+      'Huruf kapital semua (ALL CAPS) pada setiap paragraf.',
+      'Font bersirip tebal pada resolusi rendah.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Sans-Serif diutamakan untuk keterbacaan optimal di layar digital.'
+  },
+  {
+    id: 241,
+    moduleId: 'modul-3',
+    category: 'Kontras Warna & Aksesibilitas',
+    question: 'Apa tujuan utama dari aksesibilitas pengguna dalam perancangan antarmuka?',
+    options: [
+      'Memungkinkan semua orang termasuk lansia dan penyandang keterbatasan visual menikmati konten.',
+      'Membatasi akses hanya untuk ahli komputer.',
+      'Mengurangi jumlah warna yang digunakan.',
+      'Mempercepat unduhan teks.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Aksesibilitas memastikan semua orang dapat menikmati konten dengan nyaman.'
+  },
+  {
+    id: 242,
+    moduleId: 'modul-3',
+    category: 'External CSS',
+    question: 'Apa keuntungan pemeliharaan (maintenance) saat menggunakan External CSS dibanding inline style?',
+    options: [
+      'Perubahan gaya pada satu file style.css akan otomatis memperbarui seluruh halaman situs.',
+      'Harus mengubah satu persatu di setiap tag HTML.',
+      'Membuat pemeliharaan menjadi sangat sulit.',
+      'Mengharuskan pembuatan ulang database.'
+    ],
+    correctAnswer: 0,
+    explanation: 'External CSS memungkinkan pembaruan global melalui satu file.'
+  },
+  {
+    id: 243,
+    moduleId: 'modul-3',
+    category: 'Definisi & Peran CSS',
+    question: 'Bagaimana CSS berinteraksi dengan HTML dalam dokumen web?',
+    options: [
+      'HTML menyediakan struktur elemen, sementara CSS merias dan menata elemen tersebut.',
+      'CSS menghapus elemen HTML yang tidak terpakai.',
+      'HTML membaca kode CSS dan mengubahnya menjadi database.',
+      'CSS dan HTML berjalan di server yang berbeda.'
+    ],
+    correctAnswer: 0,
+    explanation: 'HTML menyediakan struktur, CSS menata dan merias tampilannya.'
+  },
+  {
+    id: 244,
+    moduleId: 'modul-3',
+    category: 'Piramida Desain Web',
+    question: 'Apa posisi komponen Purpose / Economics dalam piramida desain web?',
+    options: [
+      'Di puncak (atas) piramida sebagai sasaran keberhasilan sistem.',
+      'Di dasar fondasi piramida.',
+      'Di luar kerangka desain.',
+      'Di tengah komponen konten.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Purpose/Economics berada di puncak piramida.'
+  },
+  {
+    id: 245,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM',
+    question: 'Mengapa konsistensi tata letak membantu pengunjung merasa "at home" (seperti di rumah sendiri)?',
+    options: [
+      'Karena pola navigasi yang familiar mengurangi kebingungan saat menjelajahi arsip.',
+      'Karena situs web dilengkapi musik latar.',
+      'Karena halaman web otomatis tertutup sendiri.',
+      'Karena warna latar belakang selalu berubah.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pola navigasi yang familiar membuat pengunjung nyaman dan cepat beradaptasi.'
+  },
+  {
+    id: 246,
+    moduleId: 'modul-3',
+    category: 'Tipografi Web',
+    question: 'Apa kelemahan utama huruf Serif jika dibaca di layar monitor komputer?',
+    options: [
+      'Sirip kecil pada huruf dapat terlihat kabur atau kurang tajam pada resolusi layar tertentu.',
+      'Huruf Serif tidak memiliki garis.',
+      'Huruf Serif hanya bisa dicetak dengan tinta emas.',
+      'Huruf Serif berukuran sangat besar.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Sirip kecil pada serif kurang tajam di layar monitor beresolusi rendah.'
+  },
+  {
+    id: 247,
+    moduleId: 'modul-3',
+    category: 'Kontras Warna & Aksesibilitas',
+    question: 'Mengapa kombinasi warna latar belakang krem lembut dengan teks gelap sangat direkomendasikan?',
+    options: [
+      'Memberikan kontras tinggi yang nyaman di mata dan menghindari silau putih murni.',
+      'Membuat teks tidak terlihat.',
+      'Mengurangi kecepatan render browser.',
+      'Membuat situs terlihat kuno.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Krem lembut dengan teks gelap memberikan kontras tinggi tanpa menyilaukan mata.'
+  },
+  {
+    id: 248,
+    moduleId: 'modul-3',
+    category: 'External CSS',
+    question: 'Mengapa pemisahan kode melalui External CSS dianggap sebagai standar industri web?',
+    options: [
+      'Memisahkan tanggung jawab antara struktur (HTML) dan presentasi (CSS) secara profesional.',
+      'Menggabungkan semua kode dalam satu baris.',
+      'Menghilangkan kebutuhan akan desainer web.',
+      'Mempercepat kerusakan perangkat keras.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pemisahan struktur dan presentasi adalah prinsip dasar pengembangan web profesional.'
+  },
+  {
+    id: 249,
+    moduleId: 'modul-3',
+    category: 'Definisi & Peran CSS',
+    question: 'Apa hasil akhir dari penerapan CSS yang baik pada institusi GLAM?',
+    options: [
+      'Katalog digital yang estetik, mudah diakses, informatif, dan nyaman dijelajahi publik.',
+      'Situs web yang hanya berupa teks hitam putih polos.',
+      'Sistem yang hanya dapat diakses oleh administrator.',
+      'Penyimpanan data yang terenkripsi penuh.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Penerapan CSS yang baik menghasilkan katalog digital yang estetik dan mudah diakses.'
+  },
+  {
+    id: 250,
+    moduleId: 'modul-3',
+    category: 'Piramida Desain Web',
+    question: 'Bagaimana komponen Technology / Function dan Visuals / Form berinteraksi di fondasi piramida?',
+    options: [
+      'Keduanya saling menopang sebagai dasar teknis dan estetika sebelum menyangga konten dan tujuan.',
+      'Keduanya saling bersaing untuk menghapus konten.',
+      'Keduanya tidak memiliki kaitan satu sama lain.',
+      'Keduanya hanya berfungsi di sisi server.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Estetika dan teknologi berkolaborasi di fondasi untuk menopang sistem.'
+  },
+
+  // --- TEKNIS (251 - 300) ---
+  {
+    id: 251,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Bagaimana sintaks penulisan tag `<link>` untuk menghubungkan file `style.css` di dalam HTML?',
+    options: [
+      '<link rel="stylesheet" href="style.css">',
+      '<stylesheet href="style.css">',
+      '<css link="style.css">',
+      '<style src="style.css">'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tautan CSS eksternal menggunakan tag <link rel="stylesheet" href="style.css">.'
+  },
+  {
+    id: 252,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Di dalam tag apakah baris kode penaut CSS eksternal harus diletakkan?',
+    options: [
+      '<head>',
+      '<body>',
+      '<footer>',
+      '<main>'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tag penaut CSS diletakkan di dalam bagian <head> dokumen HTML.'
+  },
+  {
+    id: 253,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor CSS mana yang digunakan dalam contoh kode untuk menata seluruh tubuh dokumen web?',
+    options: [
+      'body',
+      'header',
+      'main',
+      '.card-koleksi'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor `body` menargetkan elemen pembungkus seluruh isi halaman.'
+  },
+  {
+    id: 254,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS apa yang digunakan untuk menetapkan jenis font pada elemen `body`?',
+    options: [
+      'font-family',
+      'font-size',
+      'font-weight',
+      'font-style'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `font-family` digunakan untuk menentukan jenis tipografi.'
+  },
+  {
+    id: 255,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Berapa nilai kode warna hex `#fcfaf2` yang diterapkan pada latar belakang dokumen dalam contoh kode?',
+    options: [
+      'Latar belakang krem lembut',
+      'Latar belakang merah bata',
+      'Latar belakang hitam pekat',
+      'Latar belakang putih bersih'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kode `#fcfaf2` menghasilkan warna latar belakang krem lembut.'
+  },
+  {
+    id: 256,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Berapa nilai kode warna hex `#1a1a1a` yang digunakan untuk warna teks utama?',
+    options: [
+      'Teks gelap untuk kontras tinggi',
+      'Teks putih terang',
+      'Teks merah menyala',
+      'Teks abu-abu transparan'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kode `#1a1a1a` adalah warna teks gelap untuk kontras tinggi.'
+  },
+  {
+    id: 257,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Apa fungsi dari properti `line-height: 1.6;` pada elemen `body`?',
+    options: [
+      'Mengatur jarak antar baris teks agar nyaman dibaca.',
+      'Mengatur ketebalan garis tepi.',
+      'Mengatur tinggi total gambar.',
+      'Mengatur jarak antar paragraf.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `line-height` menentukan jarak antar baris teks.'
+  },
+  {
+    id: 258,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor CSS mana yang digunakan untuk menata bagian kepala dokumen web (`<header>`)?',
+    options: [
+      'header',
+      'body',
+      'main',
+      'footer'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor `header` menargetkan elemen tajuk halaman.'
+  },
+  {
+    id: 259,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Berapa nilai kode warna hex `#8c2d19` yang diterapkan pada latar belakang elemen `<header>`?',
+    options: [
+      'Merah bata khas museum',
+      'Krem lembut',
+      'Biru laut',
+      'Hijau daun'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kode `#8c2d19` adalah warna merah bata khas museum.'
+  },
+  {
+    id: 260,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS apa yang digunakan untuk mengatur jarak internal di dalam elemen `<header>` sebesar `20px`?',
+    options: [
+      'padding: 20px;',
+      'margin: 20px;',
+      'width: 20px;',
+      'height: 20px;'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `padding` mengatur jarak internal elemen.'
+  },
+  {
+    id: 261,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS apa yang digunakan untuk membuat teks berada di tengah (`text-align: center;`)?',
+    options: [
+      'text-align',
+      'font-align',
+      'align-content',
+      'vertical-align'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `text-align` dengan nilai `center` memusatkan teks secara horizontal.'
+  },
+  {
+    id: 262,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor CSS mana yang digunakan untuk menata kontainer utama (`<main>`)?',
+    options: [
+      'main',
+      'body',
+      'header',
+      'section'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor `main` menargetkan elemen pembungkus konten utama.'
+  },
+  {
+    id: 263,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Apa fungsi dari properti `max-width: 800px;` pada elemen `<main>`?',
+    options: [
+      'Membatasi lebar maksimum kontainer utama agar tidak terlalu melebar di layar besar.',
+      'Memperbesar ukuran font hingga 800 piksel.',
+      'Mengatur tinggi minimum elemen.',
+      'Menghapus margin kiri.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `max-width` membatasi lebar maksimum elemen agar tetap nyaman dibaca.'
+  },
+  {
+    id: 264,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Apa fungsi dari deklarasi `margin: 30px auto;` pada elemen `<main>`?',
+    options: [
+      'Memberikan jarak atas-bawah 30px dan membuat kontainer berada di tengah secara horizontal.',
+      'Memberikan jarak 30px di sebelah kiri saja.',
+      'Membuat elemen melayang ke kanan.',
+      'Menghilangkan border elemen.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Nilai `auto` pada margin kiri-kanan memusatkan elemen secara horizontal.'
+  },
+  {
+    id: 265,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor class apa yang digunakan dalam contoh kode untuk menata kartu koleksi?',
+    options: [
+      '.card-koleksi',
+      '#card-koleksi',
+      'card-koleksi',
+      'div.koleksi'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor class diawali dengan titik, yaitu `.card-koleksi`.'
+  },
+  {
+    id: 266,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Berapa nilai properti `background-color` untuk elemen `.card-koleksi` dalam contoh kode?',
+    options: [
+      '#ffffff (putih)',
+      '#fcfaf2 (krem)',
+      '#8c2d19 (merah bata)',
+      '#1a1a1a (hitam)'
+    ],
+    correctAnswer: 0,
+    explanation: 'Elemen `.card-koleksi` menggunakan `background-color: #ffffff;`.'
+  },
+  {
+    id: 267,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS apa yang digunakan untuk membuat sudut elemen `.card-koleksi` melengkung sebesar `8px`?',
+    options: [
+      'border-radius',
+      'border-style',
+      'border-width',
+      'border-color'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `border-radius` mengatur lengkungan sudut elemen.'
+  },
+  {
+    id: 268,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS apa yang digunakan untuk memberikan efek bayangan lembut pada kartu koleksi?',
+    options: [
+      'box-shadow',
+      'text-shadow',
+      'element-shadow',
+      'drop-shadow'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `box-shadow` memberikan efek bayangan pada kotak elemen.'
+  },
+  {
+    id: 269,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Apa arti dari nilai `0 2px 5px rgba(0,0,0,0.1)` pada properti `box-shadow`?',
+    options: [
+      'Offset horizontal 0, offset vertikal 2px, blur 5px, dengan warna hitam transparan 10%.',
+      'Ukuran font 10px dengan warna merah.',
+      'Ketebalan border 5px.',
+      'Margin luar 2px.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Parameter box-shadow menentukan pergeseran x, y, radius blur, dan warna bayangan transparan.'
+  },
+  {
+    id: 270,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Bagaimana cara menuliskan komentar satu baris di dalam file CSS?',
+    options: [
+      '/* Komentar CSS */',
+      '// Komentar CSS',
+      '<!-- Komentar CSS -->',
+      '# Komentar CSS'
+    ],
+    correctAnswer: 0,
+    explanation: 'Komentar di CSS ditulis di antara `/*` dan `*/`.'
+  },
+  {
+    id: 271,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Manakah penulisan deklarasi CSS yang benar untuk mengubah warna teks menjadi merah?',
+    options: [
+      'color: red;',
+      'text-color: red;',
+      'font-color: red;',
+      'colour = red;'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti color dengan titik dua dan titik koma (`color: red;`) adalah penulisan yang benar.'
+  },
+  {
+    id: 272,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Simbol apa yang digunakan di depan nama class untuk menargetkannya di CSS?',
+    options: [
+      'Titik (.)',
+      'Pagar (#)',
+      'Asterisk (*)',
+      'Ampersand (&)'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor class menggunakan simbol titik (.) di depannya.'
+  },
+  {
+    id: 273,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Simbol apa yang digunakan di depan nama ID untuk menargetkannya di CSS?',
+    options: [
+      'Pagar (#)',
+      'Titik (.)',
+      'At (@)',
+      'Dollar ($)'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor ID menggunakan simbol pagar (#) di depannya.'
+  },
+  {
+    id: 274,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Apa fungsi dari tanda titik koma (`;`) di dalam blok deklarasi CSS?',
+    options: [
+      'Memisahkan antar properti atau mengakhiri sebuah deklarasi CSS.',
+      'Menggabungkan dua file CSS.',
+      'Menghapus elemen dari halaman.',
+      'Mengaktifkan mode server.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Titik koma wajib digunakan untuk mengakhiri setiap baris deklarasi CSS.'
+  },
+  {
+    id: 275,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Bagaimana cara menuliskan deklarasi font-family dengan beberapa pilihan cadangan (fallback)?',
+    options: [
+      'font-family: Arial, Helvetica, sans-serif;',
+      'font-family = [Arial, Helvetica];',
+      'font: Arial and Helvetica;',
+      'font-style: Arial; font-style: Helvetica;'
+    ],
+    correctAnswer: 0,
+    explanation: 'Beberapa font dipisahkan dengan koma sebagai cadangan jika font utama tidak tersedia.'
+  },
+  {
+    id: 276,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Apa perbedaan utama antara `margin` dan `padding` dalam CSS Box Model?',
+    options: [
+      'Margin adalah jarak di luar border elemen, sedangkan padding adalah jarak di dalam border elemen.',
+      'Margin untuk teks, padding untuk gambar.',
+      'Margin di dalam border, padding di luar border.',
+      'Tidak ada perbedaan sama sekali.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Margin mengatur ruang luar elemen, sementara padding mengatur ruang internal.'
+  },
+  {
+    id: 277,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Atribut apa dalam tag `<link>` yang mendefinisikan hubungan file tertaut sebagai lembar gaya?',
+    options: [
+      'rel="stylesheet"',
+      'type="css"',
+      'target="style"',
+      'media="all"'
+    ],
+    correctAnswer: 0,
+    explanation: 'Atribut `rel="stylesheet"` menyatakan bahwa file yang ditautkan adalah lembar gaya.'
+  },
+  {
+    id: 278,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Atribut apa dalam tag `<link>` yang menunjuk ke lokasi atau URL file CSS?',
+    options: [
+      'href',
+      'src',
+      'link',
+      'path'
+    ],
+    correctAnswer: 0,
+    explanation: 'Atribut `href` berisi jalur atau URL ke file eksternal termasuk CSS.'
+  },
+  {
+    id: 279,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS mana yang mengatur lebar maksimum suatu elemen kontainer?',
+    options: [
+      'max-width',
+      'width-max',
+      'limit-width',
+      'container-width'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `max-width` digunakan untuk membatasi lebar maksimum elemen.'
+  },
+  {
+    id: 280,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS mana yang mengatur besar kecilnya ukuran huruf?',
+    options: [
+      'font-size',
+      'text-size',
+      'size-font',
+      'text-scale'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `font-size` menentukan ukuran huruf pada teks.'
+  },
+  {
+    id: 281,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS mana yang digunakan untuk memberikan garis tepi (border) pada elemen?',
+    options: [
+      'border',
+      'outline',
+      'stroke',
+      'edge'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `border` mengatur garis tepi pada elemen.'
+  },
+  {
+    id: 282,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Bagaimana penulisan yang benar untuk mengatur padding sebesar 20px di semua sisi?',
+    options: [
+      'padding: 20px;',
+      'padding-all: 20px;',
+      'padding: 20px 20px 20px 20px 20px;',
+      'pad: 20px;'
+    ],
+    correctAnswer: 0,
+    explanation: '`padding: 20px;` menerapkan jarak 20px di seluruh sisi elemen.'
+  },
+  {
+    id: 283,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor CSS mana yang menargetkan tag HTML secara langsung tanpa titik atau pagar?',
+    options: [
+      'Selektor Tag (misal: body, header, main)',
+      'Selektor Class',
+      'Selektor ID',
+      'Selektor Attribute'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor tag menggunakan nama tag HTML secara langsung.'
+  },
+  {
+    id: 284,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Apa ekstensi file standar untuk lembar gaya eksternal CSS?',
+    options: [
+      '.css',
+      '.html',
+      '.js',
+      '.txt'
+    ],
+    correctAnswer: 0,
+    explanation: 'File CSS selalu menggunakan ekstensi `.css`.'
+  },
+  {
+    id: 285,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Bagaimana cara menuliskan warna putih murni dalam format hex pada CSS?',
+    options: [
+      '#ffffff',
+      '#000000',
+      '#fcfaf2',
+      '#8c2d19'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kode `#ffffff` merepresentasikan warna putih murni.'
+  },
+  {
+    id: 286,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Bagaimana cara menuliskan warna hitam transparan 10% menggunakan fungsi `rgba`?',
+    options: [
+      'rgba(0,0,0,0.1)',
+      'rgba(255,255,255,1)',
+      'rgba(140,45,25,0.5)',
+      'rgba(0,0,0,1)'
+    ],
+    correctAnswer: 0,
+    explanation: '`rgba(0,0,0,0.1)` menghasilkan warna hitam dengan tingkat transparan 10%.'
+  },
+  {
+    id: 287,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti mana yang mengatur tebal tipisnya huruf pada teks?',
+    options: [
+      'font-weight',
+      'font-style',
+      'font-variant',
+      'font-stretch'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `font-weight` mengatur ketebalan huruf (misal: bold, normal).'
+  },
+  {
+    id: 288,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Apa fungsi dari nilai `auto` pada properti margin kiri dan kanan (`margin: 30px auto;`)?',
+    options: [
+      'Membagi sisa ruang secara merata di sisi kiri dan kanan sehingga elemen berada tepat di tengah.',
+      'Membuat elemen otomatis menghilang.',
+      'Mengunci posisi elemen di pojok kiri.',
+      'Memutar posisi elemen 90 derajat.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Nilai `auto` pada margin horizontal memusatkan elemen secara otomatis.'
+  },
+  {
+    id: 289,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Bagaimana struktur penulisan aturan CSS (CSS rule) yang paling dasar?',
+    options: [
+      'selektor { properti: nilai; }',
+      'properti: nilai (selektor);',
+      '{ nilai: properti; } selektor',
+      'selektor ( nilai = properti );'
+    ],
+    correctAnswer: 0,
+    explanation: 'Aturan CSS terdiri dari selektor diikuti kurung kurawal berisi properti dan nilai.'
+  },
+  {
+    id: 290,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor mana yang paling tepat untuk menata elemen unik yang hanya ada satu dalam satu halaman web?',
+    options: [
+      'Selektor ID (#id)',
+      'Selektor Class (.class)',
+      'Selektor Tag',
+      'Selektor Universal (*)'
+    ],
+    correctAnswer: 0,
+    explanation: 'Selektor ID digunakan untuk elemen unik yang bersifat spesifik.'
+  },
+  {
+    id: 291,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Apa yang terjadi jika Anda lupa menuliskan tanda titik koma (`;`) di akhir deklarasi CSS?',
+    options: [
+      'Deklarasi tersebut dan baris berikutnya bisa gagal dirender oleh browser (syntax error).',
+      'Halaman web akan berjalan 10 kali lebih cepat.',
+      'File HTML otomatis terhapus.',
+      'Browser akan memperbaikinya tanpa ada kendala.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Kehilangan titik koma menyebabkan error parsing pada lembar gaya CSS.'
+  },
+  {
+    id: 292,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Manakah penulisan shorthand margin yang memberikan jarak atas-bawah 20px dan kiri-kanan auto?',
+    options: [
+      'margin: 20px auto;',
+      'margin: auto 20px;',
+      'margin: 20px 20px 20px 20px;',
+      'margin: auto;'
+    ],
+    correctAnswer: 0,
+    explanation: '`margin: 20px auto;` berarti atas-bawah 20px dan kiri-kanan auto.'
+  },
+  {
+    id: 293,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS mana yang mengatur agar teks rata kiri-kanan (justified)?',
+    options: [
+      'text-align: justify;',
+      'text-align: center;',
+      'text-align: left;',
+      'text-align: right;'
+    ],
+    correctAnswer: 0,
+    explanation: 'Nilai `justify` pada `text-align` membuat paragraf rata kiri-kanan.'
+  },
+  {
+    id: 294,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Mengapa file CSS dihubungkan di dalam bagian `<head>` dokumen HTML?',
+    options: [
+      'Agar gaya visual dimuat sebelum browser merender konten sehingga terhindar dari kedipan tata letak (FOUC).',
+      'Agar file CSS dapat diproses oleh database SQL.',
+      'Agar file HTML berukuran lebih kecil.',
+      'Agar browser tidak menampilkan teks sama sekali.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Memuat CSS di head memastikan styling siap saat DOM dirender.'
+  },
+  {
+    id: 295,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti CSS apa yang digunakan untuk mengatur jarak luar di atas suatu elemen?',
+    options: [
+      'margin-top',
+      'padding-top',
+      'border-top',
+      'top-space'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `margin-top` mengatur jarak luar di sisi atas elemen.'
+  },
+  {
+    id: 296,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Bagaimana cara menuliskan nilai properti warna dengan format nama warna standar di CSS?',
+    options: [
+      'color: red; atau color: white;',
+      'color: 123456;',
+      'color: [rgb];',
+      'color: file.css;'
+    ],
+    correctAnswer: 0,
+    explanation: 'CSS mendukung nama warna standar seperti red, white, blue, black, dll.'
+  },
+  {
+    id: 297,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Properti apa yang digunakan untuk menambahkan garis bawah, garis atas, atau coretan pada teks?',
+    options: [
+      'text-decoration',
+      'font-decoration',
+      'text-style',
+      'line-style'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `text-decoration` mengatur garis pada teks (underline, line-through, dll).'
+  },
+  {
+    id: 298,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Bagaimana cara mengatur transparansi keseluruhan suatu elemen di CSS?',
+    options: [
+      'opacity: 0.5;',
+      'transparent: true;',
+      'alpha: 50%;',
+      'visibility: hidden;'
+    ],
+    correctAnswer: 0,
+    explanation: 'Properti `opacity` mengatur tingkat transparansi elemen (dari 0.0 sampai 1.0).'
+  },
+  {
+    id: 299,
+    moduleId: 'modul-3',
+    category: 'Penerapan Kode CSS',
+    question: 'Selektor CSS mana yang menargetkan semua elemen di dalam dokumen web tanpa terkecuali?',
+    options: [
+      'Selektor Universal (*)',
+      'Selektor Body (body)',
+      'Selektor Root (:root)',
+      'Selektor Utama (main)'
+    ],
+    correctAnswer: 0,
+    explanation: 'Asterisk (`*`) adalah selektor universal yang mencakup seluruh elemen.'
+  },
+  {
+    id: 300,
+    moduleId: 'modul-3',
+    category: 'Sintaks & Properti CSS',
+    question: 'Apa kunci utama agar browser berhasil menerapkan gaya dari file `style.css` eksternal?',
+    options: [
+      'Penulisan jalur file (`href`) dan nama file yang tepat serta penempatan tag `<link>` di dalam `<head>`.',
+      'Menyimpan file di komputer pengguna secara manual.',
+      'Menghapus seluruh tag HTML dari halaman.',
+      'Menggunakan huruf besar pada semua kode CSS.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Jalur file yang benar dan penempatan di head adalah kunci keberhasilan pemuatan CSS.'
+  }
 ];
