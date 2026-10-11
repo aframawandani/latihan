@@ -1,6 +1,6 @@
 export interface Question {
   id: number;
-  moduleId: 'modul-1' | 'modul-2';
+  moduleId: 'modul-1' | 'modul-2' | 'modul-3';
   category: string;
   question: string;
   options: string[];
@@ -21,12 +21,12 @@ export interface QuizState {
   timeSpent: number; // in seconds
   examTimeLeft: number; // in seconds
   isExamSubmitted: boolean;
-  selectedModule: 'all' | 'modul-1' | 'modul-2';
+  selectedModule: 'all' | 'modul-1' | 'modul-2' | 'modul-3';
 }
 
 export interface ModuleTopic {
   id: string;
-  moduleId: 'modul-1' | 'modul-2';
+  moduleId: 'modul-1' | 'modul-2' | 'modul-3';
   title: string;
   subtitle: string;
   summary: string;

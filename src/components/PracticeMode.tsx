@@ -11,8 +11,8 @@ interface PracticeModeProps {
 export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
   // Configuration state
   const [isConfiguring, setIsConfiguring] = useState<boolean>(true);
-  const [selectedModules, setSelectedModules] = useState<string[]>(['modul-1', 'modul-2']);
-  const [questionLimit, setQuestionLimit] = useState<number>(20);
+  const [selectedModules, setSelectedModules] = useState<string[]>(['modul-1', 'modul-2', 'modul-3']);
+  const [questionLimit, setQuestionLimit] = useState<number>(30);
 
   // Active quiz state
   const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
@@ -169,6 +169,26 @@ export const PracticeMode: React.FC<PracticeModeProps> = ({ setMode }) => {
                 <input 
                   type="checkbox" 
                   checked={selectedModules.includes('modul-2')}
+                  onChange={() => {}}
+                  className="w-4 h-4 rounded text-indigo-600 accent-indigo-600 cursor-pointer"
+                />
+              </div>
+
+              <div 
+                onClick={() => handleToggleModule('modul-3')}
+                className={`p-4 rounded-xl border cursor-pointer transition-all flex items-center justify-between ${
+                  selectedModules.includes('modul-3')
+                    ? 'bg-indigo-600/20 border-indigo-500 text-white shadow-md'
+                    : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:border-slate-600'
+                }`}
+              >
+                <div>
+                  <div className="font-bold text-sm text-white">Modul 3</div>
+                  <div className="text-xs text-slate-400 mt-0.5">CSS, Langer Pyramid & UI</div>
+                </div>
+                <input 
+                  type="checkbox" 
+                  checked={selectedModules.includes('modul-3')}
                   onChange={() => {}}
                   className="w-4 h-4 rounded text-indigo-600 accent-indigo-600 cursor-pointer"
                 />

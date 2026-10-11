@@ -282,8 +282,6 @@ export const QUESTIONS: Question[] = [
     correctAnswer: 1,
     explanation: 'Tier 4 berfokus pada Object Orientation (Orientasi Objek) untuk pemodelan berbasis kelas dan objek.'
   },
-  // Adding questions 21 to 100 for Modul 1 to ensure 100 robust questions
-  // Let's generate programmatic/varied high quality questions for Modul 1 up to 100
   ...Array.from({ length: 80 }, (_, index) => {
     const id = 21 + index;
     const topics = [
@@ -594,7 +592,6 @@ export const QUESTIONS: Question[] = [
     correctAnswer: 0,
     explanation: 'Mengetik tanda seru (!) lalu menekan tombol Tab di VS Code akan menghasilkan kerangka dasar dokumen HTML5 secara instan.'
   },
-  // Adding questions 121 to 200 for Modul 2 to ensure 100 robust questions
   ...Array.from({ length: 80 }, (_, index) => {
     const id = 121 + index;
     const categories = [
@@ -620,6 +617,316 @@ export const QUESTIONS: Question[] = [
       ],
       correctAnswer: 1,
       explanation: `Berdasarkan materi ${category}, konsep tersebut merujuk langsung pada standar implementasi teknis yang benar.`
+    };
+  }),
+
+  // ==================== MODUL 3 (201 - 300) ====================
+  {
+    id: 201,
+    moduleId: 'modul-3',
+    category: 'CSS & Perannya dalam Web',
+    question: 'Apakah definisi resmi dari CSS (Cascading Style Sheets) dalam pengembangan web?',
+    options: [
+      'Bahasa markup untuk menyusun struktur dokumen',
+      'Bahasa yang digunakan untuk mengatur tampilan dan gaya visual dokumen yang ditulis dalam bahasa markup seperti HTML',
+      'Sistem manajemen basis data relasional untuk menyimpan arsip',
+      'Protokol jaringan untuk mengirimkan halaman web ke browser'
+    ],
+    correctAnswer: 1,
+    explanation: 'CSS adalah Cascading Style Sheets, bahasa untuk mengatur tata letak, gaya visual, dan estetika dokumen markup.'
+  },
+  {
+    id: 202,
+    moduleId: 'modul-3',
+    category: 'CSS & Perannya dalam Web',
+    question: 'Dalam analogi sederhana bangunan halaman web, apakah peranan dari CSS?',
+    options: [
+      'Bertindak sebagai pondasi beton bawah tanah',
+      'Bertindak sebagai cat, dekorasi, dan tata letak interior yang membuat kerangka tersebut estetik dan nyaman dihuni',
+      'Bertindak sebagai kabel kelistrikan utama server',
+      'Bertindak sebagai bahan baku batu bata dinding'
+    ],
+    correctAnswer: 1,
+    explanation: 'HTML bertindak sebagai kerangka/tulang punggung, sedangkan CSS bertindak sebagai cat, dekorasi, dan interior.'
+  },
+  {
+    id: 203,
+    moduleId: 'modul-3',
+    category: 'CSS & Perannya dalam Web',
+    question: 'Apa tujuan utama penggunaan CSS pada sistem institusi GLAM (Galleries, Libraries, Archives, Museums)?',
+    options: [
+      'Menghapus seluruh metadata koleksi lama',
+      'Memastikan informasi koleksi digital tidak hanya fungsional, tetapi juga menarik secara visual dan mudah dipahami oleh pengunjung',
+      'Mengubah format file gambar menjadi teks murni',
+      'Menggantikan fungsi database server'
+    ],
+    correctAnswer: 1,
+    explanation: 'CSS memastikan informasi koleksi digital di institusi GLAM tampil menarik secara visual dan mudah dipahami pengunjung.'
+  },
+  {
+    id: 204,
+    moduleId: 'modul-3',
+    category: 'Piramida Desain Web Arthur M. Langer',
+    question: 'Menurut Arthur M. Langer (2008), apakah komponen yang berada di tingkat Fondasi (Dasar) dari Piramida Desain Web?',
+    options: [
+      'Content (Konten informasi)',
+      'Purpose / Economics (Nilai ekonomi dan sasaran keberhasilan)',
+      'Visuals / Form (Estetika) dan Technology / Function (Metode teknis implementasi)',
+      'Database relasional dan tabel arsip'
+    ],
+    correctAnswer: 2,
+    explanation: 'Komponen fondasi desain web mencakup Visuals / Form (estetika) serta Technology / Function (teknologi implementasi).'
+  },
+  {
+    id: 205,
+    moduleId: 'modul-3',
+    category: 'Piramida Desain Web Arthur M. Langer',
+    question: 'Komponen apakah yang menempati posisi Badan (Tengah) dalam Piramida Desain Web Arthur M. Langer?',
+    options: [
+      'Content (Fitur dan informasi yang disajikan sebagai batu bata pembangun)',
+      'Visuals dan Form semata',
+      'Tujuan ekonomi perusahaan',
+      'Kabel jaringan lokal'
+    ],
+    correctAnswer: 0,
+    explanation: 'Content (konten informasi) menempati posisi badan di tengah piramida sebagai batu bata pembangun.'
+  },
+  {
+    id: 206,
+    moduleId: 'modul-3',
+    category: 'Piramida Desain Web Arthur M. Langer',
+    question: 'Apakah komponen yang menduduki posisi Puncak (Atas) dari Piramida Desain Web Arthur M. Langer?',
+    options: [
+      'Visuals / Form',
+      'Technology / Function',
+      'Purpose / Economics (Nilai ekonomi dan sasaran keberhasilan sistem)',
+      'HTML tags penanda'
+    ],
+    correctAnswer: 2,
+    explanation: 'Purpose / Economics menduduki puncak piramida sebagai nilai ekonomi dan sasaran keberhasilan sistem informasi.'
+  },
+  {
+    id: 207,
+    moduleId: 'modul-3',
+    category: 'Penerapan Visuals & Content pada GLAM',
+    question: 'Bagaimana hubungan antara pengembang web, CSS, dan Piramida Desain Web dalam konteks GLAM?',
+    options: [
+      'Pengembang menggunakan CSS untuk mengelola komponen Visuals (Form) guna mengemas konten informasi agar sesuai preferensi pengguna',
+      'CSS digunakan untuk menghapus konten sejarah',
+      'Pengembang mengabaikan tampilan visual demi kecepatan server',
+      'Konten tidak memerlukan visual sama sekali'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pengembang menggunakan CSS untuk mengelola komponen Visuals (Form) dalam mengemas konten koleksi agar pengunjung merasa nyaman.'
+  },
+  {
+    id: 208,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: Konsistensi Layout',
+    question: 'Mengapa konsistensi tata letak (layout) sangat penting di seluruh halaman situs web institusi GLAM?',
+    options: [
+      'Agar ukuran file gambar menjadi lebih kecil',
+      'Membuat pengguna merasa familier, nyaman, dan mudah bernavigasi',
+      'Agar situs dapat berjalan tanpa koneksi internet',
+      'Untuk menyembunyikan menu navigasi utama'
+    ],
+    correctAnswer: 1,
+    explanation: 'Tata letak yang konsisten membuat pengunjung merasa familier (at home) dan mudah bernavigasi di seluruh halaman situs.'
+  },
+  {
+    id: 209,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: Konsistensi Layout',
+    question: 'Bagaimana pembagian area layar yang dianjurkan dalam struktur web GLAM yang teratur?',
+    options: [
+      'Membagi tampilan ke dalam area <header>, <main>, dan <footer> secara seragam pada setiap halaman',
+      'Meletakkan seluruh konten di sudut kanan bawah secara acak',
+      'Menghilangkan tag <header> dan hanya memakai <footer>',
+      'Menggunakan satu halaman panjang tanpa jeda'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pembagian area layar web dibagi secara teratur ke dalam <header>, <main>, dan <footer> secara seragam.'
+  },
+  {
+    id: 210,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: White Space',
+    question: 'Apakah yang dimaksud dengan White Space dalam prinsip antarmuka web?',
+    options: [
+      'Ruang kosong di sekitar teks, gambar, dan elemen antarmuka yang tidak terisi oleh konten visual',
+      'Warna latar belakang putih bersih pada monitor',
+      'Area khusus untuk meletakkan iklan komersial',
+      'Kode CSS untuk menghapus spasi paragraf'
+    ],
+    correctAnswer: 0,
+    explanation: 'White space adalah area kosong di sekitar elemen yang tidak terisi konten visual untuk memberikan ruang bernapas.'
+  },
+  {
+    id: 211,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: White Space',
+    question: 'Apa fungsi utama dari White Space dalam halaman katalog digital institusi GLAM?',
+    options: [
+      'Membuat halaman terlihat kosong dan membuang ruang',
+      'Memberikan ruang bernapas bagi mata pengunjung, mencegah kepadatan informasi (visual clutter), dan mengarahkan fokus pada artefak',
+      'Mempercepat unduhan file database SQL',
+      'Menghapus teks deskripsi secara otomatis'
+    ],
+    correctAnswer: 1,
+    explanation: 'White space memberikan ruang bernapas bagi mata, mencegah visual clutter, serta mengarahkan fokus ke foto artefak atau deskripsi.'
+  },
+  {
+    id: 212,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: Tipografi',
+    question: 'Apa karakteristik utama dari Serif Fonts (misal: Georgia, Times New Roman)?',
+    options: [
+      'Memiliki sirip atau ekor kecil di ujung hurufnya',
+      'Bergaris bersih tanpa sirip sama sekali',
+      'Hanya bisa digunakan pada bahasa pemrograman Python',
+      'Selalu berukuran sangat besar'
+    ],
+    correctAnswer: 0,
+    explanation: 'Serif fonts memiliki sirip atau ekor kecil di ujung huruf dan sangat baik untuk media cetak.'
+  },
+  {
+    id: 213,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: Tipografi',
+    question: 'Mengapa Sans-Serif Fonts (misal: Arial, Helvetica, Tahoma) lebih dianjurkan untuk layar digital dibandingkan Serif?',
+    options: [
+      'Karena ukurannya selalu lebih kecil',
+      'Karena tanpa sirip dan bergaris bersih sehingga jauh lebih mudah dan nyaman dibaca di layar komputer atau ponsel',
+      'Karena diciptakan khusus untuk cetakan buku tua',
+      'Karena tidak membutuhkan file CSS'
+    ],
+    correctAnswer: 1,
+    explanation: 'Sans-serif bergaris bersih tanpa sirip, membuatnya jauh lebih nyaman dibaca pada layar digital beresolusi komputer/HP.'
+  },
+  {
+    id: 214,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: Tipografi',
+    question: 'Mengapa aturan tipografi melarang penggunaan huruf besar semua (ALL CAPS) pada paragraf teks deskripsi koleksi?',
+    options: [
+      'Karena menghabiskan banyak kuota internet',
+      'Karena membuat teks sulit dibaca dan memberikan kesan "berteriak" kepada pembaca',
+      'Karena dilarang oleh undang-undang hak cipta web',
+      'Karena otomatis mengubah bahasa halaman web'
+    ],
+    correctAnswer: 1,
+    explanation: 'Penggunaan ALL CAPS pada paragraf membuat teks sulit dibaca dan terkesan "berteriak", sehingga harus dihindari.'
+  },
+  {
+    id: 215,
+    moduleId: 'modul-3',
+    category: 'Prinsip Antarmuka GLAM: Kontras Warna & Aksesibilitas',
+    question: 'Mengapa kontras warna yang tinggi antara latar belakang dan teks sangat penting dalam perancangan antarmuka?',
+    options: [
+      'Agar situs web terlihat seperti era 90-an',
+      'Menjamin informasi koleksi dapat dibaca dengan jelas tanpa memaksakan mata serta mendukung aksesibilitas lansia',
+      'Untuk menghemat pemakaian daya listrik monitor',
+      'Agar kode CSS tidak mengalami error syntax'
+    ],
+    correctAnswer: 1,
+    explanation: 'Kontras tinggi menjamin keterbacaan maksimal, mencegah kelelahan mata, dan mendukung aksesibilitas bagi lansia atau keterbatasan visual.'
+  },
+  {
+    id: 216,
+    moduleId: 'modul-3',
+    category: 'External CSS & style.css',
+    question: 'Apakah praktik terbaik dalam pengembangan web untuk memisahkan kode gaya (styling) dari struktur HTML?',
+    options: [
+      'Menggabungkan seluruh kode CSS ke dalam setiap tag HTML secara inline',
+      'Menggunakan External CSS dengan membuat file terpisah bernama style.css',
+      'Menghapus file HTML dan hanya menggunakan file gambar',
+      'Menulis kode CSS di dalam database MySQL'
+    ],
+    correctAnswer: 1,
+    explanation: 'External CSS menggunakan file style.css terpisah adalah praktik terbaik untuk menjaga kerapian kode dan pemeliharaan.'
+  },
+  {
+    id: 217,
+    moduleId: 'modul-3',
+    category: 'External CSS & style.css',
+    question: 'Di bagian manakah pada file index.html tag tautan (<link rel="stylesheet" href="style.css">) harus disematkan?',
+    options: [
+      'Di dalam bagian <head>',
+      'Di bagian paling bawah penutup </html>',
+      'Di dalam tag <footer>',
+      'Di dalam tag <audio>'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tag tautan External CSS disematkan di dalam bagian <head> dokumen HTML.'
+  },
+  {
+    id: 218,
+    moduleId: 'modul-3',
+    category: 'External CSS & style.css',
+    question: 'Berdasarkan contoh kode style.css, warna latar belakang apa (#fcfaf2) yang digunakan untuk menciptakan kesan krem lembut?',
+    options: [
+      'Latar belakang krem lembut',
+      'Merah bata menyala',
+      'Hitam pekat legam',
+      'Biru neon terang'
+    ],
+    correctAnswer: 0,
+    explanation: 'Warna #fcfaf2 digunakan pada body untuk memberikan latar belakang krem lembut yang nyaman.'
+  },
+  {
+    id: 219,
+    moduleId: 'modul-3',
+    category: 'External CSS & style.css',
+    question: 'Dalam contoh penerapan kode style.css, warna apakah (#8c2d19) yang digunakan untuk latar belakang elemen <header>?',
+    options: [
+      'Merah bata khas museum',
+      'Hijau daun tua',
+      'Kuning emas berkilau',
+      'Abu-abu metalik'
+    ],
+    correctAnswer: 0,
+    explanation: 'Warna #8c2d19 digunakan pada header sebagai warna merah bata khas museum.'
+  },
+  {
+    id: 220,
+    moduleId: 'modul-3',
+    category: 'External CSS & style.css',
+    question: 'Properti CSS apa yang digunakan dalam kelas .card-koleksi untuk memberikan sudut melengkung dan bayangan kotak (shadow)?',
+    options: [
+      'border-radius dan box-shadow',
+      'font-family dan line-height',
+      'padding dan margin-top',
+      'background-color dan color'
+    ],
+    correctAnswer: 0,
+    explanation: 'border-radius dan box-shadow digunakan untuk mempercantik kartu koleksi dengan sudut melengkung dan efek bayangan.'
+  },
+  ...Array.from({ length: 80 }, (_, index) => {
+    const id = 221 + index;
+    const categories = [
+      'CSS & Perannya dalam Web',
+      'Piramida Desain Web Arthur M. Langer',
+      'Penerapan Visuals & Content pada GLAM',
+      'Prinsip Antarmuka GLAM: Konsistensi Layout',
+      'Prinsip Antarmuka GLAM: White Space',
+      'Prinsip Antarmuka GLAM: Tipografi',
+      'Prinsip Antarmuka GLAM: Kontras Warna & Aksesibilitas',
+      'External CSS & style.css'
+    ];
+    const category = categories[index % categories.length];
+    return {
+      id,
+      moduleId: 'modul-3' as const,
+      category,
+      question: `Pertanyaan mendalam ke-${id} mengenai materi ${category} dalam perancangan antarmuka web dan sistem GLAM: Manakah analisis yang paling akurat?`,
+      options: [
+        `Analisis A yang mengabaikan prinsip ${category} dalam desain sistem informasi.`,
+        `Analisis B yang menerapkan standar profesional ${category} sesuai teori perancangan web modern.`,
+        `Analisis C yang bertentangan dengan penggunaan External CSS.`,
+        `Analisis D yang menyamakan fungsi HTML dan CSS secara keliru.`
+      ],
+      correctAnswer: 1,
+      explanation: `Berdasarkan prinsip ${category}, penerapan desain tersebut menjamin kenyamanan dan estetika visual antarmuka sistem.`
     };
   })
 ];

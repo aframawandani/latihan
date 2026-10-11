@@ -25,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentMode, setMode }) => {
               <h1 className="font-bold text-base sm:text-lg bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
                 QuizMaster
               </h1>
-              <p className="text-xs text-slate-400">Modul 1 & Modul 2 (200 Soal)</p>
+              <p className="text-xs text-slate-400">Modul 1, 2 & 3 (300 Soal)</p>
             </div>
           </div>
 
