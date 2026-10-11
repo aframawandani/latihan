@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Question, QuizMode } from '../types';
 import { QUESTIONS } from '../data/questions';
-import { CheckCircle2, XCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, RotateCcw, Save } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, RotateCcw, Save, PlayCircle } from 'lucide-react';
 import { saveProgressToIDB, getProgressFromIDB } from '../utils/db';
 
 interface PracticeModeProps {
