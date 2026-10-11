@@ -1,6 +1,6 @@
 import { Question } from '../types';
 
-export const QUESTIONS: Question[] = [
+const RAW_QUESTIONS: Omit<Question, never>[] = [
   // ==================== MODUL 1 (1 - 100) ====================
   {
     id: 1,
@@ -632,7 +632,7 @@ export const QUESTIONS: Question[] = [
     };
   }),
 
-  // ==================== MODUL 3 (201 - 300: 50% TEORI & 50% TEKNIS) ====================
+  // ==================== MODUL 3 (201 - 300) ====================
   // --- TEORI (201 - 250) ---
   {
     id: 201,
@@ -2037,3 +2037,26 @@ export const QUESTIONS: Question[] = [
     explanation: 'Jalur file yang benar dan penempatan di head adalah kunci keberhasilan pemuatan CSS.'
   }
 ];
+
+// Helper function to deterministically shuffle options and update correctAnswer index
+function shuffleQuestionOptions(q: Question): Question {
+  const correctText = q.options[q.correctAnswer];
+  const opts = [...q.options];
+  
+  // Deterministic PRNG seed based on question ID
+  let seed = q.id * 2654435761;
+  for (let i = opts.length - 1; i > 0; i--) {
+    seed = (seed * 1103515245 + 12345) % 2147483648;
+    const j = Math.floor((seed / 2147483648) * (i + 1));
+    [opts[i], opts[j]] = [opts[j], opts[i]];
+  }
+  
+  const newCorrectIndex = opts.indexOf(correctText);
+  return {
+    ...q,
+    options: opts,
+    correctAnswer: newCorrectIndex >= 0 ? newCorrectIndex : 0
+  };
+}
+
+export const QUESTIONS: Question[] = RAW_QUESTIONS.map(shuffleQuestionOptions);
